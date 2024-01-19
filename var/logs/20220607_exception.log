@@ -1,0 +1,2 @@
+*ERROR* 	v1.7.8.3	2022/06/07 - 21:54:13: Link to database cannot be established: SQLSTATE[HY000] [1045] Access denied for user &#039;u805614560_legado&#039;@&#039;127.0.0.1&#039; (using password: YES) at line 136 in file classes/db/DbPDO.php
+*ERROR* 	v1.7.8.3	2022/06/07 - 21:54:14: Link to database cannot be established: SQLSTATE[HY000] [1045] Access denied for user &#039;u805614560_legado&#039;@&#039;127.0.0.1&#039; (using password: YES) at line 136 in file classes/db/DbPDO.php

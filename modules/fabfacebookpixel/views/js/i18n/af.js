@@ -1,0 +1,10 @@
+/*
+* The MIT License (MIT)
+* Copyright (c) 2012-2021 Kevin Brown, Igor Vaynberg, and Select2 contributors
+* Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+*
+* THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+*
+* */
+!function(){if(jQuery&&jQuery.fn&&jQuery.fn.select2&&jQuery.fn.select2.amd)var e=jQuery.fn.select2.amd;e.define("select2/i18n/af",[],function(){return{errorLoading:function(){return"Die resultate kon nie gelaai word nie."},inputTooLong:function(e){var n=e.input.length-e.maximum,r="Verwyders asseblief "+n+" character";return 1!=n&&(r+="s"),r},inputTooShort:function(e){return"Voer asseblief "+(e.minimum-e.input.length)+" of meer karakters"},loadingMore:function(){return"Meer resultate word gelaai…"},maximumSelected:function(e){var n="Kies asseblief net "+e.maximum+" item";return 1!=e.maximum&&(n+="s"),n},noResults:function(){return"Geen resultate gevind"},searching:function(){return"Besig…"},removeAllItems:function(){return"Verwyder alle items"}}}),e.define,e.require}();

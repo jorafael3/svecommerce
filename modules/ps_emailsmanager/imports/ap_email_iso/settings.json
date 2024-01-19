@@ -1,0 +1,738 @@
+{
+  "product_key": "069f5ce06fde5980bd2a566476fc5d90",
+  "name": "ap_email_iso",
+  "version": "1.1",
+  "author": "Leo Theme",
+  "inputs": [
+    {
+      "type": "text",
+      "name": "bg_img_body",
+      "default": "",
+      "demo": "https://live.staticflickr.com/65535/48635016097_8c997621d2_o.jpg",
+      "required": false,
+      "lang": false,
+      "label": {
+        "en": "Url background image body",
+        "es": "Encabezado de imagen de fondo de URL",
+        "de": "URL-Hintergrund-Bild-header",
+        "fr": "En-tête de l’image de fond URL",
+        "it": "Intestazione di URL sfondo immagine",
+        "ar": "رابط الخلفية صورة رأس"
+      },
+      "desc": {
+        "en": "Background image (width: 1920px)px. Example:  https://live.staticflickr.com/65535/48635016097_8c997621d2_o.jpg",
+        "es": "Imagen de fondo (width: 1920px)px. Example:  https://live.staticflickr.com/65535/48635016097_8c997621d2_o.jpg",
+        "de": "Hintergrundbild (width: 1920px)px. Example:  https://live.staticflickr.com/65535/48635016097_8c997621d2_o.jpg",
+        "fr": " Image de fond (width: 1920px)px. Exemple :  https://live.staticflickr.com/65535/48635016097_8c997621d2_o.jpg",
+        "it": "Immagine di sfondo (width: 1920px)px. Esempio:  https://live.staticflickr.com/65535/48635016097_8c997621d2_o.jpg",
+        "ar": "صورة الخلفية (width: 1920px)px. مثال:  https://live.staticflickr.com/65535/48635016097_8c997621d2_o.jpg"
+      }
+    },
+    {
+      "type": "color",
+      "name": "bg_color_body",
+      "default": "#eff3fa",
+      "required": false,
+      "lang": false,
+      "label": {
+        "en": "Color body background",
+        "es": "Fondo de cuerpo de color",
+        "de": "Hintergrund Farbe Körper",
+        "fr": "Fond de corps de couleur",
+        "it": "Priorità bassa del corpo di colore",
+        "ar": "للون الجسم الخلفية"
+      },
+      "desc": {
+        "en": "",
+        "es": "",
+        "de": "",
+        "fr": "",
+        "it": "",
+        "ar": ""
+      }
+    },
+        {
+      "type": "text",
+      "name": "group_content_banner_img_image_src",
+      "default": "",
+      "demo": "https://live.staticflickr.com/65535/48635092296_6503b13f87_o.png",
+      "required": false,
+      "lang": false,
+      "label": {
+        "en": "Url background image banner",
+        "es": "Banner de imagen de fondo de URL",
+        "de": "URL-Hintergrund-Bild-banner",
+        "fr": "Bannière de URL fond image",
+        "it": "Banner di URL sfondo immagine",
+        "ar": "مرابط الخلفية صورة الشعار"
+      },
+      "desc": {
+        "en": "You should use images in .png format. Example: https://live.staticflickr.com/65535/48635092296_6503b13f87_o.png",
+        "es": "Se deben utilizar imágenes en formato .png. Example: https://live.staticflickr.com/65535/48635092296_6503b13f87_o.png",
+        "de": "Sie sollten Bilder im PNG-Format verwenden.. Example: https://live.staticflickr.com/65535/48635092296_6503b13f87_o.png",
+        "fr": "Vous devez utiliser des images au format .png. Exemple : https://live.staticflickr.com/65535/48635092296_6503b13f87_o.png",
+        "it": "È consigliabile utilizzare immagini in formato. png. Esempio: https://live.staticflickr.com/65535/48635092296_6503b13f87_o.png",
+        "ar": "يجب عليك استخدام الصور بتنسيق.png. مثال: https://live.staticflickr.com/65535/48635092296_6503b13f87_o.png"
+      }
+    },
+            {
+      "type": "text",
+      "name": "group_content_banner_img_image_src_top",
+      "default": "",
+      "demo": "https://live.staticflickr.com/65535/48635016177_6234beb3c6_o.png",
+      "required": false,
+      "lang": false,
+      "label": {
+        "en": "Url background image banner top",
+        "es": "Banner top de imagen de fondo de URL",
+        "de": "URL-Hintergrund-Bild-banner top",
+        "fr": "Bannière top de URL fond image",
+        "it": "Banner top di URL sfondo immagine",
+        "ar": "مرابط الخلفية صورة الشعار"
+      },
+      "desc": {
+        "en": "You should use images in .png format. Example: https://live.staticflickr.com/65535/48635016177_6234beb3c6_o.png",
+        "es": "Se deben utilizar imágenes en formato .png. Example: https://live.staticflickr.com/65535/48635016177_6234beb3c6_o.png",
+        "de": "Sie sollten Bilder im PNG-Format verwenden.. Example: https://live.staticflickr.com/65535/48635016177_6234beb3c6_o.png",
+        "fr": "Vous devez utiliser des images au format .png. Exemple : https://live.staticflickr.com/65535/48635016177_6234beb3c6_o.png",
+        "it": "È consigliabile utilizzare immagini in formato. png. Esempio: https://live.staticflickr.com/65535/48635016177_6234beb3c6_o.png",
+        "ar": "يجب عليك استخدام الصور بتنسيق.png. مثال: https://live.staticflickr.com/65535/48635016177_6234beb3c6_o.png"
+      }
+    },
+    {
+      "type": "color",
+      "name": "color_body",
+      "default": "#000000",
+      "required": false,
+      "lang": false,
+      "label": {
+        "en": "Color text general",
+        "es": "Color texto general",
+        "de": "Farbiger Text allgemeine",
+        "fr": "Couleur du texte général",
+        "it": "Colore testo generale",
+        "ar": "لون النص العام"
+      },
+      "desc": {
+        "en": "",
+        "es": "",
+        "de": "",
+        "fr": "",
+        "it": "",
+        "ar": ""
+      }
+    },
+    {
+      "type": "text",
+      "name": "font_family",
+      "default": "Montserrat",
+      "required": false,
+      "lang": false,
+      "label": {
+        "en": "Google font name",
+        "es": "Nombre de la fuente de Google",
+        "de": "Der Name Google Schriftart",
+        "fr": "Nom de police de Google",
+        "it": "Nome del font di Google",
+        "ar": "اسم الخط جوجل"
+      },
+      "desc": {
+        "en": "Name of font at: <a href='https://fonts.google.com/'>https://fonts.google.com/</a> Example: Lato, Roboto, Open Sans...",
+        "es": "Nombre de fuente en: <a href='https://fonts.google.com/'>https://fonts.google.com/</a> Ejemplo: Lato, Roboto, Open Sans...",
+        "de": "Name der Schriftart an: <a href='https://fonts.google.com/'>https://fonts.google.com/</a> Beispiel: Lato, Roboto, Open Sans...",
+        "fr": "Nom de police à: <a href='https://fonts.google.com/'>https://fonts.google.com/</a> Exemple de: Lato, Roboto, Open Sans...",
+        "it": "Nome del tipo di carattere a: <a href='https://fonts.google.com/'>https://fonts.google.com/</a> Esempio: Lato, Roboto, Open Sans...",
+        "ar": "اسم الخط في: <a href='https://fonts.google.com/'>https://fonts.google.com/</a> مثال: Lato, Roboto, Open Sans..."
+      }
+    },
+    {
+      "type": "text",
+      "name": "font_size_body",
+      "default": "14px",
+      "required": false,
+      "lang": false,
+      "label": {
+        "en": "Font size text",
+        "es": "Texto de tamaño de fuente",
+        "de": "Schrift Größe text",
+        "fr": "Texte de taille de police",
+        "it": "Testo di dimensione carattere",
+        "ar": "النص حجم الخط"
+      },
+      "desc": {
+        "en": "Unit must is rem,px,em ...",
+        "es": "Unidad debe damos rem, px, em...",
+        "de": "Gerät muss ist Rem, px, Em...",
+        "fr": "Unité doit est rem, px, em...",
+        "it": "Unità deve è rem, px, em...",
+        "ar": "يجب أن وحدة rem، مقصف، م..."
+      }
+    },
+    {
+      "type": "text",
+      "name": "width_container",
+      "default": "620px",
+      "required": false,
+      "lang": false,
+      "label": {
+        "en": "Width container",
+        "es": "Recipiente ancho",
+        "de": "Breite container",
+        "fr": "Conteneur à largeur",
+        "it": "Contenitore a larghezza",
+        "ar": "عرض الحاوية"
+      },
+      "desc": {
+        "en": "Unit must is rem,px,em ...",
+        "es": "Unidad debe damos rem, px, em...",
+        "de": "Gerät muss ist Rem, px, Em...",
+        "fr": "Unité doit est rem, px, em...",
+        "it": "Unità deve è rem, px, em...",
+        "ar": "يجب أن وحدة rem، مقصف، م..."
+      }
+    },
+    {
+      "type": "color",
+      "name": "color_title",
+      "default": "#4553e0",
+      "required": false,
+      "lang": false,
+      "label": {
+        "en": "Color title",
+        "es": "Título de sub de color",
+        "de": "Farbe-Titel",
+        "fr": "Titre de couleur",
+        "it": "Colore titolo",
+        "ar": "لون العنوان"
+      },
+      "desc": {
+        "en": "",
+        "es": "",
+        "de": "",
+        "fr": "",
+        "it": "",
+        "ar": ""
+      }
+    },
+    {
+      "type": "color",
+      "name": "color_sub_title",
+      "default": "#979dd9",
+      "required": false,
+      "lang": false,
+      "label": {
+        "en": "Color sub title",
+        "es": "Título de sub de color",
+        "de": "Farbe-Untertitel",
+        "fr": "Couleur sous titre",
+        "it": "Titolo di sub di colore",
+        "ar": "لون العنوان الفرعي"
+      },
+      "desc": {
+        "en": "",
+        "es": "",
+        "de": "",
+        "fr": "",
+        "it": "",
+        "ar": ""
+      }
+    },
+    {
+      "type": "color",
+      "name": "color_title_hero",
+      "default": "#4553e0",
+      "required": false,
+      "lang": false,
+      "label": {
+        "en": "Color title hero",
+        "es": "Héroe del título color",
+        "de": "Farbe Titelhelden",
+        "fr": "Héros de titre de couleur",
+        "it": "Hero di titolo di colore",
+        "ar": "لون لقب بطل"
+      },
+      "desc": {
+        "en": "",
+        "es": "",
+        "de": "",
+        "fr": "",
+        "it": "",
+        "ar": ""
+      }
+    },
+    {
+      "type": "color",
+      "name": "color_link_email",
+      "default": "#ff6eb1",
+      "required": false,
+      "lang": false,
+      "label": {
+        "en": "Color link email",
+        "es": "Color de borde de tabla",
+        "de": "Farbe Link e-Mail",
+        "fr": "Couleur lien e-mail",
+        "it": "Colore link e-mail",
+        "ar": "لون الارتباط البريد الإلكتروني"
+      },
+      "desc": {
+        "en": "",
+        "es": "",
+        "de": "",
+        "fr": "",
+        "it": "",
+        "ar": ""
+      }
+    },
+    {
+      "type": "color",
+      "name": "table_border_color",
+      "default": "#D6D4D4",
+      "required": false,
+      "lang": false,
+      "label": {
+        "en": "Table border color",
+        "es": "Color de borde de tabla",
+        "de": "Tabelle Rahmenfarbe",
+        "fr": "Couleur de bordure de table",
+        "it": "Colore del bordo tabella",
+        "ar": "لون حدود الجدول"
+      },
+      "desc": {
+        "en": "",
+        "es": "",
+        "de": "",
+        "fr": "",
+        "it": "",
+        "ar": ""
+      }
+    },
+    {
+      "type": "color",
+      "name": "table_bg_color",
+      "default": "#ffffff",
+      "required": false,
+      "lang": false,
+      "label": {
+        "en": "Table background color",
+        "es": "Color de fondo de la tabla",
+        "de": "Hintergrundfarbe der Tabelle",
+        "fr": "Couleur d’arrière-plan de tableau",
+        "it": "Colore di sfondo della tabella",
+        "ar": "لون خلفية الجدول"
+      },
+      "desc": {
+        "en": "",
+        "es": "",
+        "de": "",
+        "fr": "",
+        "it": "",
+        "ar": ""
+      }
+    },
+    {
+      "type": "color",
+      "name": "table_color_caption",
+      "default": "#124147",
+      "required": false,
+      "lang": false,
+      "label": {
+        "en": "Table color caption",
+        "es": "Tabla color",
+        "de": "Tabellenbeschriftung Farbe",
+        "fr": "Légende couleur de tableau",
+        "it": "Didascalia della tabella colore",
+        "ar": "الجدول لون التسمية التوضيحية"
+      },
+      "desc": {
+        "en": "",
+        "es": "",
+        "de": "",
+        "fr": "",
+        "it": "",
+        "ar": ""
+      }
+    },
+    {
+      "type": "color",
+      "name": "table_color",
+      "default": "#124147",
+      "required": false,
+      "lang": false,
+      "label": {
+        "en": "Table color",
+        "es": "Tabla color",
+        "de": "Tabelle-Farbe",
+        "fr": "Couleur de la table",
+        "it": "Tabella dei colori",
+        "ar": "جدول الألوان"
+      },
+      "desc": {
+        "en": "",
+        "es": "",
+        "de": "",
+        "fr": "",
+        "it": "",
+        "ar": ""
+      }
+    },
+    {
+      "type": "color",
+      "name": "group_header_bg_color_header",
+      "default": "transparent",
+      "required": false,
+      "lang": false,
+      "label": {
+        "en": "Background color header",
+        "es": "Encabezado de imagen de fondo de URL",
+        "de": "Hintergrund-Farbe-header",
+        "fr": "En-tête de couleur de fond",
+        "it": "Intestazione di colore di sfondo",
+        "ar": "رأس لون الخلفية"
+      },
+      "desc": {
+        "en": "",
+        "es": "",
+        "de": "",
+        "fr": "",
+        "it": "",
+        "ar": ""
+      }
+    },
+    {
+      "type": "color",
+      "name": "group_content_color_custom_text",
+      "default": "#9a9a9a",
+      "required": false,
+      "lang": false,
+      "label": {
+        "en": "Color custom text",
+        "es": "Color de texto personalizado",
+        "de": "Benutzerdefinierter Text Farbe",
+        "fr": "Couleur de texte personnalisé",
+        "it": "Colore testo personalizzato",
+        "ar": "اترك هذا الحقل فارغاً إذا أردت خفية هذه الكتلة"
+      },
+      "desc": {
+        "en": "",
+        "es": "",
+        "de": "",
+        "fr": "",
+        "it": "",
+        "ar": ""
+      }
+    },
+    {
+      "type": "text",
+      "name": "group_content_text_input_custom_text",
+      "default": {
+        "en": "This is custom text in other language, you can translate it for each language. Leave this field empty if you want to hidden this block.",
+        "es": "Esto es texto personalizado en otro idioma, usted puede traducir para cada idioma. Deje este campo vacío si desea que oculta este bloque.",
+        "de": "Benutzerdefinierter Text in einer anderen Sprache, Sie können es für jede Sprache zu übersetzen. Lassen Sie dieses Feld leer, wenn Sie zu versteckten diesen Block.",
+        "fr": "Il s’agit d’un texte personnalisé dans une autre langue, vous pouvez le traduire pour chaque langue. Laissez ce champ vide si vous souhaitez que cachés de ce bloc.",
+        "it": "Si tratta di testo personalizzato in altra lingua, si può tradurre per ogni lingua. Lasciare vuoto questo campo se si desidera a nascosto questo blocco.",
+        "ar": "وهذا نص مخصص في لغة أخرى، يمكنك ترجمة ذلك لكل لغة. اترك هذا الحقل فارغاً إذا أردت خفية إلى هذه الكتلة."
+      },
+      "required": false,
+      "lang": true,
+      "label": {
+        "en": "Custom text",
+        "es": "Texto personalizado",
+        "de": "Benutzerdefinierter text",
+        "fr": "Texte personnalisé",
+        "it": "Testo personalizzato",
+        "ar": "نص مخصص"
+      },
+      "desc": {
+        "en": "Leave this field empty if you want to hidden this block.",
+        "es": "Deje este campo vacío si desea que oculta este bloque",
+        "de": "Lassen Sie dieses Feld leer, wenn Sie zu versteckten dieser block",
+        "fr": "Laissez ce champ vide si vous souhaitez que cachés à ce bloc",
+        "it": "Lasciare vuoto questo campo se si desidera a nascosto questo blocco",
+        "ar": "اترك هذا الحقل فارغاً إذا أردت خفية هذه الكتلة"
+      }
+    },
+    {
+      "type": "color",
+      "name": "group_content_bg_color_content",
+      "default": "#ffffff",
+      "required": false,
+      "lang": false,
+      "label": {
+        "en": "Background color content",
+        "es": "Contenido de color de fondo",
+        "de": "Hintergrund Farbe Inhalt",
+        "fr": "Contenuto di colore dello sfondo",
+        "it": "Contenuto di colore dello sfondo",
+        "ar": "محتوى الألوان الخلفية"
+      },
+      "desc": {
+        "en": "Delete the background-image link to show background-color",
+        "es": "Eliminar el enlace de la imagen de fondo para mostrar el color de fondo",
+        "de": "Löschen Sie den Hintergrund-Bild-Link, um die Hintergrundfarbe anzeigen",
+        "fr": "Supprimer le lien de l’image d’arrière-plan pour afficher la couleur d’arrière-plan",
+        "it": "Eliminare il collegamento di immagine di sfondo per visualizzare il colore di sfondo",
+        "ar": "حذف رابط صورة الخلفية لإظهار لون الخلفية"
+      }
+    },
+    {
+      "type": "color",
+      "name": "group_footer_bg_color_footer",
+      "default": "#ff6eb1",
+      "required": false,
+      "lang": false,
+      "label": {
+        "en": "Background color footer",
+        "es": "Pie de página de fondo color",
+        "de": "Hintergrund Farbe Fußzeile",
+        "fr": "Pied de couleur d’arrière-plan",
+        "it": "Piè di pagina di sfondo colore",
+        "ar": "تذييل لون الخلفية"
+      },
+      "desc": {
+        "en": "",
+        "es": "",
+        "de": "",
+        "fr": "",
+        "it": "",
+        "ar": ""
+      }
+    },
+    {
+      "type": "color",
+      "name": "group_footer_color_copyright",
+      "default": "#ffffff",
+      "required": false,
+      "lang": false,
+      "label": {
+        "en": "Color copyright",
+        "es": "Derechos de autor color",
+        "de": "Farbe-copyright",
+        "fr": "Copyright couleur",
+        "it": "Copyright di colore",
+        "ar": "حقوق الطبع والنشر لون"
+      },
+      "desc": {
+        "en": "",
+        "es": "",
+        "de": "",
+        "fr": "",
+        "it": "",
+        "ar": ""
+      }
+    },
+    {
+      "type": "text",
+      "name": "group_footer_text_input_contact_footer",
+      "default": "12 rue d'Amsterdam | 75009 Paris France | +331 23 45 67 89",
+      "required": false,
+      "lang": false,
+      "label": {
+        "en": "Text contact footer",
+        "es": "Pie contacto texto",
+        "de": "Fußzeile Kontakt",
+        "fr": "Pied de page texte contact",
+        "it": "Testo piè di pagina contatto",
+        "ar": "نص تذييل الصفحة جهات الاتصال"
+      },
+      "desc": {
+        "en": "",
+        "es": "",
+        "de": "",
+        "fr": "",
+        "it": "",
+        "ar": ""
+      }
+    },
+    {
+      "type": "color",
+      "name": "group_footer_color_contact_footer",
+      "default": "#ffffff",
+      "required": false,
+      "lang": false,
+      "label": {
+        "en": "Color contact footer",
+        "es": "Pie de contacto de color",
+        "de": "Farbe-Kontakt-Fußzeile",
+        "fr": "Pied de contact de couleur",
+        "it": "Colore contatto piè di pagina",
+        "ar": "لون الاتصال تذييل الصفحة"
+      },
+      "desc": {
+        "en": "",
+        "es": "",
+        "de": "",
+        "fr": "",
+        "it": "",
+        "ar": ""
+      }
+    },
+    {
+      "type": "text",
+      "name": "group_footer_text_input_copyright",
+      "default": {
+        "en": "Copyright © 2019. All rights reserved.",
+        "es": "Copyright © 2019. Todos los derechos reservados.",
+        "de": "Copyright © 2019. Alle Rechte vorbehalten.",
+        "fr": "Copyright © 2019. Tous droits réservés.",
+        "it": "Copyright © 2019. Tutti i diritti riservati.",
+        "ar": "حقوق الطبع والنشر © عام 2019. جميع الحقوق محفوظة."
+      },
+      "required": false,
+      "lang": true,
+      "label": {
+        "en": "Text copyright",
+        "es": "Derechos de autor de texto",
+        "de": "Text copyright",
+        "fr": "Texte d’auteur",
+        "it": "Testo sul copyright",
+        "ar": "نص حقوق التأليف والنشر"
+      },
+      "desc": {
+        "en": "Leave this field empty if you want to hidden this block.",
+        "es": "Deje este campo vacío si desea que oculta este bloque",
+        "de": "Lassen Sie dieses Feld leer, wenn Sie zu versteckten dieser block",
+        "fr": "Laissez ce champ vide si vous souhaitez que cachés à ce bloc",
+        "it": "Lasciare vuoto questo campo se si desidera a nascosto questo blocco",
+        "ar": "اترك هذا الحقل فارغاً إذا أردت خفية هذه الكتلة"
+      }
+    },
+    {
+      "type": "text",
+      "name": "group_social_facebook_link",
+      "default": "https://www.facebook.com/prestashop",
+      "required": false,
+      "lang": false,
+      "label": {
+        "en": "Facebook",
+        "es": "Facebook",
+        "de": "Facebook",
+        "fr": "Facebook",
+        "it": "Facebook",
+        "ar": "Facebook"
+      },
+      "desc": {
+        "en": "Leave this field empty and this block will not be displayed.",
+        "es": "Deje este campo vacío y este bloque no se mostrará.",
+        "de": "Lassen Sie dieses Feld leer, und dieser Block wird nicht angezeigt.",
+        "fr": "Laissez ce champ vide et ce bloc ne s’affichera pas.",
+        "it": "Lasciare vuoto questo campo e questo blocco non verrà visualizzato.",
+        "ar": "اترك هذا الحقل فارغاً، ولن يتم عرض هذه الكتلة."
+      }
+    },
+    {
+      "type": "text",
+      "name": "group_social_googleplus_link",
+      "default": "https://plus.google.com/+prestashop",
+      "required": false,
+      "lang": false,
+      "label": {
+        "en": "Google Plus",
+        "es": "Google Plus",
+        "de": "Google Plus",
+        "fr": "Google Plus",
+        "it": "Google Plus",
+        "ar": "Google Plus"
+      },
+      "desc": {
+        "en": "Leave this field empty and this block will not be displayed.",
+        "es": "Deje este campo vacío y este bloque no se mostrará.",
+        "de": "Lassen Sie dieses Feld leer, und dieser Block wird nicht angezeigt.",
+        "fr": "Laissez ce champ vide et ce bloc ne s’affichera pas.",
+        "it": "Lasciare vuoto questo campo e questo blocco non verrà visualizzato.",
+        "ar": "اترك هذا الحقل فارغاً، ولن يتم عرض هذه الكتلة."
+      }
+    },
+    {
+      "type": "text",
+      "name": "group_social_instagram_link",
+      "default": "https://www.instagram.com/prestashop/",
+      "required": false,
+      "lang": false,
+      "label": {
+        "en": "Instagram",
+        "es": "Instagram",
+        "de": "Instagram",
+        "fr": "Instagram",
+        "it": "Instagram",
+        "ar": "Instagram"
+      },
+      "desc": {
+        "en": "Leave this field empty and this block will not be displayed.",
+        "es": "Deje este campo vacío y este bloque no se mostrará.",
+        "de": "Lassen Sie dieses Feld leer, und dieser Block wird nicht angezeigt.",
+        "fr": "Laissez ce champ vide et ce bloc ne s’affichera pas.",
+        "it": "Lasciare vuoto questo campo e questo blocco non verrà visualizzato.",
+        "ar": "اترك هذا الحقل فارغاً، ولن يتم عرض هذه الكتلة."
+      }
+    },
+    {
+      "type": "text",
+      "name": "group_social_pinterest_link",
+      "default": "https://www.instagram.com/prestashop/",
+      "required": false,
+      "lang": false,
+      "label": {
+        "en": "Pinterest",
+        "es": "Pinterest",
+        "de": "Pinterest",
+        "fr": "Pinterest",
+        "it": "Pinterest",
+        "ar": "Pinterest"
+      },
+      "desc": {
+        "en": "Leave this field empty and this block will not be displayed.",
+        "es": "Deje este campo vacío y este bloque no se mostrará.",
+        "de": "Lassen Sie dieses Feld leer, und dieser Block wird nicht angezeigt.",
+        "fr": "Laissez ce champ vide et ce bloc ne s’affichera pas.",
+        "it": "Lasciare vuoto questo campo e questo blocco non verrà visualizzato.",
+        "ar": "اترك هذا الحقل فارغاً، ولن يتم عرض هذه الكتلة."
+      }
+    },
+    {
+      "type": "text",
+      "name": "group_social_twitter_link",
+      "default": "https://www.twitter.com/prestashop",
+      "required": false,
+      "lang": false,
+      "label": {
+        "en": "Twitter",
+        "es": "Twitter",
+        "de": "Twitter",
+        "fr": "Twitter",
+        "it": "Twitter",
+        "ar": "Twitter"
+      },
+      "desc": {
+        "en": "Leave this field empty and this block will not be displayed.",
+        "es": "Deje este campo vacío y este bloque no se mostrará.",
+        "de": "Lassen Sie dieses Feld leer, und dieser Block wird nicht angezeigt.",
+        "fr": "Laissez ce champ vide et ce bloc ne s’affichera pas.",
+        "it": "Lasciare vuoto questo campo e questo blocco non verrà visualizzato.",
+        "ar": "اترك هذا الحقل فارغاً، ولن يتم عرض هذه الكتلة."
+      }
+    },
+    {
+      "type": "text",
+      "name": "group_social_youtube_link",
+      "default": "https://www.youtube.com/user/prestashop/",
+      "required": false,
+      "lang": false,
+      "label": {
+        "en": "Youtube",
+        "es": "Youtube",
+        "de": "Youtube",
+        "fr": "Youtube",
+        "it": "Youtube",
+        "ar": "Youtube"
+      },
+      "desc": {
+        "en": "Leave this field empty and this block will not be displayed.",
+        "es": "Deje este campo vacío y este bloque no se mostrará.",
+        "de": "Lassen Sie dieses Feld leer, und dieser Block wird nicht angezeigt.",
+        "fr": "Laissez ce champ vide et ce bloc ne s’affichera pas.",
+        "it": "Lasciare vuoto questo campo e questo blocco non verrà visualizzato.",
+        "ar": "اترك هذا الحقل فارغاً، ولن يتم عرض هذه الكتلة."
+      }
+    }
+  ]
+}

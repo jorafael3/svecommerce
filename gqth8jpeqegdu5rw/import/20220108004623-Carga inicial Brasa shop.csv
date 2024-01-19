@@ -1,0 +1,48 @@
+﻿Id;Nombre;Categoria;Categoria 1;Categoria;Precio;IVA;Descripción
+1;Bife De Chorizo Brahman Res - 1Kg;Carne de Res/Brahman;Carne de Res;Brahman;15,99;54;Producto empacado al vacío
+2;Pulpa Brahman Res - 1Kg;Carne de Res/Brahman;Carne de Res;Brahman;9,99;54;Producto empacado al vacío
+3;Pulpa Filete Brahman Res - 1Kg;Carne de Res/Brahman;Carne de Res;Brahman;10,99;54;Producto empacado al vacío
+4;Pulpa Corriente Brahman Res - 1Kg;Carne de Res/Brahman;Carne de Res;Brahman;8,99;54;Producto empacado al vacío
+5;Hamburguesa Procesado Res Y Cerdo - 1Kg;Hamburguesas/Brahman;Hamburguesas;Brahman;9,99;54;Producto empacado al vacío
+6;Molida Brahman Res - 1Kg;Carne de Res/Brahman;Carne de Res;Brahman;4,99;54;Producto empacado al vacío
+7;Molida Sin Grasa Brahman Res - 1Kg;Carne de Res/Brahman;Carne de Res;Brahman;8,99;54;Producto empacado al vacío
+8;Riñon Brahman Res - 1Kg;Carne de Res/Brahman;Carne de Res;Brahman;5,99;54;Producto empacado al vacío
+9;Lomo De Falda Brahman Res - 1Kg;Carne de Res/Brahman;Carne de Res;Brahman;12,99;54;Producto empacado al vacío
+10;Lomo Fino Brahman Res - 1Kg;Carne de Res/Brahman;Carne de Res;Brahman;17,99;54;Producto empacado al vacío
+11;Patas De Res Brahman Res - 1Kg;Carne de Res/Brahman;Carne de Res;Brahman;3,99;54;Producto empacado al vacío
+12;Picaña Brahman Res - 1Kg;Carne de Res/Brahman;Carne de Res;Brahman;15,99;54;Producto empacado al vacío
+13;Salon Brahman Res - 1Kg;Carne de Res/Brahman;Carne de Res;Brahman;10,99;54;Producto empacado al vacío
+14;Tbone Brahman Res - 1Kg;Carne de Res/Brahman;Carne de Res;Brahman;15,99;54;Producto empacado al vacío
+15;Rib Eye Brahman Res - 1Kg;Carne de Res/Brahman;Carne de Res;Brahman;15,99;54;Producto empacado al vacío
+16;Tira De Asado Brahman Res - 1Kg;Carne de Res/Brahman;Carne de Res;Brahman;9,99;54;Producto empacado al vacío
+17;Tomahawk Brahman Res - 1Kg;Carne de Res/Brahman;Carne de Res;Brahman;15,99;54;Producto empacado al vacío
+18;Bife De Chorizo Brangus Res - 1Kg;Carne de Res/Brangus;Carne de Res;Brangus;17,99;54;Producto empacado al vacío
+19;Pulpa Filete Brangus Res - 1Kg;Carne de Res/Brangus;Carne de Res;Brangus;11,99;54;Producto empacado al vacío
+20;Molida Brangus Res - 1Kg;Carne de Res/Brangus;Carne de Res;Brangus;5,99;54;Producto empacado al vacío
+21;Molida Sin Grasa Brangus Res - 1Kg;Carne de Res/Brangus;Carne de Res;Brangus;9,99;54;Producto empacado al vacío
+22;Lomo Fino Brangus Res - 1Kg;Carne de Res/Brangus;Carne de Res;Brangus;18,99;54;Producto empacado al vacío
+23;Picaña Brangus Res - 1Kg;Carne de Res/Brangus;Carne de Res;Brangus;17,99;54;Producto empacado al vacío
+24;T Bone Brangus Res - 1Kg;Carne de Res/Brangus;Carne de Res;Brangus;17,99;54;Producto empacado al vacío
+25;Tira De Asado Brangus Res - 1Kg;Carne de Res/Brangus;Carne de Res;Brangus;12,99;54;Producto empacado al vacío
+26;Tomahawk Brangus Res - 1Kg;Carne de Res/Brangus;Carne de Res;Brangus;17,99;54;Producto empacado al vacío
+27;Molida Pietrain Cerdo - 1Kg;Carne de Cerdo/Otro;Carne de Cerdo;Otro;6,99;54;Producto empacado al vacío
+28;Chorizo Finas Hierbas Procesado Cerdo - 1Kg;Carne de Cerdo/Embutidos;Carne de Cerdo;Embutidos;12,99;54;Producto empacado al vacío
+29;Chorizo Parrillero Procesado Cerdo - 1Kg;Carne de Cerdo/Embutidos;Carne de Cerdo;Embutidos;8,99;54;Producto empacado al vacío
+30;Chuleta De Lomo Pietrain Cerdo - 1Kg;Carne de Cerdo/Otro;Carne de Cerdo;Otro;7,99;54;Producto empacado al vacío
+31;Chuleta De Pierna Pietrain Cerdo - 1Kg;Carne de Cerdo/Otro;Carne de Cerdo;Otro;7,99;54;Producto empacado al vacío
+32;Costilla Entera Pietrain Cerdo - 1Kg;Carne de Cerdo/Otro;Carne de Cerdo;Otro;9,99;54;Producto empacado al vacío
+33;Costilla En Tiras O San Luis Pietrain Cerdo - 1Kg;Carne de Cerdo/Otro;Carne de Cerdo;Otro;10,99;54;Producto empacado al vacío
+34;Cuero De Cerdo Pietrain Cerdo - 1Kg;Carne de Cerdo/Otro;Carne de Cerdo;Otro;3,99;54;Producto empacado al vacío
+35;Lomo Fino De Cerdo Pietrain Cerdo - 1Kg;Carne de Cerdo/Otro;Carne de Cerdo;Otro;12,99;54;Producto empacado al vacío
+36;Longaniza Manabita  Ahumada Procesado Cerdo - 1Kg;Carne de Cerdo/Embutidos;Carne de Cerdo;Embutidos;12,99;54;Producto empacado al vacío
+37;Panceta  Pietrain Cerdo - 1Kg;Carne de Cerdo/Otro;Carne de Cerdo;Otro;8,99;54;Producto empacado al vacío
+38;Pulpa De Cerdo Pietrain Cerdo - 1Kg;Carne de Cerdo/Otro;Carne de Cerdo;Otro;8,99;54;Producto empacado al vacío
+39;Tocino De Cerdo Ahumado Procesado Cerdo - 440g;Carne de Cerdo/Otro;Carne de Cerdo;Otro;4,99;54;Producto empacado al vacío
+40;Tomahawk Pietrain Cerdo - 1Kg;Carne de Cerdo/Otro;Carne de Cerdo;Otro;12,99;54;Producto empacado al vacío
+41;Picaña Pietrain Cerdo - 1Kg;Carne de Cerdo/Otro;Carne de Cerdo;Otro;12,99;54;Producto empacado al vacío
+42;Alitas  Pollo - 1Kg;Carne de Pollo/Otro;Carne de Pollo;Otro;6,99;54;Producto empacado al vacío
+43;Chorizo  Pollo - 1Kg;Carne de Pollo/Embutidos;Carne de Pollo;Embutidos;8,99;54;Producto empacado al vacío
+44;Pechuga     Pollo - 1Kg;Carne de Pollo/Otro;Carne de Pollo;Otro;6,99;54;Producto empacado al vacío
+45;Pechuga Deshuesada  Pollo - 1Kg;Carne de Pollo/Otro;Carne de Pollo;Otro;7,99;54;Producto empacado al vacío
+46;Piernas Y Postpiernas  Pollo - 1Kg;Carne de Pollo/Otro;Carne de Pollo;Otro;4,99;54;Producto empacado al vacío
+47;Alimento Para Mascotas  Res Y Cerdo - 1Kg;Mascotas/Dieta Barf;Mascotas;Dieta Barf;2,99;54;Producto empacado al vacío

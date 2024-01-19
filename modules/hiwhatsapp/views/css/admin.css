@@ -1,0 +1,139 @@
+.addons-style-img_preview-theme{
+    max-width: 100%;
+}
+#blog_modal_container .modal .modal-dialog{
+    width: 850px;
+}
+#blog_modal_container.blog-slide-modal .modal .modal-dialog{
+    width: 600px;
+}
+.tabs {
+    margin: 0px 0px 5px 2px;
+}
+.tabs a.list-group-item  {
+    display: inline-block;
+}
+#ui-datepicker-div {
+    z-index: 2 !important;
+}
+
+.mce-container * {
+    white-space: normal;
+}
+
+.bootstrap .hipresta-modules-ad .module-sorting-menu {
+    margin-bottom: 30px;
+}
+.bootstrap .hipresta-modules-ad .module-item-wrapper-grid {
+    border: none;
+    border-radius: 0;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+    min-height: 415px;
+    padding: .625rem;
+    position: relative;
+    display: block;
+    margin-bottom: .625rem;
+    background-color: #fff;
+}
+.bootstrap .hipresta-modules-ad .module-item-heading-grid {
+    position: relative;
+    text-align: center;
+}
+.bootstrap .hipresta-modules-ad .module-logo-thumb-grid {
+    width: 55px;
+    height: 55px;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 0;
+}
+.bootstrap .hipresta-modules-ad .module-logo-thumb-grid img {
+    max-width: 55px;
+    max-height: 55px;
+}
+#content.bootstrap .hipresta-modules-ad h3.module-name-grid {
+    border: none;
+    font-size: 1.2em;
+    padding: 0 0 0 5px;
+    position: relative;
+    text-align: center;
+    font-weight: bolder;
+    margin: 1rem 0 .5rem;
+    min-height: 24px;
+    font-family: Open Sans,Helvetica,Arial,sans-serif;
+    line-height: 1.2;
+    color: #363a41;
+    text-transform: none;
+    border-bottom: none;
+    height: inherit;
+}
+.bootstrap .hipresta-modules-ad .module-quick-description-grid {
+    margin: 15px 0;
+    text-align: center;
+    min-height: 100px;
+}
+.bootstrap .hipresta-modules-ad .module-read-more-grid {
+    display: inline-block;
+}
+.bootstrap .hipresta-modules-ad .module-price {
+    right: auto;
+    bottom: auto;
+    position: relative;
+    margin-right: 5px;
+    float: right;
+    font-size: 14px;
+}
+.bootstrap .hipresta-modules-ad hr {
+    margin-top: 1.875rem;
+    margin-bottom: 1.875rem;
+    border: 0;
+    border-top: 1px solid #bbcdd2;
+}
+.bootstrap .hipresta-modules-ad .form-action-button-container {
+    display: flex;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    left: 0;
+    padding: 0 10px;
+}
+.bootstrap .hipresta-modules-ad .btn {
+    height: 32px;
+    font-size: .625rem;
+    padding: .5rem;
+    float: none;
+    margin: 0 auto;
+    color: #25b9d7;
+    background-color: transparent;
+    background-image: none;
+    border-color: #25b9d7;
+    border-width: 1px;
+    font-weight: 600;
+    border-radius: .063rem;
+    white-space: nowrap;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    text-transform: none;
+    border-left: 1px solid #25b9d7;
+}
+.bootstrap .hipresta-modules-ad .btn:hover {
+    color: #fff;
+    background-color: #19a9c6;
+    border-color: #19a9c6;
+    box-shadow: none;
+}
+.bootstrap .hipresta-modules-ad .badges-container {
+    min-height: 30px;
+    font-size: 14px;
+    line-height: 50%;
+    text-align: center;
+}
+.bootstrap .hipresta-modules-ad .badges-container img {
+    width: 22px;
+}
+.bootstrap .hipresta-modules-ad .module-quick-action-grid {
+    color: #363a41;
+}

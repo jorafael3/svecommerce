@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+    <name>ganalyticspro</name>
+    <displayName><![CDATA[Google Analytics : GA4 y Universal-Analytics]]></displayName>
+    <version><![CDATA[2.0.4]]></version>
+    <description><![CDATA[Instale la etiqueta de Google Analytics 4 (GA4) en su p&aacute;gina y recoja datos para sus informes GA4 y Universal Analytics (UA), con comercio electr&oacute;nico mejorado, en su cuenta de Google Analytics]]></description>
+    <author><![CDATA[Business Tech]]></author>
+    <tab><![CDATA[analytics_stats]]></tab>
+	<confirmUninstall><![CDATA[¿Seguro que quiere desinstalar el módulo Google Analytics : GA4 y Universal-Analytics (perderá su configuración)?]]></confirmUninstall>
+    <is_configurable>1</is_configurable>
+    <need_instance>1</need_instance>
+	<limited_countries></limited_countries>
+</module>

@@ -1,0 +1,2 @@
+/home/u506993268/domains/brasas.ec/public_html/modules/axoncreator/assets/upload/css
+/home/u506993268/domains/brasas.ec/public_html/modules/stcustomcode/views/templates/hook

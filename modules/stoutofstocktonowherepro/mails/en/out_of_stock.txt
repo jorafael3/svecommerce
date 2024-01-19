@@ -1,0 +1,3 @@
+{shop_name}
+
+{product_name} is out of stock, it's Visibility option has been set to "Nowhere", so It won't show out on the front office. 

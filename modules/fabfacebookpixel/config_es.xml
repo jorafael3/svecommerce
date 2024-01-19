@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+    <name>fabfacebookpixel</name>
+    <displayName><![CDATA[Facebook Pixel + Catalog Export]]></displayName>
+    <version><![CDATA[3.2.3]]></version>
+    <description><![CDATA[Installs the Facebook pixel, collects e-commerce events. 
+            Exports FB catalog or stores the catalog in a file, downloadable from a specific URL. 
+            Multi store / currency / country / language supported. Export may be scheduled via external Cronjob.]]></description>
+    <author><![CDATA[MANFIELD]]></author>
+    <tab><![CDATA[advertising_marketing]]></tab>
+    <is_configurable>1</is_configurable>
+    <need_instance>0</need_instance>
+	<limited_countries></limited_countries>
+</module>

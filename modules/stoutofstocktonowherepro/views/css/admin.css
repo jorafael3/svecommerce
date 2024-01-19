@@ -1,0 +1,11 @@
+a:focus{
+  outline: thin dotted;
+  -moz-outline-style: none;
+}
+a:active,a:hover{
+  outline: 0;
+}
+a:focus,:focus{ 
+  outline: none!important;
+}
+

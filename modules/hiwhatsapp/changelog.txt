@@ -1,0 +1,5 @@
+version 1.0.1
+    * Stability improvements
+
+version 1.0.0
+    * initial release

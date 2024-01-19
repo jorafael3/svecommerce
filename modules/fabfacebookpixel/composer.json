@@ -1,0 +1,19 @@
+{
+  "name": "prestashop/fabfacebookpixel",
+  "description": "Facebook Pixel with standard actions and catalog export",
+  "homepage": "",
+  "license": "Commercial License",
+  "authors": [
+    {
+      "name": "Manfredi Petruso",
+      "email": "manfredi.petruso@fabvla.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.6.0"
+  },
+  "config": {
+    "preferred-install": "dist"
+  },
+  "type": "prestashop-module"
+}

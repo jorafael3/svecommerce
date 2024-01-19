@@ -1,0 +1,1 @@
+ALTER TABLE `PREFIX_fabfacebookpixel_purchase` ADD `event_id` varchar(255) NULL;

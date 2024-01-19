@@ -1,0 +1,1 @@
+DROP TABLE `PREFIX_fabfacebookpixel_f`;

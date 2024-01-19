@@ -1,0 +1,1 @@
+{if isset($id_product)}<a class="btn-action btn-wishlist js-wishlist" href="{url entity='module' name='nrtwishlist' controller='view'}" data-id-product="{$id_product|intval}" data-id-product-attribute="{$id_product_attribute|intval}" title="{l s='Add to Wishlist' mod='nrtwishlist'}">{l s='Add to Wishlist' mod='nrtwishlist'}</a>{/if}

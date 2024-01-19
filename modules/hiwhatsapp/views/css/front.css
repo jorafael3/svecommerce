@@ -1,0 +1,297 @@
+.hi-wap-chatbox-container {
+    bottom: 0;
+    position: fixed;
+    margin: 1em;
+    right: 0;
+    z-index: 998;
+}
+
+.hi-wap-chatbox-container.hi-wap-chatbox-position-left {
+    right: auto;
+    left: 0;
+}
+
+.hi-wap-widgets-container {
+    max-width: 400px;
+    margin-top: 20px;
+}
+
+.hi-wap-chatbox-opener {
+  display: block;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  text-align: center;
+  color: #f0f0f0;
+  margin: 25px auto 0;
+  box-shadow: 0 0 4px rgba(0, 0, 0, .14), 0 4px 8px rgba(0, 0, 0, .28);
+  cursor: pointer;
+  -webkit-transition: all .1s ease-out;
+  transition: all .1s ease-out;
+  position: relative;
+  z-index: 998;
+  overflow: hidden;
+  background: #25D366;
+}
+
+.hi-wap-chatbox-opener > i {
+  font-size: 2em;
+  line-height: 55px;
+  -webkit-transition: all .2s ease-out;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  color: #ffffff;
+}
+
+.hi-wap-chatbox {
+    position: fixed;
+    right: 20px;
+    bottom: 80px;
+    width: 400px;
+    font-size: 12px;
+    line-height: 22px;
+    font-weight: 500;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    opacity: 0;
+    box-shadow: 1px 1px 100px 2px rgba(0, 0, 0, 0.22);
+    -webkit-transition: all .2s ease-out;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    text-align: left;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+    display: none;
+}
+.hi-wap-chatbox-position-left .hi-wap-chatbox {
+    right: auto;
+    left: 20px;
+}
+
+.hi-wap-chatbox-header {
+    font-size: 13px;
+    font-weight: 500;
+    color: #f3f3f3;
+    min-height: 100px;
+    background: #25D366;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding-top: 16px;
+}
+.hi-wap-chatbox-header-title {
+    font-size: 19px;
+    margin-left: 90px;
+    margin-right: 20px;
+}
+.hi-wap-chatbox-header-subtitle {
+    font-size: 14px;
+    line-height: 1.2em;
+    padding-top: 8px;
+    padding: 10px 20px;
+}
+.hi-wap-chatbox-header .span {
+    float:right;
+}
+
+.hi-wap-chatbox.hi-wap-chatbox-is-visible {
+    opacity: 1;
+    display: block;
+    -webkit-animation: zoomIn .2s cubic-bezier(.42, 0, .58, 1);
+    animation: zoomIn .2s cubic-bezier(.42, 0, .58, 1);
+}
+
+.hi-wap-chatbox-header img {
+    width: 50px;
+    margin: -15px 20px 10px 20px;
+    background: #25D366;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.hi-wap-chatbox-header .agent {
+  font-size: 12px;
+    font-weight: 300;
+}
+.hi-wap-chatbox-header .online{
+      opacity: 0.4;
+    font-size: 11px;
+    font-weight: 300;
+}
+
+.hi-wap-chatbox-body {
+    background: #fff;
+    width: 100%;
+
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+    padding: 20px;
+}
+
+/*.hi-wap-chatbox-body li, .hi-wap-chatbox-body p, .hi-wap-chatbox-body a{
+    -webkit-animation: zoomIn .5s cubic-bezier(.42, 0, .58, 1);
+    animation: zoomIn .5s cubic-bezier(.42, 0, .58, 1);
+}*/
+
+.hi-wap-chatbox-is-active {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+    -webkit-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+
+.hi-wap-chatbox-is-float {
+  box-shadow: 0 0 6px rgba(0, 0, 0, .16), 0 6px 12px rgba(0, 0, 0, .32);
+}
+
+.hi-wap-chatbox-account,
+.hi-wap-widget-account {
+    padding: 10px;
+    background: #f4f4f4;
+    border-radius: 4px;
+    position: relative;
+    top: 0;
+    margin-bottom: 10px;
+    border-left: 2px solid #25D366;
+}
+.hi-wap-widget-account {
+    /*background: #eaeaea;*/
+    background: #ffffff;
+    border-top: 1px dotted #25D366;
+    border-right: 1px dotted #25D366;
+    border-bottom: 1px dotted #25D366;
+}
+.hi-wap-chatbox-account:hover,
+.hi-wap-widget-account:hover {
+    opacity: 0.8;
+}
+.hi-wap-chatbox-account > a,
+.hi-wap-widget-account > a {
+    display: block;
+    text-decoration: none;
+}
+.hi-wap-chatbox-account > a:focus,
+.hi-wap-chatbox-account > a:active,
+.hi-wap-widget-account > a:focus,
+.hi-wap-widget-account > a:active {
+    text-decoration: none;
+}
+.hi-wap-account-avatar,
+.hi-wap-widget-account-avatar {
+    width: 50px;
+    float: left;
+}
+.hi-wap-account-avatar img,
+.hi-wap-widget-account-avatar img {
+    max-width: 100%;
+    border-radius: 100%;
+}
+.hi-wap-account-details,
+.hi-wap-widget-account-details {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    float: left;
+    max-width: calc(100% - 110px);
+}
+.hi-wap-account-name,
+.hi-wap-widget-account-name {
+    font-size: 14px;
+    line-height: 1.4em;
+    color: #545050;
+}
+.hi-wap-account-title,
+.hi-wap-widget-account-title {
+    font-size: 11px;
+    line-height: 1.4em;
+    color: #757575;
+}
+.hi-wap-account-status,
+.hi-wap-widget-account-status {
+    float: right;
+    margin-top: 12px;
+    background: #20ab54;
+    color: #fff;
+    font-size: 11px;
+    padding: 0px 6px;
+    border-radius: 4px;
+}
+.hi-wap-account-status.hi-wap-account-offline,
+.hi-wap-widget-account-status.hi-wap-widget-account-offline {
+    background: #797979;
+}
+.hi-wap-account-offline-text,
+.hi-wap-widget-account-offline-text {
+    font-size: 12px;
+    line-height: 1.4em;
+    color: #773636;
+    padding-top: 10px;
+}
+
+.hi-wap-chatbox-icon {
+    background-image: url(../img/whatsapp-logo-white.png);
+    display: block;
+    width: 50%;
+    height: 50%;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.hi-wap-chatbox-icon-close {
+    background-image: url(../img/close.png);
+    width: 30%;
+    height: 30%;
+}
+
+.hi-wap-widget-button-text {
+    font-size: 14px;
+    padding-top: 5px;
+    color: #25D366;
+    font-weight: bold;
+}
+
+@-webkit-keyframes zoomIn {
+    0% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+        opacity: 0.0;
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn {
+    0% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+        opacity: 0.0;
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .hi-wap-chatbox {
+        width: 350px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .hi-wap-chatbox {
+        max-width: calc(100% - 40px);
+    }
+}

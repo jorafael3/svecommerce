@@ -1,0 +1,15 @@
+/* NOTICE OF LICENSE
+ *
+ * This module was created by Anastasia Bu and is protected by the laws of Copyright.
+ * This source file is subject to a commercial license from Anastasia Bu
+ * Use, copy, modification or distribution of this source file without written
+ * license agreement from Anastasia Bu <site@web-esse.ru> is strictly forbidden.
+ * ...........................................................................
+ *
+ *
+ * @module     Pricecsvupdate
+ * @author     Anastasia Bu
+ * @copyright  Copyright (c) 2010-2021 Snegurka (http://web-esse.ru/)
+ * @license    Commercial license
+ * Support by mail  : site@web-esse.ru
+ */

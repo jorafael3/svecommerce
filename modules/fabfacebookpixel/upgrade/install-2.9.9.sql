@@ -1,0 +1,1 @@
+DELETE FROM `PREFIX_fabfacebookpixel_events`;

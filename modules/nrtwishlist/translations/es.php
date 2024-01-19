@@ -1,0 +1,31 @@
+<?php
+
+global $_MODULE;
+$_MODULE = array();
+$_MODULE['<{nrtwishlist}prestashop>nrtwishlist_6a5373df703ab2827a4ba7facdfcf779'] = 'Agregar a favoritos';
+$_MODULE['<{nrtwishlist}prestashop>nrtwishlist_e14f9c6d6b9e8b88631a2ff922990ab8'] = 'Ir a favoritos';
+$_MODULE['<{nrtwishlist}prestashop>view_641254d77e7a473aa5910574f3f9453c'] = 'Favoritos';
+$_MODULE['<{nrtwishlist}prestashop>login_fa0cd4fcf0b3cc45b6935ed0759f0ebc'] = 'Por favor primero inicia sesión';
+$_MODULE['<{nrtwishlist}prestashop>login_ce8ae9da5b7cd6c3df2929543a9af92d'] = 'Correo electrónico';
+$_MODULE['<{nrtwishlist}prestashop>login_dc647eb65e6711e155375218212b3964'] = 'Contraseña';
+$_MODULE['<{nrtwishlist}prestashop>login_498f79c4c5bbde77f1bceb6c86fd0f6d'] = 'Ver';
+$_MODULE['<{nrtwishlist}prestashop>login_62a5e490880a92eef74f167d9dc6dca0'] = 'Ocultar';
+$_MODULE['<{nrtwishlist}prestashop>login_b6d4223e60986fa4c9af77ee5f7149c5'] = 'Iniciar sesión';
+$_MODULE['<{nrtwishlist}prestashop>login_01a569ddc6cf67ddec2a683f0a5f5956'] = '¿Olvidó su contraseña?';
+$_MODULE['<{nrtwishlist}prestashop>login_929c1ec3a80a6e8a557bad8985e63991'] = '¿No tienes una cuenta?';
+$_MODULE['<{nrtwishlist}prestashop>login_fc528889db85441a9cb305c46214b8aa'] = 'Crear una cuenta aquí';
+$_MODULE['<{nrtwishlist}prestashop>view_14380cb5fb4d995a5815e694013061a7'] = 'Remover todos los productos';
+$_MODULE['<{nrtwishlist}prestashop>view_49ee3087348e8d44e1feda1917443987'] = 'Nombre';
+$_MODULE['<{nrtwishlist}prestashop>view_3601146c4e948c32b6424d2c0a7f0118'] = 'Precio';
+$_MODULE['<{nrtwishlist}prestashop>view_27ce7f8b5623b2e2df568d64cf051607'] = 'Storck';
+$_MODULE['<{nrtwishlist}prestashop>view_1063e38cb53d94d386f21227fcd84717'] = 'Remover';
+$_MODULE['<{nrtwishlist}prestashop>view_e38004377b7618106370e94bef4b1dca'] = 'Compartir tus favoritos';
+$_MODULE['<{nrtwishlist}prestashop>view_a588b1abc58b8b758c4b34b69b9e10bb'] = 'Copiado';
+$_MODULE['<{nrtwishlist}prestashop>view_5fb63579fc981698f97d55bfecb213ea'] = 'Copiar';
+$_MODULE['<{nrtwishlist}prestashop>view_423ca1f2f973dee2886a15b32e264566'] = 'Tus favoritos están vacíos.';
+$_MODULE['<{nrtwishlist}prestashop>view_e07f391ff5885591b5d3a99a7017ee74'] = 'No hay productos agregados a tu lista de favoritos.';
+$_MODULE['<{nrtwishlist}prestashop>view_3affb35c9857564eda6f309385b71f63'] = 'Regresar al inicio';
+$_MODULE['<{nrtwishlist}prestashop>view_148c775f403dcfc7dfd863c59e344880'] = 'Tu lista de favoritos está vacía.';
+$_MODULE['<{nrtwishlist}prestashop>display-account_7ec9cceb94985909c6994e95c31c1aa8'] = 'Mis favoritos';
+$_MODULE['<{nrtwishlist}prestashop>display-btn_6a5373df703ab2827a4ba7facdfcf779'] = 'Agregar a favoritos';
+$_MODULE['<{nrtwishlist}prestashop>display-nb_4840f4437f55e68a587d358090b948d1'] = 'Mis favoritos';
