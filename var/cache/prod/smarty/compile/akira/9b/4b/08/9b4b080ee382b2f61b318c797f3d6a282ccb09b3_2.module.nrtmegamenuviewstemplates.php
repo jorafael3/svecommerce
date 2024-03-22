@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.47, created on 2024-01-19 10:16:36
+/* Smarty version 3.1.47, created on 2024-03-22 14:36:07
   from 'module:nrtmegamenuviewstemplates' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.47',
-  'unifunc' => 'content_65aa92540c6279_09759987',
+  'unifunc' => 'content_65fddda7b21989_10512991',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '9b4b080ee382b2f61b318c797f3d6a282ccb09b3' => 
     array (
       0 => 'module:nrtmegamenuviewstemplates',
-      1 => 1685021481,
+      1 => 1711123671,
       2 => 'module',
     ),
   ),
@@ -21,8 +21,8 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'module:nrtmegamenu/views/templates/hook/megamenu-category.tpl' => 2,
   ),
 ),false)) {
-function content_65aa92540c6279_09759987 (Smarty_Internal_Template $_smarty_tpl) {
-$_smarty_tpl->_checkPlugins(array(0=>array('file'=>'/home/u672279739/domains/salvacerohomecenter.com/public_html/vendor/smarty/smarty/libs/plugins/modifier.replace.php','function'=>'smarty_modifier_replace',),));
+function content_65fddda7b21989_10512991 (Smarty_Internal_Template $_smarty_tpl) {
+$_smarty_tpl->_checkPlugins(array(0=>array('file'=>'C:\\xampp\\htdocs\\svecommerce\\vendor\\smarty\\smarty\\libs\\plugins\\modifier.replace.php','function'=>'smarty_modifier_replace',),));
 ?>
 
 <?php if (is_array($_smarty_tpl->tpl_vars['menus']->value) && count($_smarty_tpl->tpl_vars['menus']->value)) {?>

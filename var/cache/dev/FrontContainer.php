@@ -2153,7 +2153,7 @@ class FrontContainer extends \PrestaShop\PrestaShop\Adapter\Container\LegacyCont
 
         $a->setSQLLogger($b);
 
-        return $this->services['doctrine.dbal.default_connection'] = ${($_ = isset($this->services['doctrine.dbal.connection_factory']) ? $this->services['doctrine.dbal.connection_factory'] : ($this->services['doctrine.dbal.connection_factory'] = new \Doctrine\Bundle\DoctrineBundle\ConnectionFactory([]))) && false ?: '_'}->createConnection(['driver' => 'pdo_mysql', 'host' => '127.0.0.1', 'port' => '', 'dbname' => 'u672279739_salvacero', 'user' => 'u672279739_salvacero', 'password' => '!ypZMb1Y]t', 'charset' => 'utf8mb4', 'driverOptions' => [1002 => 'SET sql_mode=(SELECT REPLACE(@@sql_mode,\'ONLY_FULL_GROUP_BY\',\'\'))', 1013 => $this->getEnv('const:runtime:_PS_ALLOW_MULTI_STATEMENTS_QUERIES_')], 'defaultTableOptions' => []], $a, new \Symfony\Bridge\Doctrine\ContainerAwareEventManager($this), ['enum' => 'string']);
+        return $this->services['doctrine.dbal.default_connection'] = ${($_ = isset($this->services['doctrine.dbal.connection_factory']) ? $this->services['doctrine.dbal.connection_factory'] : ($this->services['doctrine.dbal.connection_factory'] = new \Doctrine\Bundle\DoctrineBundle\ConnectionFactory([]))) && false ?: '_'}->createConnection(['driver' => 'pdo_mysql', 'host' => '127.0.0.1', 'port' => '', 'dbname' => 'u672279739_salvacero', 'user' => 'root', 'password' => '', 'charset' => 'utf8mb4', 'driverOptions' => [1002 => 'SET sql_mode=(SELECT REPLACE(@@sql_mode,\'ONLY_FULL_GROUP_BY\',\'\'))', 1013 => $this->getEnv('const:runtime:_PS_ALLOW_MULTI_STATEMENTS_QUERIES_')], 'defaultTableOptions' => []], $a, new \Symfony\Bridge\Doctrine\ContainerAwareEventManager($this), ['enum' => 'string']);
     }
 
     /**
@@ -3535,8 +3535,8 @@ class FrontContainer extends \PrestaShop\PrestaShop\Adapter\Container\LegacyCont
             'database_host' => '127.0.0.1',
             'database_port' => '',
             'database_name' => 'u672279739_salvacero',
-            'database_user' => 'u672279739_salvacero',
-            'database_password' => '!ypZMb1Y]t',
+            'database_user' => 'root',
+            'database_password' => '',
             'database_prefix' => 'phgv_',
             'database_engine' => 'InnoDB',
             'mailer_transport' => 'smtp',
@@ -3553,9 +3553,7 @@ class FrontContainer extends \PrestaShop\PrestaShop\Adapter\Container\LegacyCont
             'cookie_iv' => 'pGPQOYeM',
             'new_cookie_key' => 'def000007fbedbac5b0ca1f51082b63ce95c7d14a8a2d5f88a1ea9939cf7a464ce1eca542c83a817a7515e2e1fd2fa614507316f2570d2a79acd81ba65dc0ac4c9310e31',
             'cache.driver' => 'array',
-            'kernel.bundles' => [
-
-            ],
+            'kernel.bundles' => [],
             'kernel.root_dir' => '/home/u672279739/domains/salvacerohomecenter.com/public_html/app',
             'kernel.project_dir' => '/home/u672279739/domains/salvacerohomecenter.com/public_html',
             'kernel.name' => 'app',
@@ -3739,9 +3737,7 @@ class FrontContainer extends \PrestaShop\PrestaShop\Adapter\Container\LegacyCont
                 'default' => 'doctrine.orm.default_entity_manager',
             ],
             'doctrine.default_entity_manager' => 'default',
-            'doctrine.dbal.connection_factory.types' => [
-
-            ],
+            'doctrine.dbal.connection_factory.types' => [],
             'doctrine.connections' => [
                 'default' => 'doctrine.dbal.default_connection',
             ],

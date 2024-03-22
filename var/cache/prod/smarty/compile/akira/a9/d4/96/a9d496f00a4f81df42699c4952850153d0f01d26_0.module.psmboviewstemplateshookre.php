@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.47, created on 2024-01-19 10:18:28
+/* Smarty version 3.1.47, created on 2024-03-22 15:31:36
   from 'module:psmboviewstemplateshookre' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.47',
-  'unifunc' => 'content_65aa92c4ca8761_05420003',
+  'unifunc' => 'content_65fdeaa8a93b66_95932692',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'a9d496f00a4f81df42699c4952850153d0f01d26' => 
     array (
       0 => 'module:psmboviewstemplateshookre',
-      1 => 1685021481,
+      1 => 1711123676,
       2 => 'module',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_65aa92c4ca8761_05420003 (Smarty_Internal_Template $_smarty_tpl) {
+function content_65fdeaa8a93b66_95932692 (Smarty_Internal_Template $_smarty_tpl) {
 echo '<script'; ?>
 >
   if (undefined !== mbo) {

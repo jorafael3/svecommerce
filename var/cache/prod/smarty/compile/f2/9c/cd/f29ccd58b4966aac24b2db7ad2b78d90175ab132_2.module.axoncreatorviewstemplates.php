@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.47, created on 2024-01-19 10:16:35
+/* Smarty version 3.1.47, created on 2024-03-22 14:36:05
   from 'module:axoncreatorviewstemplates' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.47',
-  'unifunc' => 'content_65aa9253e02531_05860309',
+  'unifunc' => 'content_65fddda5c77e64_59458490',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'f29ccd58b4966aac24b2db7ad2b78d90175ab132' => 
     array (
       0 => 'module:axoncreatorviewstemplates',
-      1 => 1685021483,
+      1 => 1711123670,
       2 => 'module',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_65aa9253e02531_05860309 (Smarty_Internal_Template $_smarty_tpl) {
+function content_65fddda5c77e64_59458490 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <form class="elementor-newsletter ajax-elementor-subscription block_newsletter" action="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['urls']->value['current_url'], ENT_QUOTES, 'UTF-8');?>
 #footer" method="post">
