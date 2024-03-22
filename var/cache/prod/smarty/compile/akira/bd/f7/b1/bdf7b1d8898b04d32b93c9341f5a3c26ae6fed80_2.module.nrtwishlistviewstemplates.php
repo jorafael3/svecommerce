@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.47, created on 2024-03-22 14:36:05
+/* Smarty version 3.1.47, created on 2024-03-22 17:30:01
   from 'module:nrtwishlistviewstemplates' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.47',
-  'unifunc' => 'content_65fddda5e5f713_23616750',
+  'unifunc' => 'content_65fe0669b76f46_16039719',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_65fddda5e5f713_23616750 (Smarty_Internal_Template $_smarty_tpl) {
+function content_65fe0669b76f46_16039719 (Smarty_Internal_Template $_smarty_tpl) {
 ?>	 
 <div id="modal_wishlist" class="modal" tabindex="-1" role="dialog" aria-hidden="true"><div class="modal-dialog" role="document">
 	<div class="modal-content">

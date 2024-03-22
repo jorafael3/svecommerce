@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.47, created on 2024-03-22 14:36:01
+/* Smarty version 3.1.47, created on 2024-03-22 17:29:57
   from 'C:\xampp\htdocs\svecommerce\themes\akira\templates\catalog\_partials\miniatures\_partials\_product\product-1.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.47',
-  'unifunc' => 'content_65fddda1542995_00859072',
+  'unifunc' => 'content_65fe06651b39c4_96212148',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:catalog/_partials/miniatures/flags.tpl' => 1,
   ),
 ),false)) {
-function content_65fddda1542995_00859072 (Smarty_Internal_Template $_smarty_tpl) {
+function content_65fe06651b39c4_96212148 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 ?>
@@ -141,7 +141,7 @@ echo htmlspecialchars($_smarty_tpl->tpl_vars['product']->value['name'], ENT_QUOT
         <div class="element-bottom">
             <div class="product-description">
                 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_50925570165fddda1539389_38621968', 'product_name');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_153774961065fe06651aaec1_46009384', 'product_name');
 ?>
 
                 <div class="info-product">
@@ -187,12 +187,12 @@ $_smarty_tpl->smarty->ext->_capture->close($_smarty_tpl);?>
     </div>
 </div><?php }
 /* {block 'product_name'} */
-class Block_50925570165fddda1539389_38621968 extends Smarty_Internal_Block
+class Block_153774961065fe06651aaec1_46009384 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'product_name' => 
   array (
-    0 => 'Block_50925570165fddda1539389_38621968',
+    0 => 'Block_153774961065fe06651aaec1_46009384',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {

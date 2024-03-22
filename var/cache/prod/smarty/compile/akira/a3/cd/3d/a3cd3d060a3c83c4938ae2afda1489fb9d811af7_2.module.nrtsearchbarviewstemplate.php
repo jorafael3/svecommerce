@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.47, created on 2024-03-22 14:36:06
+/* Smarty version 3.1.47, created on 2024-03-22 17:30:02
   from 'module:nrtsearchbarviewstemplate' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.47',
-  'unifunc' => 'content_65fddda6a80445_13020231',
+  'unifunc' => 'content_65fe066a397691_31639361',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'module:nrtsearchbar/views/templates/hook/categories.tpl' => 1,
   ),
 ),false)) {
-function content_65fddda6a80445_13020231 (Smarty_Internal_Template $_smarty_tpl) {
+function content_65fe066a397691_31639361 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div id="search-popup" class="modal" tabindex="-1" role="dialog" aria-hidden="true"><div class="modal-dialog search-wrapper popup-wrapper" role="document">
 	<div class="modal-content">
 		<button type="button" class="close" data-dismiss="modal" aria-label="<?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Close','d'=>'Shop.Theme.Global'),$_smarty_tpl ) );?>

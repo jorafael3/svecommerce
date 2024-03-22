@@ -2081,7 +2081,7 @@ class FrontContainer extends \PrestaShop\PrestaShop\Adapter\Container\LegacyCont
      */
     protected function getPsAccountsService()
     {
-        return $this->services['PrestaShop\\PsAccountsInstaller\\Installer\\Facade\\PsAccounts'] = new \PrestaShop\PsAccountsInstaller\Installer\Facade\PsAccounts(${($_ = isset($this->services['PrestaShop\\PsAccountsInstaller\\Installer\\Installer']) ? $this->services['PrestaShop\\PsAccountsInstaller\\Installer\\Installer'] : ($this->services['PrestaShop\\PsAccountsInstaller\\Installer\\Installer'] = new \PrestaShop\PsAccountsInstaller\Installer\Installer('5.3.0'))) && false ?: '_'});
+        return $this->services['PrestaShop\\PsAccountsInstaller\\Installer\\Facade\\PsAccounts'] = new \PrestaShop\PsAccountsInstaller\Installer\Facade\PsAccounts(${($_ = isset($this->services['PrestaShop\\PsAccountsInstaller\\Installer\\Installer']) ? $this->services['PrestaShop\\PsAccountsInstaller\\Installer\\Installer'] : ($this->services['PrestaShop\\PsAccountsInstaller\\Installer\\Installer'] = new \PrestaShop\PsAccountsInstaller\Installer\Installer('3.0.0'))) && false ?: '_'});
     }
 
     /**
@@ -2091,7 +2091,7 @@ class FrontContainer extends \PrestaShop\PrestaShop\Adapter\Container\LegacyCont
      */
     protected function getInstaller2Service()
     {
-        return $this->services['PrestaShop\\PsAccountsInstaller\\Installer\\Installer'] = new \PrestaShop\PsAccountsInstaller\Installer\Installer('5.3.0');
+        return $this->services['PrestaShop\\PsAccountsInstaller\\Installer\\Installer'] = new \PrestaShop\PsAccountsInstaller\Installer\Installer('3.0.0');
     }
 
     /**
@@ -2148,10 +2148,10 @@ class FrontContainer extends \PrestaShop\PrestaShop\Adapter\Container\LegacyCont
         $b = new \Doctrine\Persistence\Mapping\Driver\MappingDriverChain();
 
         $c = ${($_ = isset($this->services['annotation_reader']) ? $this->services['annotation_reader'] : ($this->services['annotation_reader'] = new \Doctrine\Common\Annotations\AnnotationReader())) && false ?: '_'};
-        $d = new \Doctrine\ORM\Mapping\Driver\AnnotationDriver($c, [0 => '/home/u672279739/domains/salvacerohomecenter.com/public_html/modules/productcomments/src/Entity']);
-        $d->addExcludePaths([0 => '/home/u672279739/domains/salvacerohomecenter.com/public_html/modules/productcomments/src/Entity/index.php']);
+        $d = new \Doctrine\ORM\Mapping\Driver\AnnotationDriver($c, [0 => 'C:\\xampp\\htdocs\\svecommerce\\modules\\productcomments\\src\\Entity']);
+        $d->addExcludePaths([0 => 'C:\\xampp\\htdocs\\svecommerce\\modules\\productcomments\\src\\Entity/index.php']);
 
-        $b->addDriver(new \Doctrine\ORM\Mapping\Driver\AnnotationDriver($c, [0 => '/home/u672279739/domains/salvacerohomecenter.com/public_html/src/PrestaShopBundle/Entity']), 'PrestaShop');
+        $b->addDriver(new \Doctrine\ORM\Mapping\Driver\AnnotationDriver($c, [0 => 'C:\\xampp\\htdocs\\svecommerce\\src\\PrestaShopBundle\\Entity']), 'PrestaShop');
         $b->addDriver($d, 'PrestaShop\\Module\\ProductComment\\Entity');
 
         $a->setEntityNamespaces(['PrestaShopBundle\\Entity' => 'PrestaShop']);
@@ -2159,7 +2159,7 @@ class FrontContainer extends \PrestaShop\PrestaShop\Adapter\Container\LegacyCont
         $a->setQueryCacheImpl(${($_ = isset($this->services['doctrine_cache.providers.doctrine.orm.default_query_cache']) ? $this->services['doctrine_cache.providers.doctrine.orm.default_query_cache'] : $this->getDoctrineCache_Providers_Doctrine_Orm_DefaultQueryCacheService()) && false ?: '_'});
         $a->setResultCacheImpl(${($_ = isset($this->services['doctrine.orm.cache.provider.cache.doctrine.orm.default.result']) ? $this->services['doctrine.orm.cache.provider.cache.doctrine.orm.default.result'] : $this->getDoctrine_Orm_Cache_Provider_Cache_Doctrine_Orm_Default_ResultService()) && false ?: '_'});
         $a->setMetadataDriverImpl($b);
-        $a->setProxyDir('/home/u672279739/domains/salvacerohomecenter.com/public_html/var/cache/prod//doctrine/orm/Proxies');
+        $a->setProxyDir('C:\\xampp\\htdocs\\svecommerce/var/cache/prod\\/doctrine/orm/Proxies');
         $a->setProxyNamespace('Proxies');
         $a->setAutoGenerateProxyClasses(false);
         $a->setClassMetadataFactoryName('Doctrine\\ORM\\Mapping\\ClassMetadataFactory');
@@ -2187,7 +2187,7 @@ class FrontContainer extends \PrestaShop\PrestaShop\Adapter\Container\LegacyCont
     {
         $this->services['doctrine_cache.providers.doctrine.orm.default_metadata_cache'] = $instance = new \Doctrine\Common\Cache\ArrayCache();
 
-        $instance->setNamespace('sf_orm_default_84dcdab46a17b516c250eb3a0d2b5f66c538ac91509af61799049414ff61dfdf');
+        $instance->setNamespace('sf_orm_default_39ccc851ec3297e0eb9825547dfbe1560f726afe58e4ce3cf0d94447a382b84d');
 
         return $instance;
     }
@@ -2201,7 +2201,7 @@ class FrontContainer extends \PrestaShop\PrestaShop\Adapter\Container\LegacyCont
     {
         $this->services['doctrine_cache.providers.doctrine.orm.default_query_cache'] = $instance = new \Doctrine\Common\Cache\ArrayCache();
 
-        $instance->setNamespace('sf_orm_default_84dcdab46a17b516c250eb3a0d2b5f66c538ac91509af61799049414ff61dfdf');
+        $instance->setNamespace('sf_orm_default_39ccc851ec3297e0eb9825547dfbe1560f726afe58e4ce3cf0d94447a382b84d');
 
         return $instance;
     }
@@ -2363,7 +2363,7 @@ class FrontContainer extends \PrestaShop\PrestaShop\Adapter\Container\LegacyCont
      */
     protected function getPrestashop_Core_Localization_Cldr_Cache_AdapterService()
     {
-        return $this->services['prestashop.core.localization.cldr.cache.adapter'] = new \Symfony\Component\Cache\Adapter\FilesystemAdapter('CLDR', 0, '/home/u672279739/domains/salvacerohomecenter.com/public_html/var/cache/prod//localization');
+        return $this->services['prestashop.core.localization.cldr.cache.adapter'] = new \Symfony\Component\Cache\Adapter\FilesystemAdapter('CLDR', 0, 'C:\\xampp\\htdocs\\svecommerce/var/cache/prod\\/localization');
     }
 
     /**
@@ -2373,7 +2373,7 @@ class FrontContainer extends \PrestaShop\PrestaShop\Adapter\Container\LegacyCont
      */
     protected function getPrestashop_Core_Localization_Cldr_Datalayer_LocaleCacheService()
     {
-        $this->services['prestashop.core.localization.cldr.datalayer.locale_cache'] = $instance = new \PrestaShop\PrestaShop\Core\Localization\CLDR\DataLayer\LocaleCache(${($_ = isset($this->services['prestashop.core.localization.cldr.cache.adapter']) ? $this->services['prestashop.core.localization.cldr.cache.adapter'] : ($this->services['prestashop.core.localization.cldr.cache.adapter'] = new \Symfony\Component\Cache\Adapter\FilesystemAdapter('CLDR', 0, '/home/u672279739/domains/salvacerohomecenter.com/public_html/var/cache/prod//localization'))) && false ?: '_'});
+        $this->services['prestashop.core.localization.cldr.datalayer.locale_cache'] = $instance = new \PrestaShop\PrestaShop\Core\Localization\CLDR\DataLayer\LocaleCache(${($_ = isset($this->services['prestashop.core.localization.cldr.cache.adapter']) ? $this->services['prestashop.core.localization.cldr.cache.adapter'] : ($this->services['prestashop.core.localization.cldr.cache.adapter'] = new \Symfony\Component\Cache\Adapter\FilesystemAdapter('CLDR', 0, 'C:\\xampp\\htdocs\\svecommerce/var/cache/prod\\/localization'))) && false ?: '_'});
 
         $instance->setLowerLayer(${($_ = isset($this->services['prestashop.core.localization.cldr.datalayer.locale_reference']) ? $this->services['prestashop.core.localization.cldr.datalayer.locale_reference'] : $this->getPrestashop_Core_Localization_Cldr_Datalayer_LocaleReferenceService()) && false ?: '_'});
 
@@ -3503,7 +3503,7 @@ class FrontContainer extends \PrestaShop\PrestaShop\Adapter\Container\LegacyCont
             'database_host' => '127.0.0.1',
             'database_port' => '',
             'database_name' => 'u672279739_salvacero',
-            'database_user' => 'u672279739_salvacero',
+            'database_user' => 'root',
             'database_password' => '',
             'database_prefix' => 'phgv_',
             'database_engine' => 'InnoDB',
@@ -3524,12 +3524,12 @@ class FrontContainer extends \PrestaShop\PrestaShop\Adapter\Container\LegacyCont
             'kernel.bundles' => [
 
             ],
-            'kernel.root_dir' => '/home/u672279739/domains/salvacerohomecenter.com/public_html/app',
-            'kernel.project_dir' => '/home/u672279739/domains/salvacerohomecenter.com/public_html',
+            'kernel.root_dir' => 'C:\\xampp\\htdocs\\svecommerce/app',
+            'kernel.project_dir' => 'C:\\xampp\\htdocs\\svecommerce',
             'kernel.name' => 'app',
             'kernel.debug' => false,
             'kernel.environment' => 'prod',
-            'kernel.cache_dir' => '/home/u672279739/domains/salvacerohomecenter.com/public_html/var/cache/prod/',
+            'kernel.cache_dir' => 'C:\\xampp\\htdocs\\svecommerce/var/cache/prod\\',
             'kernel.active_modules' => [
                 0 => 'contactform',
                 1 => 'dashactivity',
@@ -3654,7 +3654,7 @@ class FrontContainer extends \PrestaShop\PrestaShop\Adapter\Container\LegacyCont
                 120 => 'servientrega_shipping',
                 121 => 'wkpaymentfee',
             ],
-            'ps_cache_dir' => '/home/u672279739/domains/salvacerohomecenter.com/public_html/var/cache/prod/',
+            'ps_cache_dir' => 'C:\\xampp\\htdocs\\svecommerce/var/cache/prod\\',
             'mail_themes_uri' => '/mails/themes',
             'doctrine_cache.apc.class' => 'Doctrine\\Common\\Cache\\ApcCache',
             'doctrine_cache.apcu.class' => 'Doctrine\\Common\\Cache\\ApcuCache',
@@ -3765,7 +3765,7 @@ class FrontContainer extends \PrestaShop\PrestaShop\Adapter\Container\LegacyCont
             'doctrine.orm.second_level_cache.cache_configuration.class' => 'Doctrine\\ORM\\Cache\\CacheConfiguration',
             'doctrine.orm.second_level_cache.regions_configuration.class' => 'Doctrine\\ORM\\Cache\\RegionsConfiguration',
             'doctrine.orm.auto_generate_proxy_classes' => false,
-            'doctrine.orm.proxy_dir' => '/home/u672279739/domains/salvacerohomecenter.com/public_html/var/cache/prod//doctrine/orm/Proxies',
+            'doctrine.orm.proxy_dir' => 'C:\\xampp\\htdocs\\svecommerce/var/cache/prod\\/doctrine/orm/Proxies',
             'doctrine.orm.proxy_namespace' => 'Proxies',
             'ps_accounts.environment' => 'production',
             'ps_accounts.accounts_api_url' => 'https://accounts-api.distribution.prestashop.net/v1/',
