@@ -26,6 +26,7 @@ class SalvaceroCustomer extends ObjectModel
     public $id_customer_ps;
     public $active;
     public $amount;
+    public $amount_inicial;
     public $date_add;
     public $date_upd;
 
@@ -39,6 +40,7 @@ class SalvaceroCustomer extends ObjectModel
             'id_customer_ps' => array('type' => self::TYPE_INT, 'required' => true),
             'active' => array('type' => self::TYPE_INT, 'required' => true),
             'amount' => array('type' => self::TYPE_FLOAT, 'required' => false),
+            'amount_inicial' => array('type' => self::TYPE_FLOAT, 'required' => false),
             'date_add' => array(
                 'type' => self::TYPE_DATE,
                 'required'  =>  false,
@@ -65,6 +67,13 @@ class SalvaceroCustomer extends ObjectModel
     {
         $table = _DB_PREFIX_ . "salvacero_customers";
         $query   = "SELECT amount FROM `$table` WHERE id_customer_ps = $id";
+        return Db::getInstance()->getValue($query);
+    }
+
+    public static function getAmountCompletoForIdPs($id)
+    {
+        $table = _DB_PREFIX_ . "salvacero_customers";
+        $query   = "SELECT amount_inicial FROM `$table` WHERE id_customer_ps = $id";
         return Db::getInstance()->getValue($query);
     }
 }

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.47, created on 2024-03-24 16:18:19
+/* Smarty version 3.1.47, created on 2024-03-25 17:54:30
   from 'C:\xampp\htdocs\svecommerce\modules\ganalyticspro\views\templates\hook\header.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.47',
-  'unifunc' => 'content_6600989b6e16a6_10074036',
+  'unifunc' => 'content_660200a6d5fff8_85166905',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '03fc8b775d73cfbcf7816ce1ac8a5d24f1eefa62' => 
     array (
       0 => 'C:\\xampp\\htdocs\\svecommerce\\modules\\ganalyticspro\\views\\templates\\hook\\header.tpl',
-      1 => 1711210455,
+      1 => 1711123670,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6600989b6e16a6_10074036 (Smarty_Internal_Template $_smarty_tpl) {
+function content_660200a6d5fff8_85166905 (Smarty_Internal_Template $_smarty_tpl) {
 if (!empty($_smarty_tpl->tpl_vars['btGtagSource']->value) && !empty($_smarty_tpl->tpl_vars['btUseGFour']->value)) {?>
 	<?php echo '<script'; ?>
  async src="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['btGtagSource']->value, ENT_QUOTES, 'UTF-8');?>

@@ -150,6 +150,7 @@ class AdminSalvaceroCustomersController extends ModuleAdminController
                 $salvaceroCustomer->id_customer_ps = $id_customer;
                 $salvaceroCustomer->active = 1;
                 $salvaceroCustomer->amount = number_format((float)Tools::getValue("val"), 2, ".", "");
+                $salvaceroCustomer->amount_inicial = number_format((float)Tools::getValue("val"), 2, ".", "");
                 $salvaceroCustomer->date_upd = $date;
                 $salvaceroCustomer->date_add = $date;
                 if ($salvaceroCustomer->add()) {

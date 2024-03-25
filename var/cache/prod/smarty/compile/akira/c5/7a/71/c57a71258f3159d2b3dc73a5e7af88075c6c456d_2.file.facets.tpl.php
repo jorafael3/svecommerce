@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.47, created on 2024-03-24 16:18:19
+/* Smarty version 3.1.47, created on 2024-03-25 17:54:34
   from 'C:\xampp\htdocs\svecommerce\themes\akira\templates\_partials\canvas\facets.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.47',
-  'unifunc' => 'content_6600989bbff0a6_25740751',
+  'unifunc' => 'content_660200aa3f81a5_89558682',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'c57a71258f3159d2b3dc73a5e7af88075c6c456d' => 
     array (
       0 => 'C:\\xampp\\htdocs\\svecommerce\\themes\\akira\\templates\\_partials\\canvas\\facets.tpl',
-      1 => 1711210466,
+      1 => 1711123680,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6600989bbff0a6_25740751 (Smarty_Internal_Template $_smarty_tpl) {
+function content_660200aa3f81a5_89558682 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div id="canvas-facets-search" class="canvas-widget canvas-left">
 	<div class="canvas-widget-top">
 		<h3 class="title-canvas-widget" data-dismiss="canvas-widget"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Filter Your Selection','d'=>'Shop.Theme.Axon'),$_smarty_tpl ) );?>

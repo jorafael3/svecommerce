@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.47, created on 2024-03-24 16:14:07
+/* Smarty version 3.1.47, created on 2024-03-25 17:31:41
   from 'C:\xampp\htdocs\svecommerce\gqth8jpeqegdu5rw\themes\default\template\controllers\login\header.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.47',
-  'unifunc' => 'content_6600979f122738_04114198',
+  'unifunc' => 'content_6601fb4d043bb9_92871235',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'c2477539b6361c409a3a1344ed891c5894b5422b' => 
     array (
       0 => 'C:\\xampp\\htdocs\\svecommerce\\gqth8jpeqegdu5rw\\themes\\default\\template\\controllers\\login\\header.tpl',
-      1 => 1711210447,
+      1 => 1711123664,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6600979f122738_04114198 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6601fb4d043bb9_92871235 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7 lt-ie6"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8 ie7"> <![endif]-->

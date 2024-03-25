@@ -39,16 +39,17 @@ class Salvacero_FunctionsAjaxModuleFrontController extends ModuleFrontController
         if (Tools::getValue('action') == 'getDataCustomer') {
             $id_customer = $this->context->customer->id;
             $amount = SalvaceroCustomer::getAmountForIdPs($id_customer);
+            $amount_inicial = SalvaceroCustomer::getAmountCompletoForIdPs($id_customer);
             $isActive = false;
             if ($amount) {
                 if ($amount > Tools::getValue('total')) {
                     $isActive = true;
                 }
             }
-
             die(Tools::jsonEncode(array(
                 'success' => $isActive,
-                'Monto_Credito' => $amount
+                'Monto_Credito' => $amount,
+                "amount_inicial" => $amount_inicial
             )));
         }
         die(0);

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.47, created on 2024-03-24 16:18:19
+/* Smarty version 3.1.47, created on 2024-03-25 17:54:33
   from 'module:nrtmegamenuviewstemplates' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.47',
-  'unifunc' => 'content_6600989ba66c17_14125086',
+  'unifunc' => 'content_660200a92836c5_63926011',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '492a8c21b8e77707708b1ae194c7227a7ee99959' => 
     array (
       0 => 'module:nrtmegamenuviewstemplates',
-      1 => 1711210455,
+      1 => 1711123671,
       2 => 'module',
     ),
   ),
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'module:nrtmegamenu/views/templates/hook/megamenu-sub.tpl' => 1,
   ),
 ),false)) {
-function content_6600989ba66c17_14125086 (Smarty_Internal_Template $_smarty_tpl) {
+function content_660200a92836c5_63926011 (Smarty_Internal_Template $_smarty_tpl) {
 ?>	
 <ul class="nrt_mega_menu menu-horizontal element_ul_depth_0">
 	<?php

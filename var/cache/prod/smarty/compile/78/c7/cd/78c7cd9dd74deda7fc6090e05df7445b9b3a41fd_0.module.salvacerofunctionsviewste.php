@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.47, created on 2024-03-24 16:18:18
+/* Smarty version 3.1.47, created on 2024-03-25 18:01:03
   from 'module:salvacerofunctionsviewste' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.47',
-  'unifunc' => 'content_6600989a8b7442_22690318',
+  'unifunc' => 'content_6602022f8497e1_66435398',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '78c7cd9dd74deda7fc6090e05df7445b9b3a41fd' => 
     array (
       0 => 'module:salvacerofunctionsviewste',
-      1 => 1711210463,
+      1 => 1711123677,
       2 => 'module',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6600989a8b7442_22690318 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6602022f8497e1_66435398 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <div class="col-6">
     <div class="card customer-private-note-card">

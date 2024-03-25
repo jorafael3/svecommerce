@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.47, created on 2024-03-24 16:18:18
+/* Smarty version 3.1.47, created on 2024-03-25 18:01:01
   from 'C:\xampp\htdocs\svecommerce\modules\smartblog\views\templates\admin\addjs.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.47',
-  'unifunc' => 'content_6600989a5bbf58_11238796',
+  'unifunc' => 'content_6602022da23f94_06505893',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'b391389991aef9280f1d9d6cc63fadb6956b5cb6' => 
     array (
       0 => 'C:\\xampp\\htdocs\\svecommerce\\modules\\smartblog\\views\\templates\\admin\\addjs.tpl',
-      1 => 1711210464,
+      1 => 1711123678,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6600989a5bbf58_11238796 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6602022da23f94_06505893 (Smarty_Internal_Template $_smarty_tpl) {
 ?><style>
 .icon-AdminSmartBlog:before{
   content: "\f14b";

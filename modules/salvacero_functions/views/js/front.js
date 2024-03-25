@@ -47,7 +47,7 @@ jQuery(document).ready(function ($) {
                 if (result.success) {
 
                     
-                    $("#header-normal").append("asdasdasdasdasdasd");
+                    // $("#header-normal").append("asdasdasdasdasdasd");
 
                 }
             },

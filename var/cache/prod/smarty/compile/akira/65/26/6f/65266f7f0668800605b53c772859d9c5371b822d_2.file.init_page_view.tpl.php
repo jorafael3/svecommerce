@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.47, created on 2024-03-24 16:18:19
+/* Smarty version 3.1.47, created on 2024-03-25 17:54:30
   from 'C:\xampp\htdocs\svecommerce\modules\fabfacebookpixel\views\templates\hook\init_page_view.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.47',
-  'unifunc' => 'content_6600989b3fa890_90126545',
+  'unifunc' => 'content_660200a645a299_86616710',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '65266f7f0668800605b53c772859d9c5371b822d' => 
     array (
       0 => 'C:\\xampp\\htdocs\\svecommerce\\modules\\fabfacebookpixel\\views\\templates\\hook\\init_page_view.tpl',
-      1 => 1711210455,
+      1 => 1711123670,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6600989b3fa890_90126545 (Smarty_Internal_Template $_smarty_tpl) {
+function content_660200a645a299_86616710 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'C:\\xampp\\htdocs\\svecommerce\\vendor\\smarty\\smarty\\libs\\plugins\\function.counter.php','function'=>'smarty_function_counter',),));
 ?>
 
