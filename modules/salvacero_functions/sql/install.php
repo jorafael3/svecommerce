@@ -31,6 +31,7 @@ $sql[] = 'CREATE TABLE IF NOT EXISTS `' . _DB_PREFIX_ . 'salvacero_customers` (
     `id_customer_ps` int(11) NOT NULL,
     `active` int(11) NOT NULL,
     `amount` float NOT NULL,
+    `amount_inical` float NOT NULL,
     `date_add` DATETIME NULL DEFAULT NULL,
     `date_upd` DATETIME NULL DEFAULT NULL,
     PRIMARY KEY  (`id`)

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.47, created on 2024-03-22 17:29:40
+/* Smarty version 3.1.47, created on 2024-03-24 16:18:18
   from 'C:\xampp\htdocs\svecommerce\gqth8jpeqegdu5rw\themes\new-theme\template\components\layout\warning_messages.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.47',
-  'unifunc' => 'content_65fe06549638d5_07967823',
+  'unifunc' => 'content_6600989a7bf397_99270399',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '3e8e9d4215c520294cbc8601c660c34f6d2fbffc' => 
     array (
       0 => 'C:\\xampp\\htdocs\\svecommerce\\gqth8jpeqegdu5rw\\themes\\new-theme\\template\\components\\layout\\warning_messages.tpl',
-      1 => 1711123664,
+      1 => 1711210447,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_65fe06549638d5_07967823 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6600989a7bf397_99270399 (Smarty_Internal_Template $_smarty_tpl) {
 if (count($_smarty_tpl->tpl_vars['warnings']->value)) {?>
   <div class="bootstrap">
     <div class="alert alert-warning">

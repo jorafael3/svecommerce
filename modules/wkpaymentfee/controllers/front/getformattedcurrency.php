@@ -78,7 +78,8 @@ class WkPaymentFeeGetFormattedCurrencyModuleFrontController extends ModuleFrontC
             die(Tools::jsonEncode(array(
                 'amount' => $totalCartAmount,
                 'discountText' => $discountText,
-                'feeAmount' => Tools::displayPrice($feeAmount)
+                'feeAmount' => Tools::displayPrice($feeAmount),
+                'feeAmount2' => $totalOrderAmount,
             )));
         }
     }

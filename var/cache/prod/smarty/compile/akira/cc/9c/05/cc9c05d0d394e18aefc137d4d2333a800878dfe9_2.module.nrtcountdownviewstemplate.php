@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.47, created on 2024-03-22 17:29:59
+/* Smarty version 3.1.47, created on 2024-03-24 15:57:09
   from 'module:nrtcountdownviewstemplate' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.47',
-  'unifunc' => 'content_65fe0667960de8_75188250',
+  'unifunc' => 'content_660093a5b57c47_85867882',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'cc9c05d0d394e18aefc137d4d2333a800878dfe9' => 
     array (
       0 => 'module:nrtcountdownviewstemplate',
-      1 => 1711123670,
+      1 => 1711210455,
       2 => 'module',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_65fe0667960de8_75188250 (Smarty_Internal_Template $_smarty_tpl) {
+function content_660093a5b57c47_85867882 (Smarty_Internal_Template $_smarty_tpl) {
 if ((isset($_smarty_tpl->tpl_vars['to']->value)) && $_smarty_tpl->tpl_vars['to']->value != '0000-00-00 00:00:00') {?>
     <div class="countdown-timer-wrapper">
 		<div class="countdown-title">

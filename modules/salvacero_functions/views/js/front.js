@@ -26,10 +26,42 @@
  * to avoid any conflicts with others containers.
  */
 
-jQuery(document).ready(function($) {
+jQuery(document).ready(function ($) {
+
+
+    function Mostrar_Credito() {
+        var url = "index.php?fc=module&module=" + name_salvacero + "&controller=ajax";
+
+        $.ajax({
+            url: url,
+            dataType: 'json',
+            type: "POST",
+            data: {
+                action: "getDataCustomer",
+                customerEmail: prestashop.customer.email,
+                total: prestashop.cart.totals.total.amount
+
+            },
+            success: function (result) {
+                console.log('result: ', result);
+                if (result.success) {
+
+                    
+                    $("#header-normal").append("asdasdasdasdasdasd");
+
+                }
+            },
+            error: (jqXHR, exception) => {
+
+            }
+        });
+
+    }
+    Mostrar_Credito()
+
     prestashop.on(
         'changedCheckoutStep',
-        function(event) {
+        function (event) {
             if (typeof event.event.target.name !== 'undefined' && event.event.target.name == 'confirmDeliveryOption') {
                 console.log(event.event.target.name);
 
@@ -49,7 +81,7 @@ jQuery(document).ready(function($) {
     $(".ps-shown-by-js").on("change", (e) => {
         if ($(e.target).data().moduleName == name_salvacero) {
             var url = "index.php?fc=module&module=" + name_salvacero + "&controller=ajax";
-            console.log(url);
+            // console.log(url);
 
             $.ajax({
                 url: url,
@@ -61,31 +93,34 @@ jQuery(document).ready(function($) {
                     total: prestashop.cart.totals.total.amount
 
                 },
-                success: function(result) {
+                success: function (result) {
+
+                    // console.log('result: ', result);
                     if (result.success) {
 
+                        // $.sweetModal({
+                        //         content: '<h4> <center>¿Quieres agregar más productos a tu comprass?</center></h4>',
+                        //         title: '<strom><center class="title-modal-credic">Todavía tienes saldo disponible para comprar más</center></strom>',
+                        //         buttons: [{
+                        //             label: 'No',
+                        //             classes: 'redB'
+                        //         }, {
+                        //             label: 'SI',
+                        //             classes: 'greenB',
+                        //             action: function() {
+                        //                 window.location.href = prestashop.urls.pages.index;
+                        //             }
+                        //         }]
+                        //     },
 
-                        $.sweetModal({
-                                content: '<h4> <center>¿Quieres agregar más productos a tu compra?</center></h4>',
-                                title: '<strom><center class="title-modal-credic">Todavía tienes saldo disponible para comprar más</center></strom>',
-                                buttons: [{
-                                    label: 'No',
-                                    classes: 'redB'
-                                }, {
-                                    label: 'SI',
-                                    classes: 'greenB',
-                                    action: function() {
-                                        window.location.href = prestashop.urls.pages.index;
-                                    }
-                                }]
-                            },
-
-                            function() {
-                                console.log("hola")
-                                    // $.sweetModal('You declined. That\'s okay!');
-                            });
+                        //     function() {
+                        //         console.log("hola")
+                        //             // $.sweetModal('You declined. That\'s okay!');
+                        //     });
 
                     } else {
+                        // $("#payment-confirmation").remove()
+
                         $.sweetModal({
                             content: "NO posee saldo de crédito disponible",
                             title: 'Error',

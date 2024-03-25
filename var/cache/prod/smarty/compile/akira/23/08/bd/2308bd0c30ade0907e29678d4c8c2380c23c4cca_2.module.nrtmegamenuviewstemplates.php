@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.47, created on 2024-03-22 17:30:02
+/* Smarty version 3.1.47, created on 2024-03-24 16:18:19
   from 'module:nrtmegamenuviewstemplates' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.47',
-  'unifunc' => 'content_65fe066a8a4fb0_25751130',
+  'unifunc' => 'content_6600989bc747b3_26517139',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '2308bd0c30ade0907e29678d4c8c2380c23c4cca' => 
     array (
       0 => 'module:nrtmegamenuviewstemplates',
-      1 => 1711123671,
+      1 => 1711210455,
       2 => 'module',
     ),
   ),
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'module:nrtmegamenu/views/templates/hook/mobile-megamenu-ul.tpl' => 1,
   ),
 ),false)) {
-function content_65fe066a8a4fb0_25751130 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6600989bc747b3_26517139 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <div id="canvas-menu-mobile" class="canvas-widget canvas-left">
 	<div class="canvas-widget-top">

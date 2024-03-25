@@ -47,7 +47,8 @@ class Salvacero_FunctionsAjaxModuleFrontController extends ModuleFrontController
             }
 
             die(Tools::jsonEncode(array(
-                'success' => $isActive
+                'success' => $isActive,
+                'Monto_Credito' => $amount
             )));
         }
         die(0);

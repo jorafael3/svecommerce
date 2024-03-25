@@ -27,6 +27,8 @@
  */
 
 jQuery(document).ready(function($) {
+    console.log('ps_customer_ajax: ', ps_customer_ajax);
+
     $(".custom_switch_salvacero").click(function(e) {
         let boton = $(e.target);
         console.log(boton.data().id);

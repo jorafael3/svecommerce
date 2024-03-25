@@ -312,6 +312,11 @@ class Salvacero_functions extends PaymentModule
             ->setAction($this->context->link->getModuleLink($this->name, 'redirect', array(), true))
             ->setModuleName($this->name);
 
+        if ($this->context->cookie->id_country == 53) { // Código para Ecuador
+            // Ocultamos el despliegue de la Cuota Adicional
+            $option->setAdditionalInformation('');
+        }
+
         return [
             $option
         ];

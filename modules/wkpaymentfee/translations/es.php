@@ -8,7 +8,7 @@ $_MODULE['<{wkpaymentfee}prestashop>wkpaymentfee_431e54069be38e48fbb505d2d94b08d
 $_MODULE['<{wkpaymentfee}prestashop>wkpaymentfee_be5e304c736138e47080bb85b4235a22'] = 'Tarifa adicional en el método de pago';
 $_MODULE['<{wkpaymentfee}prestashop>getformattedcurrency_c6701602de1528fd79d5eff3e8eb1edd'] = '¡Algo salió mal!';
 $_MODULE['<{wkpaymentfee}prestashop>getformattedcurrency_104d9898c04874d0fbac36e125fa1369'] = 'Descuento';
-$_MODULE['<{wkpaymentfee}prestashop>getformattedcurrency_170ffc21b1a373d88dba1d0b4323ec60'] = 'Suplemento';
+$_MODULE['<{wkpaymentfee}prestashop>getformattedcurrency_170ffc21b1a373d88dba1d0b4323ec60'] = 'Cuota';
 $_MODULE['<{wkpaymentfee}prestashop>getformattedcurrency_fcd06074ed5e91e888c6c7e22a768f40'] = 'descuento de pago';
 $_MODULE['<{wkpaymentfee}prestashop>adminpaymentfeecontroller_e6ff0db3b8285dce688b7f9a44e4915b'] = 'Los datos guardados';
 $_MODULE['<{wkpaymentfee}prestashop>adminpaymentfeecontroller_c6c47ec90d1b31358e15cd8a7b81f4e5'] = 'Calcular la tarifa con impuestos incluidos';

@@ -1,0 +1,46 @@
+<?php
+/* Smarty version 3.1.47, created on 2024-03-24 13:00:33
+  from 'C:\xampp\htdocs\svecommerce\pdf\invoice.note-tab.tpl' */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '3.1.47',
+  'unifunc' => 'content_66006a414de718_48154015',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    'fbd203cbc3b8baedbe4e2099ca824ed942902633' => 
+    array (
+      0 => 'C:\\xampp\\htdocs\\svecommerce\\pdf\\invoice.note-tab.tpl',
+      1 => 1711210464,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_66006a414de718_48154015 (Smarty_Internal_Template $_smarty_tpl) {
+if ((isset($_smarty_tpl->tpl_vars['order_invoice']->value->note)) && $_smarty_tpl->tpl_vars['order_invoice']->value->note) {?>
+	<tr>
+		<td colspan="12" height="10">&nbsp;</td>
+	</tr>
+
+	<tr>
+		<td colspan="6" class="left">
+			<table id="note-tab" style="width: 100%">
+				<tr>
+					<td class="grey"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Note','d'=>'Shop.Pdf','pdf'=>'true'),$_smarty_tpl ) );?>
+</td>
+				</tr>
+				<tr>
+					<td class="note"><?php echo nl2br($_smarty_tpl->tpl_vars['order_invoice']->value->note);?>
+</td>
+				</tr>
+			</table>
+		</td>
+		<td colspan="1">&nbsp;</td>
+	</tr>
+<?php }
+}
+}
