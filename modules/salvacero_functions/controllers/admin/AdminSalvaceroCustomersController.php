@@ -135,12 +135,15 @@ class AdminSalvaceroCustomersController extends ModuleAdminController
         ) {
 
             $id_customer = Tools::getValue('id_customer');
+            $amount = number_format((float)Tools::getValue("val"), 2, ".", "");
             $isSuccess = false;
             $date = date("Y-m-d H:i:s");
 
             if ($oldCustomer = SalvaceroCustomer::getCustomerForIdPs($id_customer)) {
+                $amount_saldo = ($amount - floatval($oldCustomer["amount_inicial"])) + floatval($oldCustomer["amount"]);
                 $salvaceroCustomer = new SalvaceroCustomer($oldCustomer['id']);
-                $salvaceroCustomer->amount = number_format((float)Tools::getValue("val"), 2, ".", "");
+                $salvaceroCustomer->amount = $amount_saldo;
+                $salvaceroCustomer->amount_inicial = number_format((float)Tools::getValue("val"), 2, ".", "");
                 $salvaceroCustomer->date_upd = $date;
                 if ($salvaceroCustomer->update()) {
                     $isSuccess = true;
@@ -164,4 +167,25 @@ class AdminSalvaceroCustomersController extends ModuleAdminController
         }
         die('0');
     }
+
+    // JORGE ALVARADO
+
+    public function ajaxProcessSetDeleteCreditCustomer()
+    {
+        if (
+            Tools::isSubmit('action')
+            && (Tools::getAdminTokenLite('AdminSalvaceroCustomers') == Tools::getValue('token'))
+        ) {
+            $id_customer = Tools::getValue('id_customer');
+            $oldCustomer = SalvaceroCustomer::DeleteAmountForIdPs($id_customer);
+
+            die(Tools::jsonEncode(array(
+                'success' => $oldCustomer
+            )));
+        }
+    }
+
+ 
+
+    
 }

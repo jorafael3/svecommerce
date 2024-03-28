@@ -26,10 +26,10 @@
  * to avoid any conflicts with others containers.
  */
 
-jQuery(document).ready(function($) {
-    console.log('ps_customer_ajax: ', ps_customer_ajax);
+jQuery(document).ready(function ($) {
+    // console.log('ps_customer_ajax: ', ps_customer_ajax);
 
-    $(".custom_switch_salvacero").click(function(e) {
+    $(".custom_switch_salvacero").click(function (e) {
         let boton = $(e.target);
         console.log(boton.data().id);
         $.ajax({
@@ -42,10 +42,10 @@ jQuery(document).ready(function($) {
                 ajax: true,
                 id: boton.data().id
             },
-            success: function(result) {
+            success: function (result) {
                 console.log(result);
             },
-            error: function(xhr) {
+            error: function (xhr) {
                 console.log(xhr);
                 alert(xhr.statusText);
             }
@@ -54,8 +54,10 @@ jQuery(document).ready(function($) {
     });
 
 
-    $("#amount_credict_button").click(function(e) {
+    $("#amount_credict_button").click(function (e) {
         let value = $("#amount_credict").val();
+        // let value_inicial = $("#amount_credict_inicial").val();
+
         let id_customer = $("#id_customer").val();
         if (typeof value !== 'undefined' && value != "") {
 
@@ -68,21 +70,67 @@ jQuery(document).ready(function($) {
                     action: 'setAmountCustomer',
                     ajax: true,
                     val: value,
+                    // val_inicial: value_inicial,
                     id_customer: id_customer
                 },
-                success: function(result) {
+                success: function (result) {
                     console.log(result);
 
                     if (result.success) {
                         alert("valor creado correctamente");
+                        window.location.reload();
                     }
                 },
-                error: function(xhr) {
+                error: function (xhr) {
                     console.log(xhr);
                     alert(xhr.statusText);
                 }
             });
         }
     });
+
+    $("#amount_credict_button_delete").click(function (e) {
+        Swal.fire({
+            title: "Se borraran los datos del credito, esta seguro?",
+            showDenyButton: true,
+            showCancelButton: false,
+            confirmButtonText: "Continuar",
+            denyButtonText: `Cancelar`
+        }).then((result) => {
+            /* Read more about isConfirmed, isDenied below */
+            if (result.isConfirmed) {
+                let id_customer = $("#id_customer").val();
+
+                $.ajax({
+                    url: ps_customer_ajax,
+                    type: 'post',
+                    dataType: 'json',
+                    cache: false,
+                    data: {
+                        action: 'SetDeleteCreditCustomer',
+                        ajax: true,
+                        id_customer: id_customer
+                    },
+                    success: function (result) {
+                        console.log(result);
+                        if (result.success) {
+                            alert("Credito eliminado");
+                            window.location.reload();
+                        }else{
+                            alert("Error al eliminar, intente nuevamente");
+                        }
+                    },
+                    error: function (xhr) {
+                        console.log(xhr);
+                        alert(xhr.statusText);
+                    }
+                });
+
+
+                // Swal.fire("Saved!", "", "success");
+            }
+        });
+    });
+
 
 });

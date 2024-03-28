@@ -16,6 +16,8 @@
  * @copyright 2010-2022 Webkul IN
  * @license LICENSE.txt
  */
+var RESULTADO_CREDITO;
+
 if (document.getElementById("payment-confirmation") != null) {
     document.getElementById("payment-confirmation").addEventListener("click", function () {
         var moduleId = $('input[name="payment-option"]:checked').attr('id');
@@ -135,7 +137,7 @@ $(document).ready(function () {
                         data: param,
                         success: function (result) {
                             console.log('result: ', result);
-
+                            // RESULTADO_CREDITO = result
 
                             let MESES = $("#cart-select-cuotas").val();
                             var cadena = result.amount;

@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.47, created on 2024-03-25 17:54:32
+/* Smarty version 3.1.47, created on 2024-03-28 14:38:51
   from 'module:nrtsearchbarviewstemplate' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.47',
-  'unifunc' => 'content_660200a8f2bb68_68975237',
+  'unifunc' => 'content_6605c74b53bdf1_87789908',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'module:nrtsearchbar/views/templates/hook/categories.tpl' => 1,
   ),
 ),false)) {
-function content_660200a8f2bb68_68975237 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6605c74b53bdf1_87789908 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="search-widget search-wrapper">
 	<form class="search-form has-ajax-search <?php if ($_smarty_tpl->tpl_vars['show_cat']->value) {?> has-categories<?php }?>" method="get" action="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['search_controller_url']->value, ENT_QUOTES, 'UTF-8');?>
 ">

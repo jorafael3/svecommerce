@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.47, created on 2024-03-24 16:09:24
+/* Smarty version 3.1.47, created on 2024-03-27 17:17:44
   from 'C:\xampp\htdocs\svecommerce\themes\akira\templates\catalog\_partials\sort-orders.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.47',
-  'unifunc' => 'content_66009684c07661_73726732',
+  'unifunc' => 'content_66049b0888bc38_70407952',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '6b9722e000c82cab07c339ab0f1225ad88a29821' => 
     array (
       0 => 'C:\\xampp\\htdocs\\svecommerce\\themes\\akira\\templates\\catalog\\_partials\\sort-orders.tpl',
-      1 => 1711210466,
+      1 => 1711123680,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_66009684c07661_73726732 (Smarty_Internal_Template $_smarty_tpl) {
+function content_66049b0888bc38_70407952 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'C:\\xampp\\htdocs\\svecommerce\\vendor\\smarty\\smarty\\libs\\plugins\\modifier.regex_replace.php','function'=>'smarty_modifier_regex_replace',),));
 ?>
 	 

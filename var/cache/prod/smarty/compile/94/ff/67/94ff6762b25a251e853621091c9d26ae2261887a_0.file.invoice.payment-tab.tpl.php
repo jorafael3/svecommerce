@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.47, created on 2024-03-24 15:40:21
+/* Smarty version 3.1.47, created on 2024-03-28 10:55:06
   from 'C:\xampp\htdocs\svecommerce\pdf\invoice.payment-tab.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.47',
-  'unifunc' => 'content_66008fb5ada535_00321856',
+  'unifunc' => 'content_660592daea9cb9_73551983',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '94ff6762b25a251e853621091c9d26ae2261887a' => 
     array (
       0 => 'C:\\xampp\\htdocs\\svecommerce\\pdf\\invoice.payment-tab.tpl',
-      1 => 1711210464,
+      1 => 1711123678,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_66008fb5ada535_00321856 (Smarty_Internal_Template $_smarty_tpl) {
+function content_660592daea9cb9_73551983 (Smarty_Internal_Template $_smarty_tpl) {
 ?><table id="payment-tab" width="100%">
 	<tr>
 		<td class="payment center small grey bold" width="44%"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Payment Method','d'=>'Shop.Pdf','pdf'=>'true'),$_smarty_tpl ) );?>

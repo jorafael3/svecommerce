@@ -26,6 +26,8 @@
  */
 $sql = array();
 
+// JORGE ALVARADO EDIT CAMPO amount_inical
+
 $sql[] = 'CREATE TABLE IF NOT EXISTS `' . _DB_PREFIX_ . 'salvacero_customers` (
     `id` int(11) NOT NULL AUTO_INCREMENT,
     `id_customer_ps` int(11) NOT NULL,

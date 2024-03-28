@@ -52,6 +52,35 @@ class Salvacero_FunctionsAjaxModuleFrontController extends ModuleFrontController
                 "amount_inicial" => $amount_inicial
             )));
         }
+        if (Tools::getValue('action') == 'SetCustomerCreditData') {
+
+            $id_customer = $this->context->customer->id;
+            $total = 1000;
+            $meses = 12;
+            $orden = $this->getOrderNumberForCustomer($id_customer);
+
+            $oldCustomer = SalvaceroCustomer::setCustomerCreditDataForIdPs($id_customer, $total, $meses, $orden);
+
+            die(Tools::jsonEncode(array(
+                'success' => $oldCustomer,
+                'id_customer' => $id_customer,
+                'orden' => $orden
+            )));
+        }
         die(0);
+    }
+
+
+
+    public function getOrderNumberForCustomer($id_customer)
+    {
+        // Obtener el número de orden para un cliente específico (por ejemplo, el último pedido realizado por ese cliente)
+        $orderId = SalvaceroCustomer::getOrderByCustomer($id_customer); // Esto te dará el ID del último pedido del cliente
+        if ($orderId) {
+            $order = new Order($orderId);
+            return $order->reference; // Devuelve el número de referencia del pedido
+        } else {
+            return null; // Devuelve null si el cliente no tiene pedidos
+        }
     }
 }

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.47, created on 2024-03-24 15:40:21
+/* Smarty version 3.1.47, created on 2024-03-28 10:55:06
   from 'C:\xampp\htdocs\svecommerce\pdf\invoice.product-tab.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.47',
-  'unifunc' => 'content_66008fb5ac28a1_94020885',
+  'unifunc' => 'content_660592dab2b761_16117647',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'fe6b20ae32e48cb71e74f33e07a37e55fd863a8d' => 
     array (
       0 => 'C:\\xampp\\htdocs\\svecommerce\\pdf\\invoice.product-tab.tpl',
-      1 => 1711210464,
+      1 => 1711123678,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_66008fb5ac28a1_94020885 (Smarty_Internal_Template $_smarty_tpl) {
+function content_660592dab2b761_16117647 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'C:\\xampp\\htdocs\\svecommerce\\vendor\\smarty\\smarty\\libs\\plugins\\function.cycle.php','function'=>'smarty_function_cycle',),));
 ?>
 <table class="product" width="100%" cellpadding="4" cellspacing="0">

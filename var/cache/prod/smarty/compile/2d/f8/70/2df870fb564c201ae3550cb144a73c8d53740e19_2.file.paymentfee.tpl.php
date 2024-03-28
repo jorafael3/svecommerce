@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.47, created on 2024-03-25 17:54:26
+/* Smarty version 3.1.47, created on 2024-03-28 14:38:44
   from 'C:\xampp\htdocs\svecommerce\modules\wkpaymentfee\views\templates\hook\paymentfee.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.47',
-  'unifunc' => 'content_660200a2a51b19_28851460',
+  'unifunc' => 'content_6605c7444917a0_98564226',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_660200a2a51b19_28851460 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6605c7444917a0_98564226 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <div id='wk-payment-fee'>
 	<input type='hidden' name='wk-payment-fee-amount' value='<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['wk_fee']->value, ENT_QUOTES, 'UTF-8');?>

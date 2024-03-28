@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.47, created on 2024-03-24 16:14:24
+/* Smarty version 3.1.47, created on 2024-03-28 10:04:58
   from 'C:\xampp\htdocs\svecommerce\modules\dashproducts\views\templates\hook\dashboard_zone_two.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.47',
-  'unifunc' => 'content_660097b0f03c55_51810558',
+  'unifunc' => 'content_6605871a8c55d3_34404450',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'bb5ad8057c44a3d7be02a8ea13f9fa17afa391d7' => 
     array (
       0 => 'C:\\xampp\\htdocs\\svecommerce\\modules\\dashproducts\\views\\templates\\hook\\dashboard_zone_two.tpl',
-      1 => 1711210455,
+      1 => 1711123670,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_660097b0f03c55_51810558 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6605871a8c55d3_34404450 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <section id="dashproducts" class="panel widget <?php if ($_smarty_tpl->tpl_vars['allow_push']->value) {?> allow_push<?php }?>">
   <header class="panel-heading">

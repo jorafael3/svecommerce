@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.47, created on 2024-03-25 17:54:30
+/* Smarty version 3.1.47, created on 2024-03-28 14:41:42
   from 'module:stcustomcodeviewstemplate' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.47',
-  'unifunc' => 'content_660200a6371eb6_66050016',
+  'unifunc' => 'content_6605c7f61e5f20_55720546',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_660200a6371eb6_66050016 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6605c7f61e5f20_55720546 (Smarty_Internal_Template $_smarty_tpl) {
 if ((isset($_smarty_tpl->tpl_vars['stcustomcode']->value))) {?>
     <?php if ($_smarty_tpl->tpl_vars['stcustomcode']->value['css']) {?>
     <style type="text/css"><?php echo $_smarty_tpl->tpl_vars['stcustomcode']->value['css'];?>

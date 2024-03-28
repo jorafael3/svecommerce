@@ -336,15 +336,19 @@ class Salvacero_functions extends PaymentModule
         return false;
     }
 
+    //JORGE ALVARADO
+
     public function hookDisplayAdminCustomers($params)
     {
         $id_customer = $params['id_customer'];
         $amount = SalvaceroCustomer::getAmountForIdPs($id_customer);
+        $amount_inicial = SalvaceroCustomer::getAmountCompletoForIdPs($id_customer);
 
 
         $this->context->smarty->assign([
             "id_customer" => $id_customer,
             "amount" => $amount,
+            "amount_inicial" => $amount_inicial,
         ]);
 
         return $this->context->smarty->fetch('module:' . $this->name . '/views/templates/hook/amount.tpl');
@@ -356,4 +360,23 @@ class Salvacero_functions extends PaymentModule
         // exit;
 
     }
+
+
+
+    // public function hookActionObjectOrderAddAfter($params)
+    // {
+    //     // Obtener el objeto del pedido recién creado
+    //     $order = $params['object'];
+    
+    //     // Aquí puedes acceder a los datos del pedido y guardarlos en tu tabla personalizada
+    //     $additionalData = array(
+    //         'order_id' => $order->id,
+    //         // Agrega aquí los datos adicionales que deseas guardar
+    //     );
+    
+    //     // Lógica para guardar los datos en tu tabla personalizada
+    //     // Suponiendo que $this->context->controller está disponible para obtener acceso al controlador actual
+    //     $this->context->controller->module->guardarDatosPersonalizados($additionalData);
+    // }
+
 }

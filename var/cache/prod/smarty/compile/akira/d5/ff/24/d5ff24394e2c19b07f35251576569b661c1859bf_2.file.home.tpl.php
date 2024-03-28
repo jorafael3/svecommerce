@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.47, created on 2024-03-25 17:26:37
+/* Smarty version 3.1.47, created on 2024-03-28 10:56:05
   from 'C:\xampp\htdocs\svecommerce\modules\ganalyticspro\views\templates\hook\home.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.47',
-  'unifunc' => 'content_6601fa1d107d10_43062624',
+  'unifunc' => 'content_66059315e3c569_98911737',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,6 +20,6 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6601fa1d107d10_43062624 (Smarty_Internal_Template $_smarty_tpl) {
+function content_66059315e3c569_98911737 (Smarty_Internal_Template $_smarty_tpl) {
 }
 }

@@ -22,7 +22,7 @@
 *  @license   http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
 *  International Registered Trademark & Property of PrestaShop SA
 *}
-
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <div class="col-6">
     <div class="card customer-private-note-card">
         <h3 class="card-header">
@@ -38,18 +38,33 @@
             {* <input type='number' min class="form-control" value="" name="amount-credict" id="amount-credict"
                 placeholder='Añade el monto del credito para este cliente.' /> *}
             <input type="hidden" id="id_customer" value="{$id_customer}" />
-            <div class="col-xl-4 col-lg-5">
-                <label class="form-control-label">Monto del credito</label>
 
-                <div class="input-group money-type">
-                    <input type="text" id="amount_credict" name="amount_credict" data-display-price-precision="6"
-                        class="form-control" value="{$amount}">
-                    <div class="input-group-append">
-                        <span class="input-group-text"> US$</span>
+            <div class="row">
+                <div class="col-xl-6 col-lg-6">
+                    <label class="form-control-label">Monto total del credito</label>
+                    <div class="input-group money-type">
+                        <input type="text" id="amount_credict" name="amount_credict_inicial" data-display-price-precision="6"
+                            class="form-control" value="{$amount_inicial}">
+                        <div class="input-group-append">
+                            <span class="input-group-text"> US$</span>
+                        </div>
                     </div>
                 </div>
-            </div>
+                <div class="col-xl-6 col-lg-6">
+                    <label class="form-control-label">Total credito consumido</label>
+                    <div class="input-group money-type">
+                        <input readonly type="text" id="amount_credict_2" name="amount_credict" data-display-price-precision="6"
+                            class="form-control" value="{$amount}">
+                        <div class="input-group-append">
+                            <span class="input-group-text"> US$</span>
+                        </div>
+                    </div>
+                </div>
 
+            </div>
+            <button class="btn btn-danger float-right mt-3" id="amount_credict_button_delete">
+                Borrar credito
+            </button>
             <button class="btn btn-primary float-right mt-3" id="amount_credict_button">
                 Guardar
             </button>

@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.47, created on 2024-03-25 17:54:33
+/* Smarty version 3.1.47, created on 2024-03-28 14:38:52
   from 'module:nrtreviewsviewstemplatesh' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.47',
-  'unifunc' => 'content_660200a9d88d87_22073418',
+  'unifunc' => 'content_6605c74c737719_74284622',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_660200a9d88d87_22073418 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6605c74c737719_74284622 (Smarty_Internal_Template $_smarty_tpl) {
 ?>	 
 <div id="modal_reviews" class="modal" tabindex="-1" role="dialog" aria-hidden="true"><div class="modal-dialog" role="document">
 	<div class="modal-content">

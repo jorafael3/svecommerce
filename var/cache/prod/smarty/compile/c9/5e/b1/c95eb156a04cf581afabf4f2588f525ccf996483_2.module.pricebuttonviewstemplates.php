@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.47, created on 2024-03-25 17:26:35
+/* Smarty version 3.1.47, created on 2024-03-28 10:56:04
   from 'module:pricebuttonviewstemplates' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.47',
-  'unifunc' => 'content_6601fa1b8e4700_09093244',
+  'unifunc' => 'content_660593148efec1_53099495',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6601fa1b8e4700_09093244 (Smarty_Internal_Template $_smarty_tpl) {
+function content_660593148efec1_53099495 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="row">
     <div class="col-6">
         <button onclick="changePriceCustom(this, <?php echo htmlspecialchars($_smarty_tpl->tpl_vars['product']->value['id'], ENT_QUOTES, 'UTF-8');?>

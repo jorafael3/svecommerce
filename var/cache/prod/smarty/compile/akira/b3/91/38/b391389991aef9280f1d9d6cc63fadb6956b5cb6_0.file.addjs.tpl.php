@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.47, created on 2024-03-25 18:01:01
+/* Smarty version 3.1.47, created on 2024-03-28 10:05:39
   from 'C:\xampp\htdocs\svecommerce\modules\smartblog\views\templates\admin\addjs.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.47',
-  'unifunc' => 'content_6602022da23f94_06505893',
+  'unifunc' => 'content_6605874373be89_09814583',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6602022da23f94_06505893 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6605874373be89_09814583 (Smarty_Internal_Template $_smarty_tpl) {
 ?><style>
 .icon-AdminSmartBlog:before{
   content: "\f14b";

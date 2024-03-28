@@ -76,4 +76,48 @@ class SalvaceroCustomer extends ObjectModel
         $query   = "SELECT amount_inicial FROM `$table` WHERE id_customer_ps = $id";
         return Db::getInstance()->getValue($query);
     }
+
+    // JORGE ALVARADO
+    public static function DeleteAmountForIdPs($id)
+    {
+        $table = _DB_PREFIX_ . "salvacero_customers";
+        $query   = "DELETE FROM `$table` WHERE id_customer_ps = $id";
+        $result = Db::getInstance()->execute($query);
+        return $result !== false;
+    }
+
+    public static function setCustomerCreditDataForIdPs($id, $total, $meses, $orden)
+    {
+        $table = _DB_PREFIX_ . "salvacero_customers_order_credit_data";
+        $query = "INSERT INTO `$table`
+            (
+                customer_id,
+                total,
+                meses,
+                orden_number
+            ) VALUES (
+                '$id',
+                '$total',
+                '$meses',
+                '$orden'
+            )";
+            
+        $result = Db::getInstance()->execute($query);
+        return $result !== false;
+    }
+
+    public static function getOrderByCustomer($id_customer)
+    {
+        // Realizar una consulta para obtener el ID del último pedido del cliente
+        $result = Db::getInstance()->getValue(
+            '
+        SELECT `id_order`
+        FROM `' . _DB_PREFIX_ . 'orders`
+        WHERE `id_customer` = ' . (int)$id_customer . '
+        ORDER BY `id_order` DESC
+        LIMIT 1'
+        );
+
+        return $result ? $result : null; // Devuelve el ID del último pedido o null si no hay pedidos
+    }
 }

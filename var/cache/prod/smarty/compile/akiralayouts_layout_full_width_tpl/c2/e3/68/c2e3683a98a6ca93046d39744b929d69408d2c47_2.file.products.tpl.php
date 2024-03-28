@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.47, created on 2024-03-24 16:09:24
+/* Smarty version 3.1.47, created on 2024-03-27 17:17:44
   from 'C:\xampp\htdocs\svecommerce\themes\akira\templates\catalog\_partials\products.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.47',
-  'unifunc' => 'content_66009684c1b347_29200151',
+  'unifunc' => 'content_66049b089cf5d6_78675684',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'c2e3683a98a6ca93046d39744b929d69408d2c47' => 
     array (
       0 => 'C:\\xampp\\htdocs\\svecommerce\\themes\\akira\\templates\\catalog\\_partials\\products.tpl',
-      1 => 1711210466,
+      1 => 1711123680,
       2 => 'file',
     ),
   ),
@@ -23,7 +23,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:errors/not-found.tpl' => 1,
   ),
 ),false)) {
-function content_66009684c1b347_29200151 (Smarty_Internal_Template $_smarty_tpl) {
+function content_66049b089cf5d6_78675684 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_assignInScope('imageType', 'home_default');?>
 	 
 <?php if ((isset($_smarty_tpl->tpl_vars['opThemect']->value['category_product_image_type']))) {?>
