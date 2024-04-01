@@ -44,3 +44,20 @@ foreach ($sql as $query) {
         return false;
     }
 }
+
+$sql[] = 'CREATE TABLE IF NOT EXISTS `' . _DB_PREFIX_ . 'salvacero_customers_order_credit_data` (
+    id int(11) NOT NULL auto_increment primary key,
+    customer_id int(11),
+    total float NOT NULL,
+    meses int NOT NULL,
+    orden_number int NOT NULL,
+    fecha_creado DATETIME DEFAULT current_timestamp,
+    actualizado int default 0,
+    referencia varchar(100)
+)';
+
+foreach ($sql as $query) {
+    if (Db::getInstance()->execute($query) == false) {
+        return false;
+    }
+}

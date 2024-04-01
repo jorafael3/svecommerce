@@ -98,6 +98,7 @@ $(document).ready(function () {
                     <div class="cart-summary-line cart-summary-subtotals" id="cart-subtotal-products">
                         <span class="label">Valor de la cuota</span>
                         <h5 style="font-weight:bold" class="value fs-5 fw-bold" id="cart-subtotal-valor-cuota"></h5>
+                        <input type="hidden" id="cart-subtotal-valor-total">
                     </div>
                 </div>
             `
@@ -150,7 +151,8 @@ $(document).ready(function () {
 
 
                             $("#cart-subtotal-valor-cuota").text(numeroFormateado);
-
+                            $("#cart-subtotal-valor-total").val(cadena);
+                            
 
 
                             // setTimeout(function () {

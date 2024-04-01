@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.47, created on 2024-03-28 14:38:49
+/* Smarty version 3.1.47, created on 2024-03-31 20:32:14
   from 'C:\xampp\htdocs\svecommerce\themes\akira\templates\_partials\pagination-seo.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.47',
-  'unifunc' => 'content_6605c749c52d04_99325595',
+  'unifunc' => 'content_660a0e9e531a15_34706250',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '4a1ed4a90453bd240d193cfa6cb7eb0b38214c40' => 
     array (
       0 => 'C:\\xampp\\htdocs\\svecommerce\\themes\\akira\\templates\\_partials\\pagination-seo.tpl',
-      1 => 1711123680,
+      1 => 1711210466,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6605c749c52d04_99325595 (Smarty_Internal_Template $_smarty_tpl) {
+function content_660a0e9e531a15_34706250 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'C:\\xampp\\htdocs\\svecommerce\\vendor\\smarty\\smarty\\libs\\plugins\\modifier.replace.php','function'=>'smarty_modifier_replace',),));
 ?>
 

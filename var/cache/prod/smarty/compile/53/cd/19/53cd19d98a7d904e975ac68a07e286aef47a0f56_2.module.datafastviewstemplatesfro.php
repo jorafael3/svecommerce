@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.47, created on 2024-03-28 14:38:44
+/* Smarty version 3.1.47, created on 2024-03-31 20:04:08
   from 'module:datafastviewstemplatesfro' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.47',
-  'unifunc' => 'content_6605c74430f095_68441212',
+  'unifunc' => 'content_660a08080ed0e8_61032373',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '53cd19d98a7d904e975ac68a07e286aef47a0f56' => 
     array (
       0 => 'module:datafastviewstemplatesfro',
-      1 => 1711123670,
+      1 => 1711210455,
       2 => 'module',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6605c74430f095_68441212 (Smarty_Internal_Template $_smarty_tpl) {
+function content_660a08080ed0e8_61032373 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <section>
     <?php if ($_smarty_tpl->tpl_vars['message']->value == '') {?>

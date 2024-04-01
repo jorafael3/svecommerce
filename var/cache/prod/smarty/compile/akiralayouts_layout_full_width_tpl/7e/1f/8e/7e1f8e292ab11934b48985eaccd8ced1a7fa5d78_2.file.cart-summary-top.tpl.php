@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.47, created on 2024-03-28 14:38:44
+/* Smarty version 3.1.47, created on 2024-03-31 20:04:08
   from 'C:\xampp\htdocs\svecommerce\themes\akira\templates\checkout\_partials\cart-summary-top.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.47',
-  'unifunc' => 'content_6605c744b265b5_06366256',
+  'unifunc' => 'content_660a0808169544_18591042',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '7e1f8e292ab11934b48985eaccd8ced1a7fa5d78' => 
     array (
       0 => 'C:\\xampp\\htdocs\\svecommerce\\themes\\akira\\templates\\checkout\\_partials\\cart-summary-top.tpl',
-      1 => 1711123680,
+      1 => 1711210466,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6605c744b265b5_06366256 (Smarty_Internal_Template $_smarty_tpl) {
+function content_660a0808169544_18591042 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <div class="cart-summary-top js-cart-summary-top">
   <?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['hook'][0], array( array('h'=>'displayCheckoutSummaryTop'),$_smarty_tpl ) );?>

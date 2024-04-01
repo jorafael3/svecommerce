@@ -55,8 +55,8 @@ class Salvacero_FunctionsAjaxModuleFrontController extends ModuleFrontController
         if (Tools::getValue('action') == 'SetCustomerCreditData') {
 
             $id_customer = $this->context->customer->id;
-            $total = 1000;
-            $meses = 12;
+            $total =  Tools::getValue('valor_total');
+            $meses = Tools::getValue('meses');
             $orden = $this->getOrderNumberForCustomer($id_customer);
 
             $oldCustomer = SalvaceroCustomer::setCustomerCreditDataForIdPs($id_customer, $total, $meses, $orden);
@@ -65,6 +65,17 @@ class Salvacero_FunctionsAjaxModuleFrontController extends ModuleFrontController
                 'success' => $oldCustomer,
                 'id_customer' => $id_customer,
                 'orden' => $orden
+            )));
+        }
+        if (Tools::getValue('action') == 'getDatosCreditoOrden') {
+
+            $id_customer = $this->context->customer->id;
+            $orderReference =  Tools::getValue('orderReference');
+
+            $oldCustomer = SalvaceroCustomer::getDatosCreditoOrden($id_customer, $orderReference);
+
+            die(Tools::jsonEncode(array(
+                'datos' => $oldCustomer,
             )));
         }
         die(0);

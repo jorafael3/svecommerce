@@ -29,23 +29,23 @@
 //JORGE ALVARADO EDIT
 
 jQuery(document).ready(function ($) {
-    console.log('prestashop.customer: ', prestashop);
+
 
     var paymentStepSection = document.getElementById('checkout-payment-step');
 
-    $("#checkout-payment-step").append("<button id='realizarPedidoBtn'>PEDIDO</button>")
+    // $("#checkout-payment-step").append("<button id='realizarPedidoBtn'>PEDIDO</button>")
 
-    // if (paymentStepSection) {
-    //     // Si la sección existe, obtén el botón "Realizar pedido" dentro de ella
-    //     var realizarPedidoBtn = paymentStepSection.querySelector('.btn.btn-primary.center-block');
+    if (paymentStepSection) {
+        // Si la sección existe, obtén el botón "Realizar pedido" dentro de ella
+        var realizarPedidoBtn = paymentStepSection.querySelector('.btn.btn-primary.center-block');
 
 
-    //     // Verifica si se encontró el botón dentro de la sección
-    //     if (realizarPedidoBtn) {
-    //         // Agrega el ID deseado al botón
-    //         realizarPedidoBtn.setAttribute('id', 'realizarPedidoBtn');
-    //     }
-    // }
+        // Verifica si se encontró el botón dentro de la sección
+        if (realizarPedidoBtn) {
+            // Agrega el ID deseado al botón
+            realizarPedidoBtn.setAttribute('id', 'realizarPedidoBtn');
+        }
+    }
 
     function Mostrar_Credito() {
         var url = "index.php?fc=module&module=" + name_salvacero + "&controller=ajax";
@@ -62,12 +62,14 @@ jQuery(document).ready(function ($) {
             },
             success: function (result) {
 
+
                 if (result.success) {
 
                     // Calcular el porcentaje de crédito consumido
                     var percentage = (result.Monto_Credito / result.amount_inicial) * 100;
 
                     var percentage = (result.Monto_Credito / result.amount_inicial) * 100;
+
 
                     // Crear el string HTML para la barra de progreso
                     var barra = `
@@ -122,6 +124,7 @@ jQuery(document).ready(function ($) {
         if (window.location.href.includes('order-confirmation') || window.location.href.includes('confirmacion-pedido')) {
 
             var detailsElements = document.querySelectorAll('.details');
+            var url = "index.php?fc=module&module=" + name_salvacero + "&controller=ajax";
 
             // Iterar sobre los elementos encontrados
             for (var i = 0; i < detailsElements.length; i++) {
@@ -130,44 +133,101 @@ jQuery(document).ready(function ($) {
 
                 // Verificar si el nombre del producto coincide con "Pago de tarifa adicional"
                 if (productName.trim() === "Pago de tarifa adicional") {
-                    // El producto está presente en la tabla
-
-
-                    // Obtener la tabla por su etiqueta <table>
                     var table = document.querySelector('table');
-
                     // Vaciar el contenido de la tabla
                     table.innerHTML = '';
 
-                    // Crear una nueva fila <tr>
-                    var newRow = document.createElement('tr');
+                    var orderReferenceText = $("#order-reference-value").text().trim();
+                    // Dividir el texto en partes usando ":" como separador y tomar la última parte
+                    var parts = orderReferenceText.split(":");
+                    var orderReference = parts[parts.length - 1].trim();
+                    // Mostrar el texto obtenido
 
-                    // Crear una celda <td> para la descripción
-                    var descriptionCell = document.createElement('td');
-                    var descriptionSpan = document.createElement('span');
-                    descriptionSpan.textContent = 'TOTAL';
-                    descriptionCell.appendChild(descriptionSpan);
+                    let param = {
+                        action: "getDatosCreditoOrden",
+                        orderReference: orderReference,
+                    }
 
-                    // Crear una celda <td> para el total
-                    var totalCell = document.createElement('td');
-                    var boldText = document.createElement('strong'); // Crear un elemento strong para el texto en negrita
-                    boldText.textContent = 'CREDITO DIRECTO'; // Establecer el texto dentro del elemento strong
-                    totalCell.appendChild(boldText); // Agregar el texto en negrita a la celda de total
 
-                    // Añadir las celdas a la nueva fila
-                    newRow.appendChild(descriptionCell);
-                    newRow.appendChild(totalCell);
 
-                    // Añadir la nueva fila a la tabla
-                    table.appendChild(newRow);
+                    $.ajax({
+                        url: url,
+                        dataType: 'json',
+                        type: "POST",
+                        data: param,
+                        success: function (result) {
 
-                    // Obtener la fila del producto
-                    var productRow = detailsElements[i].closest('.order-line');
 
-                    // Eliminar la fila del producto
-                    productRow.parentNode.removeChild(productRow);
-                    // Puedes ejecutar aquí cualquier código que necesites cuando se encuentre el producto
-                    break; // No es necesario seguir iterando una vez que se encuentra el producto
+                            let MESES = result["datos"]["meses"];
+                            let TOTAL = result["datos"]["total"];
+                            var VALOR = TOTAL / MESES;
+
+
+
+
+
+                            // Crear una nueva fila <tr>
+                            var newRow = document.createElement('tr');
+                            // Crear una celda <td> para la descripción
+                            var descriptionCell = document.createElement('td');
+                            var descriptionSpan = document.createElement('span');
+                            descriptionSpan.textContent = 'TOTAL CREDITO DIRECTO';
+                            descriptionCell.appendChild(descriptionSpan);
+                            // Crear una celda <td> para el total
+                            var totalCell = document.createElement('td');
+                            var boldText = document.createElement('strong'); // Crear un elemento strong para el texto en negrita
+                            boldText.textContent = MESES + " CUOTAS DE " + VALOR.toLocaleString('en-US', { style: 'currency', currency: 'USD' }); // Establecer el texto dentro del elemento strong
+                            totalCell.appendChild(boldText); // Agregar el texto en negrita a la celda de total
+                            // Añadir las celdas a la nueva fila
+                            newRow.appendChild(descriptionCell);
+                            newRow.appendChild(totalCell);
+                            // Añadir la nueva fila a la tabla
+                            table.appendChild(newRow);
+                            // Obtener la fila del producto
+                            var productRow = detailsElements[i].closest('.order-line');
+                            // Eliminar la fila del producto
+                            productRow.parentNode.removeChild(productRow);
+                        },
+                        error: (jqXHR, exception) => {
+
+
+                            var msg = '';
+                            if (jqXHR.status === 0) {
+                                msg = 'Not connect.\n Verify Network.';
+                            } else if (jqXHR.status == 404) {
+                                msg = 'Requested page not found. [404]';
+                            } else if (jqXHR.status == 500) {
+                                msg = 'Internal Server Error [500].';
+                            } else if (exception === 'parsererror') {
+                                msg = 'Requested JSON parse failed.';
+                            } else if (exception === 'timeout') {
+                                msg = 'Time out error.';
+                            } else if (exception === 'abort') {
+                                msg = 'Ajax request aborted.';
+                            } else {
+                                msg = 'Uncaught Error.\n' + jqXHR.responseText;
+                            }
+
+                            $.sweetModal({
+                                content: msg,
+                                title: 'Error ' + jqXHR.status,
+                                icon: $.sweetModal.ICON_ERROR,
+                                onClose: () => {
+
+
+                                    // window.location.href = url_action;
+                                },
+                                buttons: [{
+                                    label: 'volver a intentar',
+                                    classes: 'redB'
+                                }]
+                            });
+                        }
+
+                    });
+
+
+                    break;
                 }
             }
             // Ejecutar tu código aquí
@@ -179,27 +239,54 @@ jQuery(document).ready(function ($) {
     function historial_compra() {
         if (window.location.href.includes('historial-compra')) {
             var rows = document.querySelectorAll('tbody tr');
+            var url = "index.php?fc=module&module=" + name_salvacero + "&controller=ajax";
 
-            // Iterar sobre las filas
             rows.forEach(function (row) {
                 // Obtener la celda oculta con el texto "Salvacero modulo de credito" en la fila actual
-                var cell = row.querySelector('td.hidden-md-down');
+                var cell = $(row).find('td.hidden-md-down');
 
                 // Verificar si la celda contiene "Salvacero modulo de credito"
-                if (cell && cell.textContent.trim() === "Salvacero modulo de credito") {
-                    // Reemplazar el texto de la celda por "Credito directo"
-                    cell.textContent = "Credito directo";
+                if (cell.length > 0 && cell.text().trim() === "Salvacero modulo de credito") {
+                    cell.text("Credito directo");
+                    var priceCell = $(row).find('.price');
+                    if (priceCell.length > 0) {
 
-                    // Obtener la celda de precio en la misma fila
-                    var priceCell = row.querySelector('.price');
+                        var firstElement = $(row, 'tr').find('th:first').text().trim();
 
-                    // Verificar si se encontró la celda de precio
-                    if (priceCell) {
-                        // Reemplazar el texto del precio por "credito"
-                        //priceCell.textContent = "CREDITO"; // Aquí puedes colocar el texto deseado
+
+                        let param = {
+                            action: "getDatosCreditoOrden",
+                            orderReference: firstElement,
+                        }
+
+                        $.ajax({
+                            url: url,
+                            dataType: 'json',
+                            type: "POST",
+                            data: param,
+                            success: function (result) {
+
+                                let MESES = result["datos"]["meses"];
+                                let TOTAL = result["datos"]["total"];
+                                var VALOR = TOTAL / MESES;
+                                VALOR = MESES + " CUOTAS DE " + VALOR.toLocaleString('en-US', { style: 'currency', currency: 'USD' });
+                                if (result.datos != false) {
+                                    priceCell.text(VALOR);
+                                }
+
+                            },
+                            error: (jqXHR, exception) => {
+
+
+                            }
+
+                        });
+                        // Aquí puedes colocar el texto deseado
+
                     }
                 }
             });
+
             var columnIndexToHide = 5; // Por ejemplo, si la columna "Orden" es la séptima, su índice sería 6
 
             var rows = document.querySelectorAll('tbody tr');
@@ -217,6 +304,60 @@ jQuery(document).ready(function ($) {
     }
     historial_compra()
 
+    function Order_detalle() {
+
+        if (window.location.href.includes("order-detail")) {
+            var url = "index.php?fc=module&module=" + name_salvacero + "&controller=ajax";
+
+            var orderId = $(".axps-breadcrumb span:last").text();
+
+            // Imprimir el resultado en la consola
+
+
+            let param = {
+                action: "getDatosCreditoOrden",
+                orderReference: orderId,
+            }
+
+            $.ajax({
+                url: url,
+                dataType: 'json',
+                type: "POST",
+                data: param,
+                success: function (result) {
+                    console.log('result: ', result);
+
+                    if (result.datos != false) {
+                        var tableFooter = $("#order-products tfoot");
+                        tableFooter.empty();
+
+
+                        let MESES = result["datos"]["meses"];
+                        let TOTAL = result["datos"]["total"];
+                        var VALOR = TOTAL / MESES;
+                        VALOR = MESES + " CUOTAS DE " + VALOR.toLocaleString('en-US', { style: 'currency', currency: 'USD' });
+
+                        let b = `
+                        <tr class="text-xs-right line-total">
+                            <td colspan="3">Total credito directo </td>
+                            <td class="price">`+ VALOR + `</td>
+                        </tr>
+                        `;
+                        tableFooter.append(b);
+
+                    }
+
+                },
+                error: (jqXHR, exception) => {
+
+
+                }
+
+            });
+
+        }
+    }
+    Order_detalle()
     prestashop.on(
         'changedCheckoutStep',
         function (event) {
@@ -235,6 +376,7 @@ jQuery(document).ready(function ($) {
         }
     );
     var TIENE_CREDITO = false;
+    var DATOS_CREDITO_ORDEN;
 
     $(".ps-shown-by-js").on("change", (e) => {
         if ($(e.target).data().moduleName == name_salvacero) {
@@ -256,6 +398,8 @@ jQuery(document).ready(function ($) {
                     // 
                     if (result.success) {
                         TIENE_CREDITO = true
+                        DATOS_CREDITO_ORDEN = result
+
                         // $.sweetModal({
                         //         content: '<h4> <center>¿Quieres agregar más productos a tu comprass?</center></h4>',
                         //         title: '<strom><center class="title-modal-credic">Todavía tienes saldo disponible para comprar más</center></strom>',
@@ -354,21 +498,31 @@ jQuery(document).ready(function ($) {
 
             if (TIENE_CREDITO == true) {
 
+                let valor_total = $("#cart-subtotal-valor-total").val();
+                let meses = $("#cart-select-cuotas").val();
+
+                let param = {
+                    action: "SetCustomerCreditData",
+                    id_customer: "",
+                    meses: meses,
+                    valor_total: valor_total
+                }
+
+
+
                 $.ajax({
                     url: url,
                     dataType: 'json',
                     type: "POST",
-                    data: {
-                        action: "SetCustomerCreditData",
-                        id_customer: "",
-                    },
+                    data: param,
                     success: function (result) {
-                        console.log('result_ORDEN: ', result);
+
+
 
                     },
                     error: (jqXHR, exception) => {
-                        console.log('jqXHR: ', jqXHR);
-                        console.log('exception: ', exception);
+
+
                         var msg = '';
                         if (jqXHR.status === 0) {
                             msg = 'Not connect.\n Verify Network.';
@@ -401,7 +555,7 @@ jQuery(document).ready(function ($) {
                             }]
                         });
                     }
-                    
+
                 });
             }
 

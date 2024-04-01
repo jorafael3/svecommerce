@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.47, created on 2024-03-28 14:38:52
+/* Smarty version 3.1.47, created on 2024-03-31 20:32:14
   from 'C:\xampp\htdocs\svecommerce\themes\akira\templates\_partials\breadcrumb.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.47',
-  'unifunc' => 'content_6605c74c07a0e1_55679237',
+  'unifunc' => 'content_660a0e9e8ab070_91488762',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'de63092e847f5b8f6657eb447f08d49d0d45bb8b' => 
     array (
       0 => 'C:\\xampp\\htdocs\\svecommerce\\themes\\akira\\templates\\_partials\\breadcrumb.tpl',
-      1 => 1711123680,
+      1 => 1711210466,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6605c74c07a0e1_55679237 (Smarty_Internal_Template $_smarty_tpl) {
+function content_660a0e9e8ab070_91488762 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 ?>
@@ -59,7 +59,7 @@ $_smarty_tpl->_assignInScope('breadcrumb', $_tmp_array);
 }?>
 	 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_15078112666605c74c072ec1_83062503', 'bg_page_header_title');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_757177311660a0e9e8a4ee5_79134021', 'bg_page_header_title');
 ?>
 
 
@@ -71,7 +71,7 @@ echo htmlspecialchars($_smarty_tpl->tpl_vars['opThemect']->value['page_title_col
 ')"<?php }?>>
 		<div class="container container-parent">
 			<?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_19833461516605c74c076195_26209710', 'wrapper_page_header_title');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_496608093660a0e9e8a7916_43574605', 'wrapper_page_header_title');
 ?>
 
 			<nav class="axps-breadcrumb" data-depth="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['breadcrumb']->value['count'], ENT_QUOTES, 'UTF-8');?>
@@ -107,12 +107,12 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 <?php }
 }
 /* {block 'bg_page_header_title'} */
-class Block_15078112666605c74c072ec1_83062503 extends Smarty_Internal_Block
+class Block_757177311660a0e9e8a4ee5_79134021 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'bg_page_header_title' => 
   array (
-    0 => 'Block_15078112666605c74c072ec1_83062503',
+    0 => 'Block_757177311660a0e9e8a4ee5_79134021',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -120,7 +120,7 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 }
 /* {/block 'bg_page_header_title'} */
 /* {block 'page_header_title'} */
-class Block_20038260176605c74c076489_41823099 extends Smarty_Internal_Block
+class Block_578777045660a0e9e8a7bd5_64331493 extends Smarty_Internal_Block
 {
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 ?>
@@ -132,16 +132,16 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 }
 /* {/block 'page_header_title'} */
 /* {block 'wrapper_page_header_title'} */
-class Block_19833461516605c74c076195_26209710 extends Smarty_Internal_Block
+class Block_496608093660a0e9e8a7916_43574605 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'wrapper_page_header_title' => 
   array (
-    0 => 'Block_19833461516605c74c076195_26209710',
+    0 => 'Block_496608093660a0e9e8a7916_43574605',
   ),
   'page_header_title' => 
   array (
-    0 => 'Block_20038260176605c74c076489_41823099',
+    0 => 'Block_578777045660a0e9e8a7bd5_64331493',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -149,7 +149,7 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 
 				<h1 class="h1">
 					<?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_20038260176605c74c076489_41823099', 'page_header_title', $this->tplIndex);
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_578777045660a0e9e8a7bd5_64331493', 'page_header_title', $this->tplIndex);
 ?>
 
 				</h1>

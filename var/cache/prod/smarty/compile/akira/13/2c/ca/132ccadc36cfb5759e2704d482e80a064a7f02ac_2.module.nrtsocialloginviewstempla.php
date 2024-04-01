@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.47, created on 2024-03-28 09:09:40
+/* Smarty version 3.1.47, created on 2024-03-31 19:14:18
   from 'module:nrtsocialloginviewstempla' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.47',
-  'unifunc' => 'content_66057a2416d6a2_42722717',
+  'unifunc' => 'content_6609fc5a416b07_49144900',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '132ccadc36cfb5759e2704d482e80a064a7f02ac' => 
     array (
       0 => 'module:nrtsocialloginviewstempla',
-      1 => 1711123671,
+      1 => 1711210455,
       2 => 'module',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_66057a2416d6a2_42722717 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6609fc5a416b07_49144900 (Smarty_Internal_Template $_smarty_tpl) {
 if (!Context::getContext()->customer->isLogged() && (((isset($_smarty_tpl->tpl_vars['loginizer_data']->value['facebook']['enable'])) && $_smarty_tpl->tpl_vars['loginizer_data']->value['facebook']['enable'] == 1) || ((isset($_smarty_tpl->tpl_vars['loginizer_data']->value['gplus']['enable'])) && $_smarty_tpl->tpl_vars['loginizer_data']->value['gplus']['enable'] == 1) || ((isset($_smarty_tpl->tpl_vars['loginizer_data']->value['insta']['enable'])) && $_smarty_tpl->tpl_vars['loginizer_data']->value['insta']['enable'] == 1) || ((isset($_smarty_tpl->tpl_vars['loginizer_data']->value['twitter']['enable'])) && $_smarty_tpl->tpl_vars['loginizer_data']->value['twitter']['enable'] == 1) || ((isset($_smarty_tpl->tpl_vars['loginizer_data']->value['linked']['enable'])) && $_smarty_tpl->tpl_vars['loginizer_data']->value['linked']['enable'] == 1) || ((isset($_smarty_tpl->tpl_vars['loginizer_data']->value['yahoo']['enable'])) && $_smarty_tpl->tpl_vars['loginizer_data']->value['yahoo']['enable'] == 1) || ((isset($_smarty_tpl->tpl_vars['loginizer_data']->value['live']['enable'])) && $_smarty_tpl->tpl_vars['loginizer_data']->value['live']['enable'] == 1) || ((isset($_smarty_tpl->tpl_vars['loginizer_data']->value['foursquare']['enable'])) && $_smarty_tpl->tpl_vars['loginizer_data']->value['foursquare']['enable'] == 1) || ((isset($_smarty_tpl->tpl_vars['loginizer_data']->value['amazon']['enable'])) && $_smarty_tpl->tpl_vars['loginizer_data']->value['amazon']['enable'] == 1) || ((isset($_smarty_tpl->tpl_vars['loginizer_data']->value['pay']['enable'])) && $_smarty_tpl->tpl_vars['loginizer_data']->value['pay']['enable'] == 1) || ((isset($_smarty_tpl->tpl_vars['loginizer_data']->value['github']['enable'])) && $_smarty_tpl->tpl_vars['loginizer_data']->value['github']['enable'] == 1) || ((isset($_smarty_tpl->tpl_vars['loginizer_data']->value['disqus']['enable'])) && $_smarty_tpl->tpl_vars['loginizer_data']->value['disqus']['enable'] == 1) || ((isset($_smarty_tpl->tpl_vars['loginizer_data']->value['vk']['enable'])) && $_smarty_tpl->tpl_vars['loginizer_data']->value['vk']['enable'] == 1) || ((isset($_smarty_tpl->tpl_vars['loginizer_data']->value['wordpress']['enable'])) && $_smarty_tpl->tpl_vars['loginizer_data']->value['wordpress']['enable'] == 1) || ((isset($_smarty_tpl->tpl_vars['loginizer_data']->value['dropbox']['enable'])) && $_smarty_tpl->tpl_vars['loginizer_data']->value['dropbox']['enable'] == 1))) {?>
 <p><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Or sign in with:','mod'=>'nrtsociallogin'),$_smarty_tpl ) );?>
 </p>

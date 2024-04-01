@@ -356,27 +356,37 @@ class Salvacero_functions extends PaymentModule
 
     public function hookActionControllerInitBefore($params)
     {
-        // var_dump($params['controller']);
-        // exit;
+        $context = Context::getContext();
+        // Obtiene el ID del cliente del contexto
+        $customer_id = $context->customer->id;
 
+        $amount_inicial = SalvaceroCustomer::getLastOrderByCustomerId($customer_id);
+
+        $additionalData = array(
+            'order_id' => $amount_inicial[0]["id_order"],
+            'customer_id' => $customer_id,
+            'reference' => $amount_inicial[0]["reference"],
+        );
+        $orden = SalvaceroCustomer::setCustomerCreditDataForIdPs_after($additionalData);
+        // echo "<pre>";
+        // var_dump($amount_inicial);
+        // echo "</pre>";
+
+        // exit;
     }
 
+    public function hookActionObjectOrderAddAfter($params)
+    {
+        // // Obtener el objeto del pedido recién creado
+        // $order = $params['object'];
 
+        // $total_order = $order->total_paid;
+        // $additionalData = array(
+        //     'order_id' => $order->id,
+        //     'customer_id' => $order->id_customer,
+        //     // 'total_order' => $total_order,
+        // );
 
-    // public function hookActionObjectOrderAddAfter($params)
-    // {
-    //     // Obtener el objeto del pedido recién creado
-    //     $order = $params['object'];
-    
-    //     // Aquí puedes acceder a los datos del pedido y guardarlos en tu tabla personalizada
-    //     $additionalData = array(
-    //         'order_id' => $order->id,
-    //         // Agrega aquí los datos adicionales que deseas guardar
-    //     );
-    
-    //     // Lógica para guardar los datos en tu tabla personalizada
-    //     // Suponiendo que $this->context->controller está disponible para obtener acceso al controlador actual
-    //     $this->context->controller->module->guardarDatosPersonalizados($additionalData);
-    // }
-
+        // $amount_inicial = SalvaceroCustomer::setCustomerCreditDataForIdPs_after($additionalData);
+    }
 }
