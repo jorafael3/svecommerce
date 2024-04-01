@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.47, created on 2024-03-31 19:58:59
+/* Smarty version 3.1.47, created on 2024-04-01 10:28:01
   from 'module:axoncreatorviewstemplates' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.47',
-  'unifunc' => 'content_660a06d3ec1200_23681771',
+  'unifunc' => 'content_660ad28192c0d1_26207984',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '920466935fa6d882e2ce7ad385c09ee5a3b5f878' => 
     array (
       0 => 'module:axoncreatorviewstemplates',
-      1 => 1711210454,
+      1 => 1711123670,
       2 => 'module',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_660a06d3ec1200_23681771 (Smarty_Internal_Template $_smarty_tpl) {
+function content_660ad28192c0d1_26207984 (Smarty_Internal_Template $_smarty_tpl) {
 ?>	 
 <?php if (count($_smarty_tpl->tpl_vars['content']->value['products']) > 0) {?> 
 	<?php if ($_smarty_tpl->tpl_vars['content']->value['image_size']) {?> 

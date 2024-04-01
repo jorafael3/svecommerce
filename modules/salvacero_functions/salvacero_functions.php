@@ -77,6 +77,7 @@ class Salvacero_functions extends PaymentModule
             $this->registerHook('displayBackOfficeHeader') &&
             $this->registerHook('paymentOptions') &&
             $this->registerHook('actionControllerInitBefore') &&
+            $this->registerHook('actionOrderStatusPostUpdate') &&
             $this->registerHook('displayAdminCustomers');
     }
 
@@ -356,37 +357,61 @@ class Salvacero_functions extends PaymentModule
 
     public function hookActionControllerInitBefore($params)
     {
-        $context = Context::getContext();
-        // Obtiene el ID del cliente del contexto
-        $customer_id = $context->customer->id;
+        // $context = Context::getContext();
+        // // Obtiene el ID del cliente del contexto
+        // $customer_id = $context->customer->id;
 
-        $amount_inicial = SalvaceroCustomer::getLastOrderByCustomerId($customer_id);
+        // $amount_inicial = SalvaceroCustomer::getLastOrderByCustomerId($customer_id);
 
-        $additionalData = array(
-            'order_id' => $amount_inicial[0]["id_order"],
-            'customer_id' => $customer_id,
-            'reference' => $amount_inicial[0]["reference"],
-        );
-        $orden = SalvaceroCustomer::setCustomerCreditDataForIdPs_after($additionalData);
+        // $additionalData = array(
+        //     'order_id' => $amount_inicial[0]["id_order"],
+        //     'customer_id' => $customer_id,
+        //     'reference' => $amount_inicial[0]["reference"],
+        //     'total' => $amount_inicial[0]["total_paid"],
+        // );
+        // $orden = SalvaceroCustomer::setCustomerCreditDataForIdPs_after($additionalData);
         // echo "<pre>";
         // var_dump($amount_inicial);
         // echo "</pre>";
-
         // exit;
     }
 
-    public function hookActionObjectOrderAddAfter($params)
+    public function hookActionOrderStatusPostUpdate($params)
     {
-        // // Obtener el objeto del pedido recién creado
-        // $order = $params['object'];
+        // Obtener el ID de la orden
+        // $id_order = (int)$params['id_order'];
 
-        // $total_order = $order->total_paid;
-        // $additionalData = array(
-        //     'order_id' => $order->id,
-        //     'customer_id' => $order->id_customer,
-        //     // 'total_order' => $total_order,
-        // );
+        // // Obtener el objeto de la orden
+        // $order = new Order($id_order);
 
-        // $amount_inicial = SalvaceroCustomer::setCustomerCreditDataForIdPs_after($additionalData);
+        // // Verificar si el nuevo estado es "Completado"
+        // if ($params['newOrderStatus']->id == Configuration::get('PS_OS_PAYMENT')) {
+        //     // Realizar las acciones que desees con los detalles de la orden, por ejemplo, obtener los productos comprados, el cliente, etc.
+        //     // Luego, puedes actualizar otra tabla en la base de datos según tus necesidades.
+        //     $customer_id = $order->id_customer;
+        //     $additionalData = array(
+        //         'order_id' => $order->id,
+        //         'customer_id' => $customer_id,
+        //         'reference' => $order->reference,
+        //         'total' => $order->total_paid,
+        //     );
+        //     $orden = SalvaceroCustomer::setCustomerCreditDataForIdPs_after($additionalData);
+        // }
     }
+
+    // public function hookActionObjectOrderAddAfter($params)
+    // {
+    //     // Obtener el objeto del pedido recién creado
+    //     $context = Context::getContext();
+    //     // Obtiene el ID del cliente del contexto
+    //     $customer_id = $context->customer->id;
+    //     $amount_inicial = SalvaceroCustomer::getLastOrderByCustomerId($customer_id);
+    //     $additionalData = array(
+    //         'order_id' => $amount_inicial[0]["id_order"],
+    //         'customer_id' => $customer_id,
+    //         'reference' => $amount_inicial[0]["reference"],
+    //         'total' => $amount_inicial[0]["total_paid"],
+    //     );
+    //     $orden = SalvaceroCustomer::setCustomerCreditDataForIdPs_after($additionalData);
+    // }
 }

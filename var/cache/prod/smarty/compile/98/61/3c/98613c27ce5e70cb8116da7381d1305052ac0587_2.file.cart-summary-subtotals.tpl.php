@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.47, created on 2024-03-25 08:31:39
+/* Smarty version 3.1.47, created on 2024-04-01 10:29:01
   from 'C:\xampp\htdocs\svecommerce\themes\akira\templates\checkout\_partials\cart-summary-subtotals.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.47',
-  'unifunc' => 'content_66017cbb9b45f3_93495004',
+  'unifunc' => 'content_660ad2bd4790a0_12028127',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_66017cbb9b45f3_93495004 (Smarty_Internal_Template $_smarty_tpl) {
+function content_660ad2bd4790a0_12028127 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <div class="cart-summary-subtotals-container js-cart-summary-subtotals-container">
 

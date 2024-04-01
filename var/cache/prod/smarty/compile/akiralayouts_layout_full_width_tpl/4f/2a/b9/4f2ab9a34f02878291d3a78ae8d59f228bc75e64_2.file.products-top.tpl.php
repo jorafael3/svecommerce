@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.47, created on 2024-03-31 20:34:24
+/* Smarty version 3.1.47, created on 2024-04-01 11:18:56
   from 'C:\xampp\htdocs\svecommerce\themes\akira\templates\catalog\_partials\products-top.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.47',
-  'unifunc' => 'content_660a0f2078ffd3_22640123',
+  'unifunc' => 'content_660ade70cf31e3_54368308',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '4f2ab9a34f02878291d3a78ae8d59f228bc75e64' => 
     array (
       0 => 'C:\\xampp\\htdocs\\svecommerce\\themes\\akira\\templates\\catalog\\_partials\\products-top.tpl',
-      1 => 1711210466,
+      1 => 1711123680,
       2 => 'file',
     ),
   ),
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:catalog/_partials/sort-orders.tpl' => 1,
   ),
 ),false)) {
-function content_660a0f2078ffd3_22640123 (Smarty_Internal_Template $_smarty_tpl) {
+function content_660ade70cf31e3_54368308 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'C:\\xampp\\htdocs\\svecommerce\\vendor\\smarty\\smarty\\libs\\plugins\\modifier.regex_replace.php','function'=>'smarty_modifier_regex_replace',),));
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
@@ -103,19 +103,19 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 			<p class="wc-result-count"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Showing %from%-%to% of %total% item(s)','d'=>'Shop.Theme.Catalog','sprintf'=>array('%from%'=>$_smarty_tpl->tpl_vars['nb_count_items_shown_from']->value,'%to%'=>$_smarty_tpl->tpl_vars['listing']->value['pagination']['items_shown_to'],'%total%'=>$_smarty_tpl->tpl_vars['listing']->value['pagination']['total_items'])),$_smarty_tpl ) );?>
 </p>
 			<?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1186753417660a0f2078f018_10868408', 'sort_by');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1633439964660ade70cf1fa6_83365878', 'sort_by');
 ?>
 
 		</div>
 	<?php }?>
 </div><?php }
 /* {block 'sort_by'} */
-class Block_1186753417660a0f2078f018_10868408 extends Smarty_Internal_Block
+class Block_1633439964660ade70cf1fa6_83365878 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'sort_by' => 
   array (
-    0 => 'Block_1186753417660a0f2078f018_10868408',
+    0 => 'Block_1633439964660ade70cf1fa6_83365878',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {

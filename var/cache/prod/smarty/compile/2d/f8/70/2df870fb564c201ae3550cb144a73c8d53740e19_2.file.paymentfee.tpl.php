@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.47, created on 2024-03-31 20:35:07
+/* Smarty version 3.1.47, created on 2024-04-01 11:20:36
   from 'C:\xampp\htdocs\svecommerce\modules\wkpaymentfee\views\templates\hook\paymentfee.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.47',
-  'unifunc' => 'content_660a0f4b794b17_21520758',
+  'unifunc' => 'content_660aded44e4e47_27461266',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '2df870fb564c201ae3550cb144a73c8d53740e19' => 
     array (
       0 => 'C:\\xampp\\htdocs\\svecommerce\\modules\\wkpaymentfee\\views\\templates\\hook\\paymentfee.tpl',
-      1 => 1711210464,
+      1 => 1711123678,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_660a0f4b794b17_21520758 (Smarty_Internal_Template $_smarty_tpl) {
+function content_660aded44e4e47_27461266 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <div id='wk-payment-fee'>
 	<input type='hidden' name='wk-payment-fee-amount' value='<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['wk_fee']->value, ENT_QUOTES, 'UTF-8');?>

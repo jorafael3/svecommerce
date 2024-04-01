@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.47, created on 2024-03-31 20:36:05
+/* Smarty version 3.1.47, created on 2024-04-01 12:26:00
   from 'module:axoncreatorviewstemplates' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.47',
-  'unifunc' => 'content_660a0f85d6e4c1_49850645',
+  'unifunc' => 'content_660aee28bb0c35_47378673',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '0e1e6271b4f52d9ce4c1e1cf837f2604bc7b0cc8' => 
     array (
       0 => 'module:axoncreatorviewstemplates',
-      1 => 1711210454,
+      1 => 1711123670,
       2 => 'module',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_660a0f85d6e4c1_49850645 (Smarty_Internal_Template $_smarty_tpl) {
+function content_660aee28bb0c35_47378673 (Smarty_Internal_Template $_smarty_tpl) {
 if ($_smarty_tpl->tpl_vars['notifications']->value) {?>
   <?php echo '<script'; ?>
  type="text/javascript">

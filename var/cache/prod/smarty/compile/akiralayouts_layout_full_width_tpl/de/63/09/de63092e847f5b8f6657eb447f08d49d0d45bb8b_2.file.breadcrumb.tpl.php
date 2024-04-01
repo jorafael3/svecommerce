@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.47, created on 2024-03-31 20:36:05
+/* Smarty version 3.1.47, created on 2024-04-01 12:25:59
   from 'C:\xampp\htdocs\svecommerce\themes\akira\templates\_partials\breadcrumb.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.47',
-  'unifunc' => 'content_660a0f85b9db67_88536724',
+  'unifunc' => 'content_660aee27553be4_16334912',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'de63092e847f5b8f6657eb447f08d49d0d45bb8b' => 
     array (
       0 => 'C:\\xampp\\htdocs\\svecommerce\\themes\\akira\\templates\\_partials\\breadcrumb.tpl',
-      1 => 1711210466,
+      1 => 1711123680,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_660a0f85b9db67_88536724 (Smarty_Internal_Template $_smarty_tpl) {
+function content_660aee27553be4_16334912 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 ?>
@@ -59,7 +59,7 @@ $_smarty_tpl->_assignInScope('breadcrumb', $_tmp_array);
 }?>
 	 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_136114037660a0f85b972c5_98150644', 'bg_page_header_title');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1426809045660aee2754c835_42642166', 'bg_page_header_title');
 ?>
 
 
@@ -71,7 +71,7 @@ echo htmlspecialchars($_smarty_tpl->tpl_vars['opThemect']->value['page_title_col
 ')"<?php }?>>
 		<div class="container container-parent">
 			<?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_14825976660a0f85b99fd3_35589648', 'wrapper_page_header_title');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1663302544660aee2754f665_41395046', 'wrapper_page_header_title');
 ?>
 
 			<nav class="axps-breadcrumb" data-depth="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['breadcrumb']->value['count'], ENT_QUOTES, 'UTF-8');?>
@@ -107,12 +107,12 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 <?php }
 }
 /* {block 'bg_page_header_title'} */
-class Block_136114037660a0f85b972c5_98150644 extends Smarty_Internal_Block
+class Block_1426809045660aee2754c835_42642166 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'bg_page_header_title' => 
   array (
-    0 => 'Block_136114037660a0f85b972c5_98150644',
+    0 => 'Block_1426809045660aee2754c835_42642166',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -120,7 +120,7 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 }
 /* {/block 'bg_page_header_title'} */
 /* {block 'page_header_title'} */
-class Block_1074981836660a0f85b9a2a0_00292161 extends Smarty_Internal_Block
+class Block_31904813660aee2754f957_54950377 extends Smarty_Internal_Block
 {
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 ?>
@@ -132,16 +132,16 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 }
 /* {/block 'page_header_title'} */
 /* {block 'wrapper_page_header_title'} */
-class Block_14825976660a0f85b99fd3_35589648 extends Smarty_Internal_Block
+class Block_1663302544660aee2754f665_41395046 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'wrapper_page_header_title' => 
   array (
-    0 => 'Block_14825976660a0f85b99fd3_35589648',
+    0 => 'Block_1663302544660aee2754f665_41395046',
   ),
   'page_header_title' => 
   array (
-    0 => 'Block_1074981836660a0f85b9a2a0_00292161',
+    0 => 'Block_31904813660aee2754f957_54950377',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -149,7 +149,7 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 
 				<h1 class="h1">
 					<?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1074981836660a0f85b9a2a0_00292161', 'page_header_title', $this->tplIndex);
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_31904813660aee2754f957_54950377', 'page_header_title', $this->tplIndex);
 ?>
 
 				</h1>

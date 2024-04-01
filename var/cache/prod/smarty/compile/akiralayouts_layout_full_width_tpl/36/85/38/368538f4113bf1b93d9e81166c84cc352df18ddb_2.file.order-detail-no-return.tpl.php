@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.47, created on 2024-03-31 20:34:20
+/* Smarty version 3.1.47, created on 2024-04-01 12:25:38
   from 'C:\xampp\htdocs\svecommerce\themes\akira\templates\customer\_partials\order-detail-no-return.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.47',
-  'unifunc' => 'content_660a0f1c34f488_36973191',
+  'unifunc' => 'content_660aee12a18b44_83549348',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '368538f4113bf1b93d9e81166c84cc352df18ddb' => 
     array (
       0 => 'C:\\xampp\\htdocs\\svecommerce\\themes\\akira\\templates\\customer\\_partials\\order-detail-no-return.tpl',
-      1 => 1711210466,
+      1 => 1711123680,
       2 => 'file',
     ),
   ),
@@ -20,20 +20,20 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_660a0f1c34f488_36973191 (Smarty_Internal_Template $_smarty_tpl) {
+function content_660aee12a18b44_83549348 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1672996176660a0f1c33a7c7_63058795', 'order_products_table');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_2016420827660aee129fe441_23273694', 'order_products_table');
 ?>
 
 <?php }
 /* {block 'order_products_table'} */
-class Block_1672996176660a0f1c33a7c7_63058795 extends Smarty_Internal_Block
+class Block_2016420827660aee129fe441_23273694 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'order_products_table' => 
   array (
-    0 => 'Block_1672996176660a0f1c33a7c7_63058795',
+    0 => 'Block_2016420827660aee129fe441_23273694',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {

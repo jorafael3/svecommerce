@@ -101,7 +101,7 @@ class SalvaceroCustomer extends ObjectModel
                 '$meses',
                 '$orden'
             )";
-            
+
         $result = Db::getInstance()->execute($query);
         return $result !== false;
     }
@@ -121,44 +121,58 @@ class SalvaceroCustomer extends ObjectModel
         return $result ? $result : null; // Devuelve el ID del último pedido o null si no hay pedidos
     }
 
-    public static function setCustomerCreditDataForIdPs_after($datos)
+    public static function setActualizarDatosOrden($datos)
     {
         $table = _DB_PREFIX_ . "salvacero_customers_order_credit_data";
 
         $order_id = $datos["order_id"];
         $customer_id = $datos["customer_id"];
         $reference = $datos["reference"];
+        $total = $datos["total"];
 
         $query = "UPDATE`$table`
             SET
                 orden_number = '$order_id',
                 actualizado = 1,
-                referencia = '$reference'
+                referencia = '$reference',
+                total = '$total'
             where customer_id = '$customer_id'
             and actualizado = 0
             ";
-            
+
         $result = Db::getInstance()->execute($query);
         return $result !== false;
     }
 
-    public static function getLastOrderByCustomerId($customer_id) {
+    public static function getLastOrderByCustomerId($customer_id)
+    {
         $sql = "SELECT * 
                 FROM " . _DB_PREFIX_ . "orders 
                 WHERE id_customer = " . (int)$customer_id . "
                 ORDER BY id_order desc
                 -- limit 1
                 ";
-        
+
         $result = Db::getInstance()->getRow($sql);
-        return [$result,$sql];
+        return [$result, $sql];
     }
 
-    public static function getDatosCreditoOrden($id,$reference)
+    public static function getDatosCreditoOrden($id, $reference)
     {
         $table = _DB_PREFIX_ . "salvacero_customers_order_credit_data";
         $query   = "SELECT * FROM `$table` WHERE referencia = '$reference' and customer_id = $id";
         return Db::getInstance()->getRow($query);
     }
 
+    public static function DatosOrden($id_customer, $reference)
+    {
+        // Realizar una consulta para obtener el ID del último pedido del cliente
+        $table = _DB_PREFIX_ . "orders";
+        $query   = "SELECT * FROM `$table` 
+            WHERE reference = '".$reference."' 
+            and id_customer = $id_customer";
+        $result = Db::getInstance()->getRow($query);
+
+        return $result; // Devuelve el ID del último pedido o null si no hay pedidos
+    }
 }
