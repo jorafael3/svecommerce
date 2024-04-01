@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.47, created on 2024-03-31 20:32:14
+/* Smarty version 3.1.47, created on 2024-03-31 20:36:05
   from 'C:\xampp\htdocs\svecommerce\themes\akira\templates\_partials\canvas\facets.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.47',
-  'unifunc' => 'content_660a0e9e9bcc10_20287905',
+  'unifunc' => 'content_660a0f85cb9f47_32777135',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_660a0e9e9bcc10_20287905 (Smarty_Internal_Template $_smarty_tpl) {
+function content_660a0f85cb9f47_32777135 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div id="canvas-facets-search" class="canvas-widget canvas-left">
 	<div class="canvas-widget-top">
 		<h3 class="title-canvas-widget" data-dismiss="canvas-widget"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Filter Your Selection','d'=>'Shop.Theme.Axon'),$_smarty_tpl ) );?>

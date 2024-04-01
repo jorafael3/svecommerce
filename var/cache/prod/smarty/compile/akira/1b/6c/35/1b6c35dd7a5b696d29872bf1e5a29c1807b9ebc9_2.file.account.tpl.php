@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.47, created on 2024-03-31 20:32:14
+/* Smarty version 3.1.47, created on 2024-03-31 20:36:05
   from 'C:\xampp\htdocs\svecommerce\themes\akira\templates\_partials\canvas\account.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.47',
-  'unifunc' => 'content_660a0e9e9a01f4_04409963',
+  'unifunc' => 'content_660a0f85c99b07_95632560',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_660a0e9e9a01f4_04409963 (Smarty_Internal_Template $_smarty_tpl) {
+function content_660a0f85c99b07_95632560 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div id="canvas-my-account" class="canvas-widget canvas-right">
     <div class="canvas-widget-top">
 		<h3 class="title-canvas-widget" data-dismiss="canvas-widget">
