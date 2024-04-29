@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.47, created on 2024-04-29 01:19:37
+/* Smarty version 3.1.47, created on 2024-04-29 11:02:00
   from 'C:\xampp\htdocs\svecommerce\themes\akira\templates\catalog\_partials\product-customization.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.47',
-  'unifunc' => 'content_662f3bf98a88b8_23645222',
+  'unifunc' => 'content_662fc478b75c08_28359949',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '6ce575d5b41b4025229dd554c4b0648a4dfaf03b' => 
     array (
       0 => 'C:\\xampp\\htdocs\\svecommerce\\themes\\akira\\templates\\catalog\\_partials\\product-customization.tpl',
-      1 => 1711210466,
+      1 => 1711123680,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_662f3bf98a88b8_23645222 (Smarty_Internal_Template $_smarty_tpl) {
+function content_662fc478b75c08_28359949 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 ?>
@@ -32,7 +32,7 @@ $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 		<p><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Don\'t forget to save your customization to be able to add to cart','d'=>'Shop.Forms.Help'),$_smarty_tpl ) );?>
 </p>
 		<?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1115791279662f3bf98a1088_28523462', 'product_customization_form');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_453073608662fc478b6da67_62123867', 'product_customization_form');
 ?>
 
 	</div>
@@ -40,12 +40,12 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1115791279662f3bf9
 </section>
 <?php }
 /* {block 'product_customization_form'} */
-class Block_1115791279662f3bf98a1088_28523462 extends Smarty_Internal_Block
+class Block_453073608662fc478b6da67_62123867 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'product_customization_form' => 
   array (
-    0 => 'Block_1115791279662f3bf98a1088_28523462',
+    0 => 'Block_453073608662fc478b6da67_62123867',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {

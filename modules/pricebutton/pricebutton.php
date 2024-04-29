@@ -223,15 +223,33 @@ class PriceButton extends Module
 
         if (isset($params['type']) && $params['type'] == 'custom_price') {
             $price = str_replace("$", '', $params['product']['price']);
+            $id_customer = $this->context->customer->id;
+            $amount = $this->getAmountForIdPs($id_customer);
+            $is_active = 0;
+            if ($amount != "" || $amount != null) {
+                if (floatval($amount) > 0) {
+                    $is_active = 1;
+                }
+            }
+
 
             $this->context->smarty->assign(array(
                 'product' => $params['product'],
-                'price' => $price
+                'price' => $price,
+                'iscredit' => $is_active
             ));
 
             return $this->context->smarty->fetch(
                 'module:' . $this->name . '/views/templates/hook/displayPrice.tpl'
             );
         }
+    }
+
+
+    public static function getAmountForIdPs($id)
+    {
+        $table = _DB_PREFIX_ . "salvacero_customers";
+        $query   = "SELECT amount FROM `$table` WHERE id_customer_ps = $id";
+        return Db::getInstance()->getValue($query);
     }
 }

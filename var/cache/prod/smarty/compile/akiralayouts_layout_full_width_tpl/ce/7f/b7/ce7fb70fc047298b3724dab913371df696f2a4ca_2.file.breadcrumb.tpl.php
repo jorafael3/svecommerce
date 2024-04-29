@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.47, created on 2024-04-29 01:19:24
+/* Smarty version 3.1.47, created on 2024-04-29 12:54:11
   from 'C:\xampp\htdocs\svecommerce\themes\akira\templates\catalog\_product\breadcrumb.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.47',
-  'unifunc' => 'content_662f3bec18ab55_13713891',
+  'unifunc' => 'content_662fdec379ce11_16559004',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'ce7fb70fc047298b3724dab913371df696f2a4ca' => 
     array (
       0 => 'C:\\xampp\\htdocs\\svecommerce\\themes\\akira\\templates\\catalog\\_product\\breadcrumb.tpl',
-      1 => 1711210466,
+      1 => 1711123680,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_662f3bec18ab55_13713891 (Smarty_Internal_Template $_smarty_tpl) {
+function content_662fdec379ce11_16559004 (Smarty_Internal_Template $_smarty_tpl) {
 ?><nav class="axps-breadcrumb" data-depth="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['breadcrumb']->value['count'], ENT_QUOTES, 'UTF-8');?>
 ">
     <?php

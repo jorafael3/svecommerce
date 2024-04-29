@@ -125,16 +125,17 @@ $(document).ready(function () {
 						}
 						if (x.success) {
 
-							$(".INDEX_PR_C_BUTTONS_CONTADO").hide();
-							$(".INDEX_PR_C_PRICE_CONTADO").hide();
-							$(".INDEX_PR_C_BUTTONS_CREDITO").addClass("col-12");
-							$(".INDEX_PR_C_BUTTONS_CREDITO").show();
-							$(".INDEX_PR_C_PRICE_CREDITO").show();
-
-							
 							$(".CART_PRICE_CONTADO").empty();
 							$(".CART_PRICE_TOTAL_CONTADO").empty();
 							$(".CART_SUBTOTAL_TEXT").text("12 cuotas de");
+
+							$(".CART_CHECK_CONTADO").empty();
+							$(".CART_CHECK_CREDIT").show();
+
+
+							$(".CART_TOTALS_CONTADO").empty();
+							$(".CART_TOTALS_CREDITO").show();
+
 
 							var totalPriceCredit = 0;
 							var cartItems = document.querySelectorAll('.cart-item-product');
@@ -149,10 +150,81 @@ $(document).ready(function () {
 							var formattedPrice = totalPriceCredit.toLocaleString('en-US', { style: 'currency', currency: 'USD' });
 							$(".CART_PRICE_TOTAL_CREDITO_VAL").text(formattedPrice);
 
+							setInterval(() => {
+								var tbody = document.querySelector('.CART_CHECK_CREDIT');
+								var displayStyle = window.getComputedStyle(tbody).display;
+								if (displayStyle === 'none') {
+									$(".CART_CHECK_CREDIT").show();
+									// $(".CART_TOTALS_CONTADO").show();
+								}
+							}, 1000);
+
+							setInterval(() => {
+								var tbody = document.querySelector('.CART_TOTALS_CONTADO');
+								var displayStyle = window.getComputedStyle(tbody).display;
+								if (displayStyle === 'none') {
+									// $(".CART_TOTALS_CONTADO").empty();
+									$(".CART_TOTALS_CREDITO").show();
+								}
+							}, 1000);
+
+
+							$(".cart-summary-totals").empty();
+							$(".cart-summary-line .value").empty();
+							$("#cart-subtotal-shipping").empty();
+
+							var tbody = document.querySelector('.CART_CHECK_CREDIT');
+							var subtotal = 0;
+							tbody.querySelectorAll('tr.cart-item').forEach(function (row) {
+								var priceText = row.querySelector('.product-c-price span').innerText;
+								var quantity = parseInt(row.querySelector('.js-cart-line-product-quantity').value);
+								var price = parseFloat(priceText.replace('$', '').replace(',', '.'));
+								var rowSubtotal = price * quantity;
+								row.querySelector('.product-subtotal').innerHTML = '<span class="product-price"><strong>$' + rowSubtotal.toFixed(2) + '</strong></span>';
+
+								subtotal += rowSubtotal;
+							});
+							console.log('Subtotal total: $' + subtotal.toFixed(2))
+							let h = `
+							<div class="cart-detailed-totals js-cart-detailed-totals CART_TOTALS_CREDITO">
+
+							<div class="cart-detailed-subtotals js-cart-detailed-subtotals">  
+								<h2>Resumen</h2>
+							</div>
+							<div class="cart-summary-totals js-cart-summary-totals"> 
+								<div class="cart-summary-line cart-total">
+									<span class="label">12 cuotas de </span>
+									<span class="value CART_TOTALS_TOTAL_CREDIT">$`+ subtotal.toFixed(2) + `</span>
+								</div>
+							</div>
+							</div>
+
+							
+							`
+							$(".ax-cart-summary").empty();
+
+							setTimeout(() => {
+								$(".ax-cart-summary").append(h);
+
+							}, 2000);
+
 						} else {
+							$(".CART_TOTALS_CONTADO").show();
+
+
+							$(".CART_CHECK_CONTADO").show();
+							$(".CART_CHECK_CREDIT").empty();
+
 							$(".CART_PRICE_CREDIT").empty();
 							$(".CART_PRICE_TOTAL_CREDITO").empty();
 
+							setInterval(() => {
+								var tbody = document.querySelector('.CART_CHECK_CONTADO');
+								var displayStyle = window.getComputedStyle(tbody).display;
+								if (displayStyle === 'none') {
+									$(".CART_CHECK_CREDIT").show();
+								}
+							}, 1000);
 						}
 					});
 

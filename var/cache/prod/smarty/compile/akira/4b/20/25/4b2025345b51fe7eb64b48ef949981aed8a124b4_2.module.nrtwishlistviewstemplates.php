@@ -1,19 +1,11 @@
 <?php
-<<<<<<< HEAD
-/* Smarty version 3.1.47, created on 2024-04-29 01:41:16
-=======
-/* Smarty version 3.1.47, created on 2024-04-01 12:26:01
->>>>>>> 9a1a6330930ccb4da80431385458d268e69be318
+/* Smarty version 3.1.47, created on 2024-04-29 17:47:32
   from 'module:nrtwishlistviewstemplates' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.47',
-<<<<<<< HEAD
-  'unifunc' => 'content_662f410c7e7520_00889109',
-=======
-  'unifunc' => 'content_660aee297cb8d9_39882054',
->>>>>>> 9a1a6330930ccb4da80431385458d268e69be318
+  'unifunc' => 'content_663023849a43e1_55079292',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -28,11 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-<<<<<<< HEAD
-function content_662f410c7e7520_00889109 (Smarty_Internal_Template $_smarty_tpl) {
-=======
-function content_660aee297cb8d9_39882054 (Smarty_Internal_Template $_smarty_tpl) {
->>>>>>> 9a1a6330930ccb4da80431385458d268e69be318
+function content_663023849a43e1_55079292 (Smarty_Internal_Template $_smarty_tpl) {
 ?><a class="btn-canvas btn-canvas-wishlist sb-item" href="<?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['url'][0], array( array('entity'=>'module','name'=>'nrtwishlist','controller'=>'view'),$_smarty_tpl ) );?>
 " title="<?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'My Wishlist','mod'=>'nrtwishlist'),$_smarty_tpl ) );?>
 "><?php if ((isset($_smarty_tpl->tpl_vars['icon']->value)) && $_smarty_tpl->tpl_vars['icon']->value) {

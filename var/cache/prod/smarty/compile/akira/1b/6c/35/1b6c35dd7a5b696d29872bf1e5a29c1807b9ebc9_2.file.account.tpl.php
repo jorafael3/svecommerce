@@ -1,19 +1,11 @@
 <?php
-<<<<<<< HEAD
-/* Smarty version 3.1.47, created on 2024-04-29 01:41:15
-=======
-/* Smarty version 3.1.47, created on 2024-04-01 12:26:00
->>>>>>> 9a1a6330930ccb4da80431385458d268e69be318
+/* Smarty version 3.1.47, created on 2024-04-29 17:47:30
   from 'C:\xampp\htdocs\svecommerce\themes\akira\templates\_partials\canvas\account.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.47',
-<<<<<<< HEAD
-  'unifunc' => 'content_662f410b2e9258_07989474',
-=======
-  'unifunc' => 'content_660aee28067317_23824869',
->>>>>>> 9a1a6330930ccb4da80431385458d268e69be318
+  'unifunc' => 'content_66302382e84460_92600127',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -28,11 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-<<<<<<< HEAD
-function content_662f410b2e9258_07989474 (Smarty_Internal_Template $_smarty_tpl) {
-=======
-function content_660aee28067317_23824869 (Smarty_Internal_Template $_smarty_tpl) {
->>>>>>> 9a1a6330930ccb4da80431385458d268e69be318
+function content_66302382e84460_92600127 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div id="canvas-my-account" class="canvas-widget canvas-right">
     <div class="canvas-widget-top">
 		<h3 class="title-canvas-widget" data-dismiss="canvas-widget">

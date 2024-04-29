@@ -25,6 +25,7 @@
 {block name='cart_detailed_product'}
   <div class="cart-overview js-cart" data-refresh-url="{url entity='cart' params=['ajax' => true, 'action' => 'refresh']}">
     {if $cart.products}
+		CREDITO {$iscredit}
 		<table class="shop_table shop_table_responsive" cellspacing="0">
 			<thead>
 				<tr>
@@ -36,24 +37,24 @@
 					<th class="product-subtotal">{l s='Subtotal' d='Shop.Theme.Axon'}</th>
 				</tr>
 			</thead>
-			<tbody class="CART_CHECK_CONTADO">
-				{foreach from=$cart.products item=product}
-					<tr class="cart-item">
-						{block name='cart_detailed_product_line'}
-							{include file='checkout/_partials/cart-detailed-product-line.tpl' product=$product}
-						{/block}
-					</tr>
-				{/foreach}
-			</tbody>
-			<tbody class="CART_CHECK_CREDIT">
-				{foreach from=$cart.products item=product}
-					<tr class="cart-item">
-						{block name='cart_detailed_product_line'}
-							{include file='checkout/_partials/cart-detailed-product-line_credit.tpl' product=$product}
-						{/block}
-					</tr>
-				{/foreach}
-			</tbody>
+				<tbody class="CART_CHECK_CONTADO" style="display:none">
+					{foreach from=$cart.products item=product}
+						<tr class="cart-item">
+							{block name='cart_detailed_product_line'}
+								{include file='checkout/_partials/cart-detailed-product-line.tpl' product=$product}
+							{/block}
+						</tr>
+					{/foreach}
+				</tbody>
+				<tbody class="CART_CHECK_CREDIT" style="display:none">
+					{foreach from=$cart.products item=product}
+						<tr class="cart-item">
+							{block name='cart_detailed_product_line'}
+								{include file='checkout/_partials/cart-detailed-product-line_credit.tpl' product=$product}
+							{/block}
+						</tr>
+					{/foreach}
+				</tbody>
 		</table>
 		<a href="{$urls.pages.index}" class="btn btn-secondary hidden-md-down">
 			<i class="las la-reply"></i>

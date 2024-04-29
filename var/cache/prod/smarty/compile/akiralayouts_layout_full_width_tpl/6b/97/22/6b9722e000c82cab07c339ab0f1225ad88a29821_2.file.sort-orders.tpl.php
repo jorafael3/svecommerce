@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.47, created on 2024-04-01 11:18:56
+/* Smarty version 3.1.47, created on 2024-04-29 10:44:45
   from 'C:\xampp\htdocs\svecommerce\themes\akira\templates\catalog\_partials\sort-orders.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.47',
-  'unifunc' => 'content_660ade70eb4bc4_91095386',
+  'unifunc' => 'content_662fc06d60c0a3_43016261',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_660ade70eb4bc4_91095386 (Smarty_Internal_Template $_smarty_tpl) {
+function content_662fc06d60c0a3_43016261 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'C:\\xampp\\htdocs\\svecommerce\\vendor\\smarty\\smarty\\libs\\plugins\\modifier.regex_replace.php','function'=>'smarty_modifier_regex_replace',),));
 ?>
 	 

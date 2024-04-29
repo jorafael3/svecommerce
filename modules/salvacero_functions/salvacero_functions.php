@@ -399,6 +399,8 @@ class Salvacero_functions extends PaymentModule
         // }
     }
 
+    
+
     // public function hookActionObjectOrderAddAfter($params)
     // {
     //     // Obtener el objeto del pedido recién creado

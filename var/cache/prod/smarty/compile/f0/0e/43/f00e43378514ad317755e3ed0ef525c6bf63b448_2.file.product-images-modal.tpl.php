@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.47, created on 2024-04-29 01:19:38
+/* Smarty version 3.1.47, created on 2024-04-29 11:02:01
   from 'C:\xampp\htdocs\svecommerce\themes\akira\templates\catalog\_partials\product-images-modal.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.47',
-  'unifunc' => 'content_662f3bfa3f5c89_42483611',
+  'unifunc' => 'content_662fc4797ccc09_70374557',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'f00e43378514ad317755e3ed0ef525c6bf63b448' => 
     array (
       0 => 'C:\\xampp\\htdocs\\svecommerce\\themes\\akira\\templates\\catalog\\_partials\\product-images-modal.tpl',
-      1 => 1711210466,
+      1 => 1711123680,
       2 => 'file',
     ),
   ),
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:catalog/_partials/product-attachment.tpl' => 1,
   ),
 ),false)) {
-function content_662f3bfa3f5c89_42483611 (Smarty_Internal_Template $_smarty_tpl) {
+function content_662fc4797ccc09_70374557 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 ?>
@@ -41,7 +41,7 @@ $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 			</span>
 		</div>
 		<?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_569721043662f3bfa3f0a69_30297415', 'product_attachment');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1353337807662fc4797c9263_68054131', 'product_attachment');
 ?>
 
 		<?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['hook'][0], array( array('h'=>'displayProductTags'),$_smarty_tpl ) );?>
@@ -63,12 +63,12 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_569721043662f3bfa3
 </div>
 <?php }
 /* {block 'product_attachment'} */
-class Block_569721043662f3bfa3f0a69_30297415 extends Smarty_Internal_Block
+class Block_1353337807662fc4797c9263_68054131 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'product_attachment' => 
   array (
-    0 => 'Block_569721043662f3bfa3f0a69_30297415',
+    0 => 'Block_1353337807662fc4797c9263_68054131',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {

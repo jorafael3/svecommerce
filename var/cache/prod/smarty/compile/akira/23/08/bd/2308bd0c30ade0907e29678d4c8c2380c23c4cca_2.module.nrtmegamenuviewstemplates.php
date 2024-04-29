@@ -1,19 +1,11 @@
 <?php
-<<<<<<< HEAD
-/* Smarty version 3.1.47, created on 2024-04-29 01:41:15
-=======
-/* Smarty version 3.1.47, created on 2024-04-01 12:26:00
->>>>>>> 9a1a6330930ccb4da80431385458d268e69be318
+/* Smarty version 3.1.47, created on 2024-04-29 17:47:31
   from 'module:nrtmegamenuviewstemplates' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.47',
-<<<<<<< HEAD
-  'unifunc' => 'content_662f410bc820a5_41233134',
-=======
-  'unifunc' => 'content_660aee28c527e5_87966733',
->>>>>>> 9a1a6330930ccb4da80431385458d268e69be318
+  'unifunc' => 'content_66302383d50235_75421013',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -29,11 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'module:nrtmegamenu/views/templates/hook/mobile-megamenu-ul.tpl' => 1,
   ),
 ),false)) {
-<<<<<<< HEAD
-function content_662f410bc820a5_41233134 (Smarty_Internal_Template $_smarty_tpl) {
-=======
-function content_660aee28c527e5_87966733 (Smarty_Internal_Template $_smarty_tpl) {
->>>>>>> 9a1a6330930ccb4da80431385458d268e69be318
+function content_66302383d50235_75421013 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <div id="canvas-menu-mobile" class="canvas-widget canvas-left">
 	<div class="canvas-widget-top">

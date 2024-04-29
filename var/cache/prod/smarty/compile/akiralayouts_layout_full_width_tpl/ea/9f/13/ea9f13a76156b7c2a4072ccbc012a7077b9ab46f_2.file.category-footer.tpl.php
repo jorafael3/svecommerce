@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.47, created on 2024-04-01 11:18:59
+/* Smarty version 3.1.47, created on 2024-04-29 10:44:47
   from 'C:\xampp\htdocs\svecommerce\themes\akira\templates\catalog\_partials\category-footer.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.47',
-  'unifunc' => 'content_660ade73955f97_35999438',
+  'unifunc' => 'content_662fc06fcc5c84_08197042',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_660ade73955f97_35999438 (Smarty_Internal_Template $_smarty_tpl) {
+function content_662fc06fcc5c84_08197042 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div id="js-product-list-footer">
     <?php if ((isset($_smarty_tpl->tpl_vars['category']->value)) && (isset($_smarty_tpl->tpl_vars['category']->value['additional_description'])) && $_smarty_tpl->tpl_vars['category']->value['additional_description'] && $_smarty_tpl->tpl_vars['listing']->value['pagination']['items_shown_from'] == 1) {?>
         <div class="card">

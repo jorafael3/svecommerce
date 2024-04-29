@@ -145,8 +145,11 @@
 			{if !empty($product.is_gift)}
 				<span class="gift">{l s='Gift' d='Shop.Theme.Checkout'}</span>
 			{else}
-				{assign var="price_s" value=str_replace("$", "", $product.total)}
-				{Tools::displayPrice(($price_s * 1.16 ) / 12)}
+				{assign var="price_s" value=str_replace("$", "", $product.price)}
+				{assign var="price_c" value=str_replace("$", "", $product.quantity)}
+				{assign var='resultado' value=(($price_s * 1.16) / 12) * $price_c}
+				{assign var='precio_formateado' value=number_format($resultado, 2)}
+				{Tools::displayPrice($precio_formateado)}
 			{/if}
 		</strong>
 	</span>

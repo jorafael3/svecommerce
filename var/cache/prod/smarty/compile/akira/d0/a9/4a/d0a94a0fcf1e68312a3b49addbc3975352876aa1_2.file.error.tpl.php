@@ -1,19 +1,11 @@
 <?php
-<<<<<<< HEAD
-/* Smarty version 3.1.47, created on 2024-04-29 01:38:39
-=======
-/* Smarty version 3.1.47, created on 2024-04-01 11:20:54
->>>>>>> 9a1a6330930ccb4da80431385458d268e69be318
+/* Smarty version 3.1.47, created on 2024-04-29 14:59:51
   from 'C:\xampp\htdocs\svecommerce\modules\ganalyticspro\views\templates\hook\error.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.47',
-<<<<<<< HEAD
-  'unifunc' => 'content_662f406f4f9465_98601018',
-=======
-  'unifunc' => 'content_660adee64c5330_32489529',
->>>>>>> 9a1a6330930ccb4da80431385458d268e69be318
+  'unifunc' => 'content_662ffc37667c05_21614580',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -28,11 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-<<<<<<< HEAD
-function content_662f406f4f9465_98601018 (Smarty_Internal_Template $_smarty_tpl) {
-=======
-function content_660adee64c5330_32489529 (Smarty_Internal_Template $_smarty_tpl) {
->>>>>>> 9a1a6330930ccb4da80431385458d268e69be318
+function content_662ffc37667c05_21614580 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="alert alert-danger">
 	<button type="button" class="close" data-dismiss="alert">×</button>
 	<?php

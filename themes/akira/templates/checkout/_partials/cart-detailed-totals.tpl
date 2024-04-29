@@ -23,7 +23,7 @@
  * International Registered Trademark & Property of PrestaShop SA
  *}
 {block name='cart_detailed_totals'}
-<div class="cart-detailed-totals js-cart-detailed-totals">
+<div class="cart-detailed-totals js-cart-detailed-totals CART_TOTALS_CONTADO"  style="display:none">
   <div class="cart-detailed-subtotals js-cart-detailed-subtotals">  
     <h2>{l s='Cart totals' d='Shop.Theme.Axon'}</h2>
     
@@ -38,9 +38,7 @@
                 {$axps_weight_amount = $axps_weight_amount + $product.weight_attribute * $product.cart_quantity}
             {/if}
         {/foreach}
-
         {$axps_weight_value = "{$axps_weight_amount|string_format:"%.2f"|replace:'.':'.'} {Configuration::get("PS_WEIGHT_UNIT")}"}
-
         {if $axps_weight_amount}
             {$cart.subtotals.axps_weight.type = $axps_weight_type}
             {$cart.subtotals.axps_weight.label = $axps_weight_label}
@@ -77,4 +75,11 @@
   {/block}
 
 </div>
+
+<div class="cart-detailed-totals js-cart-detailed-totals CART_TOTALS_CREDITO"  style="display:none">
+
+</div>
+
+
+
 {/block}

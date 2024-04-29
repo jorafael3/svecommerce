@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.47, created on 2024-04-29 01:19:37
+/* Smarty version 3.1.47, created on 2024-04-29 11:02:01
   from 'C:\xampp\htdocs\svecommerce\themes\akira\templates\catalog\_partials\product-variants.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.47',
-  'unifunc' => 'content_662f3bf9c83ea5_24760436',
+  'unifunc' => 'content_662fc4790df1c9_76727558',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '8c58d6ee50482573f30e1c4fc4db9d3f6629f4f3' => 
     array (
       0 => 'C:\\xampp\\htdocs\\svecommerce\\themes\\akira\\templates\\catalog\\_partials\\product-variants.tpl',
-      1 => 1711210466,
+      1 => 1711123680,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_662f3bf9c83ea5_24760436 (Smarty_Internal_Template $_smarty_tpl) {
+function content_662fc4790df1c9_76727558 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="product-variants js-product-variants">
   <?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['groups']->value, 'group', false, 'id_attribute_group');

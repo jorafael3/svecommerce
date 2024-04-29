@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.47, created on 2024-04-29 01:41:11
+/* Smarty version 3.1.47, created on 2024-04-29 17:47:43
   from 'C:\xampp\htdocs\svecommerce\themes\akira\templates\checkout\_partials\cart-detailed-totals.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.47',
-  'unifunc' => 'content_662f4107d634d6_19144203',
+  'unifunc' => 'content_6630238f6e3ed7_78146984',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'f392e00e68913541b05885a97c609317c783ccac' => 
     array (
       0 => 'C:\\xampp\\htdocs\\svecommerce\\themes\\akira\\templates\\checkout\\_partials\\cart-detailed-totals.tpl',
-      1 => 1711210466,
+      1 => 1714428969,
       2 => 'file',
     ),
   ),
@@ -22,15 +22,15 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:checkout/_partials/cart-summary-totals.tpl' => 1,
   ),
 ),false)) {
-function content_662f4107d634d6_19144203 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6630238f6e3ed7_78146984 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_843360957662f4107d5c144_62192248', 'cart_detailed_totals');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_16476244996630238f6dc0b4_89829994', 'cart_detailed_totals');
 ?>
 
 <?php }
 /* {block 'cart_voucher'} */
-class Block_822730386662f4107d61f71_99641802 extends Smarty_Internal_Block
+class Block_4132190606630238f6e2560_41604907 extends Smarty_Internal_Block
 {
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 ?>
@@ -42,7 +42,7 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 }
 /* {/block 'cart_voucher'} */
 /* {block 'cart_summary_totals'} */
-class Block_1243380936662f4107d62876_31234911 extends Smarty_Internal_Block
+class Block_10196125616630238f6e2f22_55565966 extends Smarty_Internal_Block
 {
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 ?>
@@ -54,26 +54,26 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 }
 /* {/block 'cart_summary_totals'} */
 /* {block 'cart_detailed_totals'} */
-class Block_843360957662f4107d5c144_62192248 extends Smarty_Internal_Block
+class Block_16476244996630238f6dc0b4_89829994 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'cart_detailed_totals' => 
   array (
-    0 => 'Block_843360957662f4107d5c144_62192248',
+    0 => 'Block_16476244996630238f6dc0b4_89829994',
   ),
   'cart_voucher' => 
   array (
-    0 => 'Block_822730386662f4107d61f71_99641802',
+    0 => 'Block_4132190606630238f6e2560_41604907',
   ),
   'cart_summary_totals' => 
   array (
-    0 => 'Block_1243380936662f4107d62876_31234911',
+    0 => 'Block_10196125616630238f6e2f22_55565966',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 ?>
 
-<div class="cart-detailed-totals js-cart-detailed-totals">
+<div class="cart-detailed-totals js-cart-detailed-totals CART_TOTALS_CONTADO"  style="display:none">
   <div class="cart-detailed-subtotals js-cart-detailed-subtotals">  
     <h2><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Cart totals','d'=>'Shop.Theme.Axon'),$_smarty_tpl ) );?>
 </h2>
@@ -113,16 +113,23 @@ echo htmlspecialchars($_smarty_tpl->tpl_vars['subtotal']->value['value'], ENT_QU
 $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
   </div>
   <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_822730386662f4107d61f71_99641802', 'cart_voucher', $this->tplIndex);
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_4132190606630238f6e2560_41604907', 'cart_voucher', $this->tplIndex);
 ?>
 
 
   <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1243380936662f4107d62876_31234911', 'cart_summary_totals', $this->tplIndex);
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_10196125616630238f6e2f22_55565966', 'cart_summary_totals', $this->tplIndex);
 ?>
 
 
 </div>
+
+<div class="cart-detailed-totals js-cart-detailed-totals CART_TOTALS_CREDITO"  style="display:none">
+
+</div>
+
+
+
 <?php
 }
 }

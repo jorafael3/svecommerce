@@ -1,26 +1,18 @@
 <?php
-<<<<<<< HEAD
-/* Smarty version 3.1.47, created on 2024-04-29 01:41:12
-=======
-/* Smarty version 3.1.47, created on 2024-04-01 10:29:01
->>>>>>> 9a1a6330930ccb4da80431385458d268e69be318
+/* Smarty version 3.1.47, created on 2024-04-29 17:47:43
   from 'C:\xampp\htdocs\svecommerce\themes\akira\templates\checkout\_partials\cart-summary-subtotals.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.47',
-<<<<<<< HEAD
-  'unifunc' => 'content_662f410842fb10_57747005',
-=======
-  'unifunc' => 'content_660ad2bd4790a0_12028127',
->>>>>>> 9a1a6330930ccb4da80431385458d268e69be318
+  'unifunc' => 'content_6630238fe42911_93240264',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '98613c27ce5e70cb8116da7381d1305052ac0587' => 
     array (
       0 => 'C:\\xampp\\htdocs\\svecommerce\\themes\\akira\\templates\\checkout\\_partials\\cart-summary-subtotals.tpl',
-      1 => 1711210466,
+      1 => 1711123680,
       2 => 'file',
     ),
   ),
@@ -28,11 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-<<<<<<< HEAD
-function content_662f410842fb10_57747005 (Smarty_Internal_Template $_smarty_tpl) {
-=======
-function content_660ad2bd4790a0_12028127 (Smarty_Internal_Template $_smarty_tpl) {
->>>>>>> 9a1a6330930ccb4da80431385458d268e69be318
+function content_6630238fe42911_93240264 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <div class="cart-summary-subtotals-container js-cart-summary-subtotals-container">
 

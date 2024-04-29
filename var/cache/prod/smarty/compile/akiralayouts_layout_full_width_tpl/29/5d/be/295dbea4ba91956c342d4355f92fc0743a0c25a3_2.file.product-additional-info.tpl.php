@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.47, created on 2024-04-29 01:19:24
+/* Smarty version 3.1.47, created on 2024-04-29 12:54:12
   from 'C:\xampp\htdocs\svecommerce\themes\akira\templates\catalog\_partials\product-additional-info.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.47',
-  'unifunc' => 'content_662f3becd25e82_98416148',
+  'unifunc' => 'content_662fdec48c47a2_59891421',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '295dbea4ba91956c342d4355f92fc0743a0c25a3' => 
     array (
       0 => 'C:\\xampp\\htdocs\\svecommerce\\themes\\akira\\templates\\catalog\\_partials\\product-additional-info.tpl',
-      1 => 1711210466,
+      1 => 1711123680,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_662f3becd25e82_98416148 (Smarty_Internal_Template $_smarty_tpl) {
+function content_662fdec48c47a2_59891421 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="product-additional-info js-product-additional-info">
     <?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['hook'][0], array( array('h'=>'displayButtonCompare','product'=>$_smarty_tpl->tpl_vars['product']->value),$_smarty_tpl ) );?>
  

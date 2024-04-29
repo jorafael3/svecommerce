@@ -39,7 +39,7 @@
           </div>
           <hr class="separator">
           {block name='cart_overview'}
-            {include file='checkout/_partials/cart-detailed.tpl' cart=$cart}
+            {include file='checkout/_partials/cart-detailed.tpl' cart=$cart iscredit=$iscredit }
           {/block}
         </div>
 
@@ -60,17 +60,16 @@
 
         {block name='cart_summary'}
           <div class="card cart-summary">
-
             {block name='hook_shopping_cart'}
               {hook h='displayShoppingCart'}
             {/block}
 
             {block name='cart_totals'}
-              {include file='checkout/_partials/cart-detailed-totals.tpl' cart=$cart}
+              {include file='checkout/_partials/cart-detailed-totals.tpl' cart=$cart iscredit=$iscredit}
             {/block}
 
             {block name='cart_actions'}
-              {include file='checkout/_partials/cart-detailed-actions.tpl' cart=$cart}
+              {include file='checkout/_partials/cart-detailed-actions.tpl' cart=$cart iscredit=$iscredit}
             {/block}
 
           </div>

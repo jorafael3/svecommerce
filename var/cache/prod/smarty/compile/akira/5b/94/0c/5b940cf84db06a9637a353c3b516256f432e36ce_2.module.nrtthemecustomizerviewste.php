@@ -1,19 +1,11 @@
 <?php
-<<<<<<< HEAD
-/* Smarty version 3.1.47, created on 2024-04-29 01:41:15
-=======
-/* Smarty version 3.1.47, created on 2024-04-01 12:25:59
->>>>>>> 9a1a6330930ccb4da80431385458d268e69be318
+/* Smarty version 3.1.47, created on 2024-04-29 17:47:30
   from 'module:nrtthemecustomizerviewste' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.47',
-<<<<<<< HEAD
-  'unifunc' => 'content_662f410b22b541_14871996',
-=======
-  'unifunc' => 'content_660aee27ea28c4_73747263',
->>>>>>> 9a1a6330930ccb4da80431385458d268e69be318
+  'unifunc' => 'content_66302382d4c398_74826644',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -30,11 +22,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:_partials/canvas/facets.tpl' => 1,
   ),
 ),false)) {
-<<<<<<< HEAD
-function content_662f410b22b541_14871996 (Smarty_Internal_Template $_smarty_tpl) {
-=======
-function content_660aee27ea28c4_73747263 (Smarty_Internal_Template $_smarty_tpl) {
->>>>>>> 9a1a6330930ccb4da80431385458d268e69be318
+function content_66302382d4c398_74826644 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="pswp__bg"></div>
