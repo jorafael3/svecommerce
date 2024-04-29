@@ -57,27 +57,41 @@ class Salvacero_FunctionsAjaxModuleFrontController extends ModuleFrontController
             $id_customer = $this->context->customer->id;
             $total =  Tools::getValue('valor_total');
             $meses = Tools::getValue('meses');
-            $orden = $this->getOrderNumberForCustomer($id_customer);
+            $orden = "";
 
             $oldCustomer = SalvaceroCustomer::setCustomerCreditDataForIdPs($id_customer, $total, $meses, $orden);
 
             die(Tools::jsonEncode(array(
                 'success' => $oldCustomer,
                 'id_customer' => $id_customer,
-                'orden' => $orden
+                'orden' => ""
             )));
         }
         if (Tools::getValue('action') == 'getDatosCreditoOrden') {
-
             $id_customer = $this->context->customer->id;
             $orderReference =  Tools::getValue('orderReference');
-
             $oldCustomer = SalvaceroCustomer::getDatosCreditoOrden($id_customer, $orderReference);
-
             die(Tools::jsonEncode(array(
                 'datos' => $oldCustomer,
             )));
         }
+        if (Tools::getValue('action') == 'SetActualizarOrdenCredito') {
+            $id_customer = $this->context->customer->id;
+            $orderReference =  Tools::getValue('orderReference');
+            $oldCustomer = SalvaceroCustomer::DatosOrden($id_customer, trim($orderReference));
+            $additionalData = array(
+                'order_id' => $oldCustomer["id_order"],
+                'customer_id' => $id_customer,
+                'reference' => $orderReference,
+                'total' => $oldCustomer["total_paid"],
+            );
+            $orden = SalvaceroCustomer::setActualizarDatosOrden($additionalData);
+            $oldCustomer = SalvaceroCustomer::getDatosCreditoOrden($id_customer, $orderReference);
+            die(Tools::jsonEncode(array(
+                'datos' => $oldCustomer,
+            )));
+        }
+
         die(0);
     }
 

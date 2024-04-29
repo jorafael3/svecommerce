@@ -126,8 +126,10 @@ jQuery(document).ready(function ($) {
 
             var detailsElements = document.querySelectorAll('.details');
             var url = "index.php?fc=module&module=" + name_salvacero + "&controller=ajax";
+            var encontrado = false;
 
-            // Iterar sobre los elementos encontrados
+            // Recorrer cada elemento con la clase order-line
+
             for (var i = 0; i < detailsElements.length; i++) {
                 // Obtener el texto dentro de la etiqueta <span> dentro del elemento actual
                 var productName = detailsElements[i].querySelector('span').textContent;
@@ -145,10 +147,10 @@ jQuery(document).ready(function ($) {
                     // Mostrar el texto obtenido
 
                     let param = {
-                        action: "getDatosCreditoOrden",
+                        action: "SetActualizarOrdenCredito",
                         orderReference: orderReference,
                     }
-
+                    console.log('param: ', param);
 
 
                     $.ajax({
@@ -157,14 +159,11 @@ jQuery(document).ready(function ($) {
                         type: "POST",
                         data: param,
                         success: function (result) {
-
+                            console.log('result: ', result);
 
                             let MESES = result["datos"]["meses"];
                             let TOTAL = result["datos"]["total"];
                             var VALOR = TOTAL / MESES;
-
-
-
 
 
                             // Crear una nueva fila <tr>
@@ -192,37 +191,6 @@ jQuery(document).ready(function ($) {
                         error: (jqXHR, exception) => {
 
 
-                            var msg = '';
-                            if (jqXHR.status === 0) {
-                                msg = 'Not connect.\n Verify Network.';
-                            } else if (jqXHR.status == 404) {
-                                msg = 'Requested page not found. [404]';
-                            } else if (jqXHR.status == 500) {
-                                msg = 'Internal Server Error [500].';
-                            } else if (exception === 'parsererror') {
-                                msg = 'Requested JSON parse failed.';
-                            } else if (exception === 'timeout') {
-                                msg = 'Time out error.';
-                            } else if (exception === 'abort') {
-                                msg = 'Ajax request aborted.';
-                            } else {
-                                msg = 'Uncaught Error.\n' + jqXHR.responseText;
-                            }
-
-                            $.sweetModal({
-                                content: msg,
-                                title: 'Error ' + jqXHR.status,
-                                icon: $.sweetModal.ICON_ERROR,
-                                onClose: () => {
-
-
-                                    // window.location.href = url_action;
-                                },
-                                buttons: [{
-                                    label: 'volver a intentar',
-                                    classes: 'redB'
-                                }]
-                            });
                         }
 
                     });
@@ -231,8 +199,6 @@ jQuery(document).ready(function ($) {
                     break;
                 }
             }
-            // Ejecutar tu código aquí
-        } else {
         }
     }
     Editar_Pedido_Confirmado()
@@ -329,6 +295,20 @@ jQuery(document).ready(function ($) {
 
 
                     if (result.datos != false) {
+                        var tbodyRows = document.querySelectorAll('#order-products tbody tr');
+
+                        // Iterar sobre cada fila del tbody
+                        tbodyRows.forEach(function (row) {
+                            // Obtener el texto dentro de la primera celda (td) de la fila actual
+                            var productName = row.querySelector('td').textContent.trim();
+                            console.log('productName: ', productName);
+                            // Verificar si el texto de la primera celda coincide con "Pago de tarifa adicional"
+                            if (productName.includes("Pago de tarifa adicional")) {
+                                // Eliminar la fila del tbody
+                                row.parentNode.removeChild(row);
+                            }
+                        });
+
                         var tableFooter = $("#order-products tfoot");
                         tableFooter.empty();
 
@@ -340,7 +320,11 @@ jQuery(document).ready(function ($) {
 
                         let b = `
                         <tr class="text-xs-right line-total">
-                            <td colspan="3">Total credito directo </td>
+                            <td colspan="3">TOTAL</td>
+                            <td class="price">CREDITO DIRECTO</td>
+                        </tr>
+                        <tr class="text-xs-right line-total">
+                            <td colspan="3">CUOTAS</td>
                             <td class="price">`+ VALOR + `</td>
                         </tr>
                         `;
@@ -358,6 +342,7 @@ jQuery(document).ready(function ($) {
 
         }
     }
+
     Order_detalle()
 
     function Editar_index() {
@@ -587,14 +572,12 @@ jQuery(document).ready(function ($) {
                 }
 
 
-
                 $.ajax({
                     url: url,
                     dataType: 'json',
                     type: "POST",
                     data: param,
                     success: function (result) {
-
 
 
                     },

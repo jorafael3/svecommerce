@@ -1,18 +1,26 @@
 <?php
+<<<<<<< HEAD
 /* Smarty version 3.1.47, created on 2024-04-29 01:41:16
+=======
+/* Smarty version 3.1.47, created on 2024-04-01 12:26:01
+>>>>>>> 9a1a6330930ccb4da80431385458d268e69be318
   from 'module:nrtmegamenuviewstemplates' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.47',
+<<<<<<< HEAD
   'unifunc' => 'content_662f410c6a17d0_65483000',
+=======
+  'unifunc' => 'content_660aee295fdb27_39585696',
+>>>>>>> 9a1a6330930ccb4da80431385458d268e69be318
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '9b4b080ee382b2f61b318c797f3d6a282ccb09b3' => 
     array (
       0 => 'module:nrtmegamenuviewstemplates',
-      1 => 1711210455,
+      1 => 1711123671,
       2 => 'module',
     ),
   ),
@@ -21,7 +29,11 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'module:nrtmegamenu/views/templates/hook/megamenu-category.tpl' => 2,
   ),
 ),false)) {
+<<<<<<< HEAD
 function content_662f410c6a17d0_65483000 (Smarty_Internal_Template $_smarty_tpl) {
+=======
+function content_660aee295fdb27_39585696 (Smarty_Internal_Template $_smarty_tpl) {
+>>>>>>> 9a1a6330930ccb4da80431385458d268e69be318
 $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'C:\\xampp\\htdocs\\svecommerce\\vendor\\smarty\\smarty\\libs\\plugins\\modifier.replace.php','function'=>'smarty_modifier_replace',),));
 ?>
 
