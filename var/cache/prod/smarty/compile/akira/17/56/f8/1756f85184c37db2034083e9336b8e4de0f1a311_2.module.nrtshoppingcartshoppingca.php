@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.47, created on 2024-03-31 20:36:05
+/* Smarty version 3.1.47, created on 2024-04-29 01:41:15
   from 'module:nrtshoppingcartshoppingca' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.47',
-  'unifunc' => 'content_660a0f85d56064_04162024',
+  'unifunc' => 'content_662f410b8bd474_62428847',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '1756f85184c37db2034083e9336b8e4de0f1a311' => 
     array (
       0 => 'module:nrtshoppingcartshoppingca',
-      1 => 1711210455,
+      1 => 1714369400,
       2 => 'module',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_660a0f85d56064_04162024 (Smarty_Internal_Template $_smarty_tpl) {
+function content_662f410b8bd474_62428847 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_assignInScope('imageType', 'cart_default');?>
 
 <?php if ((isset($_smarty_tpl->tpl_vars['opThemect']->value['general_product_image_type_small'])) && $_smarty_tpl->tpl_vars['opThemect']->value['general_product_image_type_small']) {?>
@@ -144,15 +144,26 @@ $_smarty_tpl->tpl_vars['value']->do_else = false;
 $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 											</div>
 											<div class="price-qty col col-xs-5">
-												<div class="price">
-													<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['product']->value['price'], ENT_QUOTES, 'UTF-8');?>
+												<div class="CART_PRICE_CONTADO">
+													<div class="price">
+														<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['product']->value['price'], ENT_QUOTES, 'UTF-8');?>
 
+													</div>
+												</div>
+												<div class="CART_PRICE_CREDIT">
+													<div class="price">
+														<?php $_smarty_tpl->_assignInScope('price_without_currency', str_replace("$",'',$_smarty_tpl->tpl_vars['product']->value['price']));?>
+														<?php $_smarty_tpl->_assignInScope('price_with_tax', ($_smarty_tpl->tpl_vars['price_without_currency']->value*1.16));?>
+														<?php $_smarty_tpl->_assignInScope('price_per_month', ($_smarty_tpl->tpl_vars['price_with_tax']->value/12));?>
+														<?php echo htmlspecialchars(Tools::displayPrice(($_smarty_tpl->tpl_vars['price_per_month']->value)), ENT_QUOTES, 'UTF-8');?>
+
+													</div>
 												</div>
 												<div class="qty">
 													<span><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Qty','mod'=>'nrtshoppingcart'),$_smarty_tpl ) );?>
 :</span>
 													<input
-														class="js-cart-line-product-quantity"
+														class="js-cart-line-product-quantity CART_PRODUCT_CANT"
 														data-down-url="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['product']->value['down_quantity_url'], ENT_QUOTES, 'UTF-8');?>
 "
 														data-up-url="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['product']->value['up_quantity_url'], ENT_QUOTES, 'UTF-8');?>
@@ -235,10 +246,16 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 				<div class="widget_shopping_cart_bottom">
 					<div class="card-block-bottom">
 						<div class="totals-top">
-						   <span class="label-top"><?php echo htmlspecialchars($_smarty_tpl->tpl_vars['cart']->value['subtotals']['products']['label'], ENT_QUOTES, 'UTF-8');?>
+						   	<span class="label-top"><?php echo htmlspecialchars($_smarty_tpl->tpl_vars['cart']->value['subtotals']['products']['label'], ENT_QUOTES, 'UTF-8');?>
 :</span>
-						   <span class="value-top price"><?php echo htmlspecialchars($_smarty_tpl->tpl_vars['cart']->value['subtotals']['products']['value'], ENT_QUOTES, 'UTF-8');?>
+						   	<span class="CART_SUBTOTAL_TEXT" style="font-size:11px;color:red"></span>
+							<span class="CART_PRICE_TOTAL_CONTADO">
+						   		<span class="value-top price CART_PRICE_TOTAL_CONTADO_VAL"><?php echo htmlspecialchars(($_smarty_tpl->tpl_vars['cart']->value['subtotals']['products']['value']), ENT_QUOTES, 'UTF-8');?>
 </span>
+							</span>
+							<span class="CART_PRICE_TOTAL_CREDITO">
+						   		<span class="value-top price CART_PRICE_TOTAL_CREDITO_VAL"></span>
+							</span>
 						</div>
                         <?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['hook'][0], array( array('h'=>'displayNrtCartInfo'),$_smarty_tpl ) );?>
 

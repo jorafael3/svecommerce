@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.47, created on 2024-03-31 20:36:04
+/* Smarty version 3.1.47, created on 2024-04-29 01:41:12
   from 'C:\xampp\htdocs\svecommerce\modules\sendinblue\views\templates\front\tracking_script.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.47',
-  'unifunc' => 'content_660a0f84711618_66389543',
+  'unifunc' => 'content_662f41085ffd49_61421514',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_660a0f84711618_66389543 (Smarty_Internal_Template $_smarty_tpl) {
+function content_662f41085ffd49_61421514 (Smarty_Internal_Template $_smarty_tpl) {
 echo '<script'; ?>
  type="text/javascript">
     (function() {

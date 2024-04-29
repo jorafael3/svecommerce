@@ -77,13 +77,23 @@
 												{/foreach}
 											</div>
 											<div class="price-qty col col-xs-5">
-												<div class="price">
-													{$product.price}
+												<div class="CART_PRICE_CONTADO">
+													<div class="price">
+														{$product.price}
+													</div>
+												</div>
+												<div class="CART_PRICE_CREDIT">
+													<div class="price">
+														{assign var="price_without_currency" value=str_replace("$", "", $product.price)}
+														{assign var="price_with_tax" value=($price_without_currency * 1.16)}
+														{assign var="price_per_month" value=($price_with_tax / 12)}
+														{Tools::displayPrice(($price_per_month))}
+													</div>
 												</div>
 												<div class="qty">
 													<span>{l s='Qty' mod='nrtshoppingcart'}:</span>
 													<input
-														class="js-cart-line-product-quantity"
+														class="js-cart-line-product-quantity CART_PRODUCT_CANT"
 														data-down-url="{$product.down_quantity_url}"
 														data-up-url="{$product.up_quantity_url}"
 														data-update-url="{$product.update_quantity_url}"
@@ -137,8 +147,14 @@
 				<div class="widget_shopping_cart_bottom">
 					<div class="card-block-bottom">
 						<div class="totals-top">
-						   <span class="label-top">{$cart.subtotals.products.label}:</span>
-						   <span class="value-top price">{$cart.subtotals.products.value}</span>
+						   	<span class="label-top">{$cart.subtotals.products.label}:</span>
+						   	<span class="CART_SUBTOTAL_TEXT" style="font-size:11px;color:red"></span>
+							<span class="CART_PRICE_TOTAL_CONTADO">
+						   		<span class="value-top price CART_PRICE_TOTAL_CONTADO_VAL">{($cart.subtotals.products.value)}</span>
+							</span>
+							<span class="CART_PRICE_TOTAL_CREDITO">
+						   		<span class="value-top price CART_PRICE_TOTAL_CREDITO_VAL"></span>
+							</span>
 						</div>
                         {hook h='displayNrtCartInfo'}
 						<div class="card-block-btn">

@@ -227,7 +227,6 @@ class PriceButton extends Module
             $this->context->smarty->assign(array(
                 'product' => $params['product'],
                 'price' => $price
-
             ));
 
             return $this->context->smarty->fetch(

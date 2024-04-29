@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.47, created on 2024-03-24 12:58:47
+/* Smarty version 3.1.47, created on 2024-04-29 01:19:38
   from 'C:\xampp\htdocs\svecommerce\modules\hiwhatsapp\views\templates\hook\widgets.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.47',
-  'unifunc' => 'content_660069d7bd2b49_91088746',
+  'unifunc' => 'content_662f3bfa301d17_76938706',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_660069d7bd2b49_91088746 (Smarty_Internal_Template $_smarty_tpl) {
+function content_662f3bfa301d17_76938706 (Smarty_Internal_Template $_smarty_tpl) {
 if ($_smarty_tpl->tpl_vars['wap_accounts']->value) {?>
     <div class="hi-wap-widgets-container">
         <div class="hi-wap-widget">

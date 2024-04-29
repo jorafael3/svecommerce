@@ -203,11 +203,15 @@ class NrtShoppingcart extends Module implements WidgetInterface
         if (Configuration::isCatalogMode()) {
             return;
         }
-
-        $this->smarty->assign($this->getWidgetVariables($hookName, $params));
+        $this->smarty->assign($this->getWidgetVariables($hookName, $params),);
 		
 		if (preg_match('/^displayBodyBottom\d*$/', $hookName)) {
 			if((bool)Configuration::get('PS_BLOCK_CART_AJAX')){
+              
+                $this->context->smarty->assign(array(
+                    'product' => $params['product'],
+                    'price' => $price
+                ));
 				return $this->fetch('module:nrtshoppingcart/shoppingcart-canvas.tpl');
 			}
 		}else{

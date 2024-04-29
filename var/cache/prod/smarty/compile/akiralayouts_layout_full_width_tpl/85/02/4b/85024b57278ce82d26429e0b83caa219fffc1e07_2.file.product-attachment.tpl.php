@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.47, created on 2024-03-24 12:58:47
+/* Smarty version 3.1.47, created on 2024-04-29 01:19:25
   from 'C:\xampp\htdocs\svecommerce\themes\akira\templates\catalog\_partials\product-attachment.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.47',
-  'unifunc' => 'content_660069d7bf4d41_37013869',
+  'unifunc' => 'content_662f3bed072232_26033679',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_660069d7bf4d41_37013869 (Smarty_Internal_Template $_smarty_tpl) {
+function content_662f3bed072232_26033679 (Smarty_Internal_Template $_smarty_tpl) {
 if (count($_smarty_tpl->tpl_vars['product']->value['attachments'])) {?>
 	<div class="attachments">
 		<span class="label"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Files','d'=>'Shop.Theme.Axon'),$_smarty_tpl ) );?>

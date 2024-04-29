@@ -63,6 +63,7 @@ jQuery(document).ready(function ($) {
             success: function (result) {
 
 
+
                 if (result.success) {
 
                     // Calcular el porcentaje de crédito consumido
@@ -325,7 +326,7 @@ jQuery(document).ready(function ($) {
                 type: "POST",
                 data: param,
                 success: function (result) {
-                    console.log('result: ', result);
+
 
                     if (result.datos != false) {
                         var tableFooter = $("#order-products tfoot");
@@ -358,6 +359,83 @@ jQuery(document).ready(function ($) {
         }
     }
     Order_detalle()
+
+    function Editar_index() {
+
+
+        var url = "index.php?fc=module&module=" + name_salvacero + "&controller=ajax";
+        console.log('url: ', url);
+
+        $.ajax({
+            url: url,
+            dataType: 'json',
+            type: "POST",
+            data: {
+                action: "getDataCustomer",
+                customerEmail: prestashop.customer.email,
+                total: prestashop.cart.totals.total.amount
+
+            },
+            success: function (result) {
+                console.log('result: ', result);
+                if (result.success) {
+                    $(".INDEX_PR_C_BUTTONS_CONTADO").hide();
+                    $(".INDEX_PR_C_PRICE_CONTADO").hide();
+                    $(".INDEX_PR_C_BUTTONS_CREDITO").addClass("col-12");
+                    $(".INDEX_PR_C_BUTTONS_CREDITO").show();
+                    $(".INDEX_PR_C_PRICE_CREDITO").show();
+
+                    $(".CART_SUBTOTAL_TEXT").text("12 cuotas de");
+
+
+                    //* PRECIO CARRITO FLOTANTE
+                    $(".CART_PRICE_CONTADO").hide();
+                    $(".CART_PRICE_TOTAL_CREDITO").show();
+                    $(".CART_PRICE_TOTAL_CONTADO").empty();
+
+                  
+                    var totalPriceCredit = 0;
+                    var cartItems = document.querySelectorAll('.cart-item-product');
+                    cartItems.forEach(function (item) {
+                        var priceElement = item.querySelector('.CART_PRICE_CREDIT .price');
+                        var priceText = priceElement.textContent.trim().replace('$', '').replace(',', '.');
+                        var price = parseFloat(priceText);
+                        var quantityElement = item.querySelector('.CART_PRODUCT_CANT');
+                        var quantity = parseInt(quantityElement.value);
+                        totalPriceCredit += price * quantity;
+                    });
+
+                    // Mostrar la suma total
+                    console.log('Total de CART_PRICE_CREDIT por cantidad:', totalPriceCredit);
+                    var formattedPrice = totalPriceCredit.toLocaleString('en-US', { style: 'currency', currency: 'USD' });
+                    $(".CART_PRICE_TOTAL_CREDITO_VAL").text(formattedPrice);
+
+
+                } else {
+                    $(".CART_PRICE_CONTADO").show();
+                    $(".CART_PRICE_CREDIT").empty();
+                    $(".CART_PRICE_TOTAL_CONTADO").show();
+                    $(".CART_PRICE_TOTAL_CREDITO").empty();
+
+
+                }
+            },
+            error: (jqXHR, exception) => {
+
+            }
+        });
+
+    }
+    Editar_index()
+
+    function Editar_Carrito_flotante() {
+
+    }
+
+
+
+
+
     prestashop.on(
         'changedCheckoutStep',
         function (event) {

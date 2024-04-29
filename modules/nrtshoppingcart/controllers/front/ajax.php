@@ -46,6 +46,21 @@ class NrtShoppingcartAjaxModuleFrontController extends ModuleFrontController
             );
         }elseif (Tools::getValue('action') === 'delete-all-cart') {
             $this->module->emptyCart();
+        }else if (Tools::getValue('action') == 'getDataCustomer') {
+            $id_customer = $this->context->customer->id;
+            $amount = $this->getAmountForIdPs($id_customer);
+            $amount_inicial = $this->getAmountCompletoForIdPs($id_customer);
+            $isActive = false;
+            if ($amount) {
+                if ($amount > Tools::getValue('total')) {
+                    $isActive = true;
+                }
+            }
+            die(Tools::jsonEncode(array(
+                'success' => $isActive,
+                'Monto_Credito' => $amount,
+                "amount_inicial" => $amount_inicial
+            )));
         }
 
 		if(ob_get_contents()){
@@ -58,4 +73,19 @@ class NrtShoppingcartAjaxModuleFrontController extends ModuleFrontController
             'modal'   => $modal
         ]));
     }
+
+    public static function getAmountForIdPs($id)
+    {
+        $table = _DB_PREFIX_ . "salvacero_customers";
+        $query   = "SELECT amount FROM `$table` WHERE id_customer_ps = $id";
+        return Db::getInstance()->getValue($query);
+    }
+
+    public static function getAmountCompletoForIdPs($id)
+    {
+        $table = _DB_PREFIX_ . "salvacero_customers";
+        $query   = "SELECT amount_inicial FROM `$table` WHERE id_customer_ps = $id";
+        return Db::getInstance()->getValue($query);
+    }
+
 }

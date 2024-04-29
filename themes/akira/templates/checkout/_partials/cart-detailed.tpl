@@ -36,11 +36,20 @@
 					<th class="product-subtotal">{l s='Subtotal' d='Shop.Theme.Axon'}</th>
 				</tr>
 			</thead>
-			<tbody>
+			<tbody class="CART_CHECK_CONTADO">
 				{foreach from=$cart.products item=product}
 					<tr class="cart-item">
 						{block name='cart_detailed_product_line'}
 							{include file='checkout/_partials/cart-detailed-product-line.tpl' product=$product}
+						{/block}
+					</tr>
+				{/foreach}
+			</tbody>
+			<tbody class="CART_CHECK_CREDIT">
+				{foreach from=$cart.products item=product}
+					<tr class="cart-item">
+						{block name='cart_detailed_product_line'}
+							{include file='checkout/_partials/cart-detailed-product-line_credit.tpl' product=$product}
 						{/block}
 					</tr>
 				{/foreach}
