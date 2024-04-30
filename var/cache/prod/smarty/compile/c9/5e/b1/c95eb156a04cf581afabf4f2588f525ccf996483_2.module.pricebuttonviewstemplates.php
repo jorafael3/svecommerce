@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.47, created on 2024-04-29 21:35:03
+/* Smarty version 3.1.47, created on 2024-04-30 11:58:41
   from 'module:pricebuttonviewstemplates' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.47',
-  'unifunc' => 'content_663058d75f3ab3_26148683',
+  'unifunc' => 'content_6631234175caf5_43242069',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'c95eb156a04cf581afabf4f2588f525ccf996483' => 
     array (
       0 => 'module:pricebuttonviewstemplates',
-      1 => 1714442937,
+      1 => 1714406544,
       2 => 'module',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_663058d75f3ab3_26148683 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6631234175caf5_43242069 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="row" id="INDEX_PR_C_BUTTONS" >
     <?php if ($_smarty_tpl->tpl_vars['iscredit']->value == 0) {?>
         <div class="col-12 INDEX_PR_C_BUTTONS_CONTADO">

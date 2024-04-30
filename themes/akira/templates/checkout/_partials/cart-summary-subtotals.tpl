@@ -23,7 +23,7 @@
  * International Registered Trademark & Property of PrestaShop SA
  *}
 
-<div class="cart-summary-subtotals-container js-cart-summary-subtotals-container">
+<div class="cart-summary-subtotals-container js-cart-summary-subtotals-container" style="display:none">
 
     {***{if null !== $cart.products}
         {$axps_weight_type = 'axps_weight'}

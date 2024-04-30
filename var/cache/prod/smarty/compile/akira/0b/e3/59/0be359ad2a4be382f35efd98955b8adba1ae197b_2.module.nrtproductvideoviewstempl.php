@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.47, created on 2024-04-29 12:54:11
+/* Smarty version 3.1.47, created on 2024-04-30 11:05:56
   from 'module:nrtproductvideoviewstempl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.47',
-  'unifunc' => 'content_662fdec372c262_61445797',
+  'unifunc' => 'content_663116e412f3c8_08382403',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_662fdec372c262_61445797 (Smarty_Internal_Template $_smarty_tpl) {
+function content_663116e412f3c8_08382403 (Smarty_Internal_Template $_smarty_tpl) {
 if ((isset($_smarty_tpl->tpl_vars['productvideos']->value))) {?>
 	<?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['productvideos']->value, 'productvideo');

@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.47, created on 2024-04-29 12:54:11
+/* Smarty version 3.1.47, created on 2024-04-30 11:05:56
   from 'module:nrtreviewsviewstemplatesh' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.47',
-  'unifunc' => 'content_662fdec3f080d3_62535417',
+  'unifunc' => 'content_663116e4a05170_01780851',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_662fdec3f080d3_62535417 (Smarty_Internal_Template $_smarty_tpl) {
+function content_663116e4a05170_01780851 (Smarty_Internal_Template $_smarty_tpl) {
 ?>		
 <div class="product-rating">
 	<span class="reviews_note">

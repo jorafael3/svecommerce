@@ -123,6 +123,8 @@ $(document).ready(function () {
 
 							prestashop.emit('mustUpdateLazyLoad', null);
 						}
+
+
 						if (x.success) {
 
 							$(".CART_PRICE_CONTADO").empty();
@@ -149,6 +151,7 @@ $(document).ready(function () {
 							});
 							var formattedPrice = totalPriceCredit.toLocaleString('en-US', { style: 'currency', currency: 'USD' });
 							$(".CART_PRICE_TOTAL_CREDITO_VAL").text(formattedPrice);
+							
 
 							setInterval(() => {
 								var tbody = document.querySelector('.CART_CHECK_CREDIT');

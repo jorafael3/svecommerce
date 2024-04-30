@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.47, created on 2024-03-28 10:05:41
+/* Smarty version 3.1.47, created on 2024-04-30 12:06:15
   from 'module:salvacerofunctionsviewste' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.47',
-  'unifunc' => 'content_66058745329d95_16860444',
+  'unifunc' => 'content_66312507897661_61466311',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_66058745329d95_16860444 (Smarty_Internal_Template $_smarty_tpl) {
+function content_66312507897661_61466311 (Smarty_Internal_Template $_smarty_tpl) {
 echo '<script'; ?>
  src="https://cdn.jsdelivr.net/npm/sweetalert2@11"><?php echo '</script'; ?>
 >

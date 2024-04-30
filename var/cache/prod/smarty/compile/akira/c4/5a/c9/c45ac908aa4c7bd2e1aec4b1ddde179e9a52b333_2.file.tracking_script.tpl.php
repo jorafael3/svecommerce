@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.47, created on 2024-04-29 22:07:19
+/* Smarty version 3.1.47, created on 2024-04-30 12:19:30
   from 'C:\xampp\htdocs\svecommerce\modules\sendinblue\views\templates\front\tracking_script.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.47',
-  'unifunc' => 'content_66306067b9da32_76633014',
+  'unifunc' => 'content_66312822d5a5a8_19871740',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'c45ac908aa4c7bd2e1aec4b1ddde179e9a52b333' => 
     array (
       0 => 'C:\\xampp\\htdocs\\svecommerce\\modules\\sendinblue\\views\\templates\\front\\tracking_script.tpl',
-      1 => 1711210464,
+      1 => 1711123678,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_66306067b9da32_76633014 (Smarty_Internal_Template $_smarty_tpl) {
+function content_66312822d5a5a8_19871740 (Smarty_Internal_Template $_smarty_tpl) {
 echo '<script'; ?>
  type="text/javascript">
     (function() {

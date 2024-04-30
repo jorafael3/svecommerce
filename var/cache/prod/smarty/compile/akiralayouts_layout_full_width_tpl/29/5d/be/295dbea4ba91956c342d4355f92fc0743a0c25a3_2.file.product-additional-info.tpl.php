@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.47, created on 2024-04-29 12:54:12
+/* Smarty version 3.1.47, created on 2024-04-30 11:05:57
   from 'C:\xampp\htdocs\svecommerce\themes\akira\templates\catalog\_partials\product-additional-info.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.47',
-  'unifunc' => 'content_662fdec48c47a2_59891421',
+  'unifunc' => 'content_663116e540ea26_83559743',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_662fdec48c47a2_59891421 (Smarty_Internal_Template $_smarty_tpl) {
+function content_663116e540ea26_83559743 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="product-additional-info js-product-additional-info">
     <?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['hook'][0], array( array('h'=>'displayButtonCompare','product'=>$_smarty_tpl->tpl_vars['product']->value),$_smarty_tpl ) );?>
  

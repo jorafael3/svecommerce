@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.47, created on 2024-04-29 21:35:39
+/* Smarty version 3.1.47, created on 2024-04-30 11:59:06
   from 'module:nrtshoppingcartmodal.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.47',
-  'unifunc' => 'content_663058fb122af6_32391870',
+  'unifunc' => 'content_6631235a62e846_76541921',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '3e4ad659787d70981b5f779b2bc20c67ea83d547' => 
     array (
       0 => 'module:nrtshoppingcartmodal.tpl',
-      1 => 1711210455,
+      1 => 1711123671,
       2 => 'module',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_663058fb122af6_32391870 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6631235a62e846_76541921 (Smarty_Internal_Template $_smarty_tpl) {
 if ($_smarty_tpl->tpl_vars['product']->value) {?>
 	<?php $_smarty_tpl->_assignInScope('imageType', 'cart_default');?>
 

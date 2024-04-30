@@ -38,7 +38,7 @@ if (document.getElementById("payment-confirmation") != null) {
                     feeAmount: feeAmount,
                 },
                 success: function (result) {
-                    console.log('result: ', result);
+                    
 
                 }
             });
@@ -50,7 +50,7 @@ $(document).ready(function () {
     var cartTotalObject = $('#js-checkout-summary .cart-summary-line.cart-total span.value');
     var orderConfirmationTable = $('#order-summary-content #order-items .order-confirmation-table table tbody tr').last().find('td').last();
     var cartTotal = cartTotalObject.html();
-    // console.log('cartTotal: ', cartTotal);
+    // 
     $(".ps-shown-by-js:not(div):not(input[name='conditions_to_approve[terms-and-conditions]'])").on('click', function () {
         cartTotalObject.html(cartTotal);
         orderConfirmationTable.html(cartTotal);
@@ -64,15 +64,16 @@ $(document).ready(function () {
     paragraphElement.style.display = 'none';
 
     $('.payment-option').on('click', function (e) {
-        // console.log('e: ', e.target);
+        // 
         let tarjeta = $("#payment-option-1").is(":checked");
-        // console.log('tarjeta: ', tarjeta);
+        console.log('tarjeta: ', tarjeta);
 
         // $("#payment-option-2-additional-information").remove();
 
         if (tarjeta == true) {
             $("#js-checkout-summary").empty();
             $("#js-checkout-summary").append(HTML_TARJETA);
+            $("#js-checkout-summary").show();
 
         } else {
 
@@ -108,10 +109,13 @@ $(document).ready(function () {
             var moduleName = $(this).find(' input[name="payment-option"]:checked').data('module-name');
             var paymentFeeDetail = $('#' + moduleId + '-additional-information').find('#wk-payment-fee');
             $('ul.wk-card-block, #wk-order-summary-tr').remove();
-
+            $("#js-checkout-summary").show();
+            $(".cart-summary-subtotals-container").show();
+            
             $('#cart-subtotal-cuotas').on('change', function (e) {
                 calcular_Cuota();
-            })
+            });
+
             calcular_Cuota();
 
             function calcular_Cuota() {
@@ -129,7 +133,7 @@ $(document).ready(function () {
                         feeAmount: feeAmount,
                     }
 
-                    console.log('param: ', param);
+                    
 
                     $.ajax({
                         url: getformattedcurrency,
@@ -138,6 +142,7 @@ $(document).ready(function () {
                         data: param,
                         success: function (result) {
                             console.log('result: ', result);
+                            
                             // RESULTADO_CREDITO = result
 
                             let MESES = $("#cart-select-cuotas").val();
@@ -152,7 +157,7 @@ $(document).ready(function () {
 
                             $("#cart-subtotal-valor-cuota").text(numeroFormateado);
                             $("#cart-subtotal-valor-total").val(cadena);
-                            
+
 
 
                             // setTimeout(function () {

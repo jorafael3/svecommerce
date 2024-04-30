@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.47, created on 2024-04-29 22:07:16
+/* Smarty version 3.1.47, created on 2024-04-30 12:05:11
   from 'module:datafastviewstemplatesfro' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.47',
-  'unifunc' => 'content_6630606417a557_89164831',
+  'unifunc' => 'content_663124c7205314_52344177',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '3063ab3b380166b87d5b4a2e8d9a020c271a0d94' => 
     array (
       0 => 'module:datafastviewstemplatesfro',
-      1 => 1711210455,
+      1 => 1711123670,
       2 => 'module',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6630606417a557_89164831 (Smarty_Internal_Template $_smarty_tpl) {
+function content_663124c7205314_52344177 (Smarty_Internal_Template $_smarty_tpl) {
 ?><style>
     .wpwl-registration {
         width: 100% !important;

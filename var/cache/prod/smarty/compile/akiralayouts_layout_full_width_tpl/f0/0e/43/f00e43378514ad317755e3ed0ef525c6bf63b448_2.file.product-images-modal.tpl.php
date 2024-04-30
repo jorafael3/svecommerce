@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.47, created on 2024-04-29 12:54:12
+/* Smarty version 3.1.47, created on 2024-04-30 11:05:57
   from 'C:\xampp\htdocs\svecommerce\themes\akira\templates\catalog\_partials\product-images-modal.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.47',
-  'unifunc' => 'content_662fdec4b7d609_39566490',
+  'unifunc' => 'content_663116e56bd108_62306863',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:catalog/_partials/product-attachment.tpl' => 1,
   ),
 ),false)) {
-function content_662fdec4b7d609_39566490 (Smarty_Internal_Template $_smarty_tpl) {
+function content_663116e56bd108_62306863 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 ?>
@@ -41,7 +41,7 @@ $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 			</span>
 		</div>
 		<?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1967443707662fdec4b78d98_58842162', 'product_attachment');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_910753341663116e56b95c1_95395354', 'product_attachment');
 ?>
 
 		<?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['hook'][0], array( array('h'=>'displayProductTags'),$_smarty_tpl ) );?>
@@ -63,12 +63,12 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1967443707662fdec4
 </div>
 <?php }
 /* {block 'product_attachment'} */
-class Block_1967443707662fdec4b78d98_58842162 extends Smarty_Internal_Block
+class Block_910753341663116e56b95c1_95395354 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'product_attachment' => 
   array (
-    0 => 'Block_1967443707662fdec4b78d98_58842162',
+    0 => 'Block_910753341663116e56b95c1_95395354',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {

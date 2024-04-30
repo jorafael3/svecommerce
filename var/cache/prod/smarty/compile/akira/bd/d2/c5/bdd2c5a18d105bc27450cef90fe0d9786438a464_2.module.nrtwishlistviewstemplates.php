@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.47, created on 2024-04-29 10:44:23
+/* Smarty version 3.1.47, created on 2024-04-30 11:34:33
   from 'module:nrtwishlistviewstemplates' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.47',
-  'unifunc' => 'content_662fc057c75272_76559236',
+  'unifunc' => 'content_66311d99ab63e6_62412434',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_662fc057c75272_76559236 (Smarty_Internal_Template $_smarty_tpl) {
+function content_66311d99ab63e6_62412434 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <a class="my-wisht-list col-lg-3 col-md-4 col-sm-6 col-xs-6" href="<?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['url'][0], array( array('entity'=>'module','name'=>'nrtwishlist','controller'=>'view'),$_smarty_tpl ) );?>
 " title="<?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'My wishlists','mod'=>'nrtwishlist'),$_smarty_tpl ) );?>

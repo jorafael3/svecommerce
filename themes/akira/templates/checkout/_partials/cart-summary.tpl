@@ -22,7 +22,7 @@
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  * International Registered Trademark & Property of PrestaShop SA
  *}
-<section id="js-checkout-summary" class="js-cart ax-cart-summary cart-summary" data-refresh-url="{$urls.pages.cart}?ajax=1&action=refresh">
+<section  style="display:none" id="js-checkout-summary" class="js-cart ax-cart-summary cart-summary" data-refresh-url="{$urls.pages.cart}?ajax=1&action=refresh">
 	
   <h2>{l s='Cart totals' d='Shop.Theme.Axon'}</h2>
 

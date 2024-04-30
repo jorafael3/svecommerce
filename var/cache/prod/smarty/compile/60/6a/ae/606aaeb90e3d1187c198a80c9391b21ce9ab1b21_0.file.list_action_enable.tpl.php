@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.47, created on 2024-03-24 15:48:15
+/* Smarty version 3.1.47, created on 2024-04-30 11:54:52
   from 'C:\xampp\htdocs\svecommerce\gqth8jpeqegdu5rw\themes\default\template\helpers\list\list_action_enable.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.47',
-  'unifunc' => 'content_6600918f30b009_65061243',
+  'unifunc' => 'content_6631225c7d4ce4_75321626',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '606aaeb90e3d1187c198a80c9391b21ce9ab1b21' => 
     array (
       0 => 'C:\\xampp\\htdocs\\svecommerce\\gqth8jpeqegdu5rw\\themes\\default\\template\\helpers\\list\\list_action_enable.tpl',
-      1 => 1711210447,
+      1 => 1711123664,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6600918f30b009_65061243 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6631225c7d4ce4_75321626 (Smarty_Internal_Template $_smarty_tpl) {
 if ((isset($_smarty_tpl->tpl_vars['migrated_url_enable']->value))) {?>
   <?php $_smarty_tpl->_assignInScope('url_enable', $_smarty_tpl->tpl_vars['migrated_url_enable']->value);
 }?>

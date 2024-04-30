@@ -204,28 +204,22 @@ jQuery(document).ready(function ($) {
             rows.forEach(function (row) {
                 // Obtener la celda oculta con el texto "Salvacero modulo de credito" en la fila actual
                 var cell = $(row).find('td.hidden-md-down');
-
                 // Verificar si la celda contiene "Salvacero modulo de credito"
                 if (cell.length > 0 && cell.text().trim() === "Salvacero modulo de credito") {
                     cell.text("Credito directo");
                     var priceCell = $(row).find('.price');
                     if (priceCell.length > 0) {
-
                         var firstElement = $(row, 'tr').find('th:first').text().trim();
-
-
                         let param = {
                             action: "getDatosCreditoOrden",
                             orderReference: firstElement,
                         }
-
                         $.ajax({
                             url: url,
                             dataType: 'json',
                             type: "POST",
                             data: param,
                             success: function (result) {
-
                                 let MESES = result["datos"]["meses"];
                                 let TOTAL = result["datos"]["total"];
                                 var VALOR = TOTAL / MESES;
@@ -233,13 +227,10 @@ jQuery(document).ready(function ($) {
                                 if (result.datos != false) {
                                     priceCell.text(VALOR);
                                 }
-
                             },
                             error: (jqXHR, exception) => {
 
-
                             }
-
                         });
                         // Aquí puedes colocar el texto deseado
 
@@ -248,14 +239,11 @@ jQuery(document).ready(function ($) {
             });
 
             var columnIndexToHide = 5; // Por ejemplo, si la columna "Orden" es la séptima, su índice sería 6
-
             var rows = document.querySelectorAll('tbody tr');
-
             // Iterar sobre cada fila
             rows.forEach(function (row) {
                 // Obtener la celda en la columna específica
                 var cellToHide = row.cells[columnIndexToHide];
-
                 // Ocultar la celda
                 cellToHide.style.display = 'none';
             });
@@ -335,15 +323,11 @@ jQuery(document).ready(function ($) {
 
         }
     }
-
     Order_detalle()
 
     function Editar_index() {
-
-
         var url = "index.php?fc=module&module=" + name_salvacero + "&controller=ajax";
-        
-
+    
         $.ajax({
             url: url,
             dataType: 'json',
@@ -370,9 +354,7 @@ jQuery(document).ready(function ($) {
                     $(".CART_TOTALS_CONTADO").empty();
                     $(".CART_TOTALS_CREDITO").show();
 
-
-
-
+                    $(".btn-canvas-text").empty();
 
                     var totalPriceCredit = 0;
                     var cartItems = document.querySelectorAll('.cart-item-product');
@@ -416,17 +398,14 @@ jQuery(document).ready(function ($) {
                                 <span class="value CART_TOTALS_TOTAL_CREDIT">$`+ subtotal.toFixed(2) + `</span>
                             </div>
                         </div>
-                    `
-
+                    `;
                     $(".CART_TOTALS_CREDITO").append(h);
-
 
                 } else {
 
                     $(".CART_TOTALS_CONTADO").show();
                     $(".CART_CHECK_CONTADO").show();
                     $(".CART_CHECK_CREDIT").empty();
-
                     $(".CART_PRICE_CONTADO").show();
                     $(".CART_PRICE_CREDIT").empty();
                     $(".CART_PRICE_TOTAL_CONTADO").show();
@@ -460,11 +439,10 @@ jQuery(document).ready(function ($) {
                 console.log('result: ', result);
                 if (result.success) {
                     $("#payment-option-1-container").empty();
-                    var priceElements = document.querySelectorAll('.price-value');
-                    priceElements.forEach(function(element) {
-                        element.textContent = ''; // Cambia '$20.00' al valor deseado
-                    });
-                    
+                    // var priceElements = document.querySelectorAll('.price-value');
+                    // priceElements.forEach(function(element) {
+                    //     element.textContent = ''; // Cambia '$20.00' al valor deseado
+                    // });
                 }else{
                     $("#payment-option-2-container").empty();
                 }

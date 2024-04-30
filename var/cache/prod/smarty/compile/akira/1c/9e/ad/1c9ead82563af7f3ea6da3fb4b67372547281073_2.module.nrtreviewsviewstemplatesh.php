@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.47, created on 2024-04-29 12:54:06
+/* Smarty version 3.1.47, created on 2024-04-30 11:05:50
   from 'module:nrtreviewsviewstemplatesh' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.47',
-  'unifunc' => 'content_662fdebef41563_66983142',
+  'unifunc' => 'content_663116deef18f9_71318884',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'module:nrtreviews/views/templates/hook/display-list-comments.tpl' => 1,
   ),
 ),false)) {
-function content_662fdebef41563_66983142 (Smarty_Internal_Template $_smarty_tpl) {
+function content_663116deef18f9_71318884 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <div class="row">	
 	<div class="col-xs-12 col-lg-12 col-my-reviews">
