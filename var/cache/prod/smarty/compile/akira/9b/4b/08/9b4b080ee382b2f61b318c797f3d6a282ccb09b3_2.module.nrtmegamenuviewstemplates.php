@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.47, created on 2024-04-29 17:47:32
+/* Smarty version 3.1.47, created on 2024-04-29 22:07:23
   from 'module:nrtmegamenuviewstemplates' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.47',
-  'unifunc' => 'content_663023847936f7_87715694',
+  'unifunc' => 'content_6630606b8bfb74_10836441',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '9b4b080ee382b2f61b318c797f3d6a282ccb09b3' => 
     array (
       0 => 'module:nrtmegamenuviewstemplates',
-      1 => 1711123671,
+      1 => 1711210455,
       2 => 'module',
     ),
   ),
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'module:nrtmegamenu/views/templates/hook/megamenu-category.tpl' => 2,
   ),
 ),false)) {
-function content_663023847936f7_87715694 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6630606b8bfb74_10836441 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'C:\\xampp\\htdocs\\svecommerce\\vendor\\smarty\\smarty\\libs\\plugins\\modifier.replace.php','function'=>'smarty_modifier_replace',),));
 ?>
 

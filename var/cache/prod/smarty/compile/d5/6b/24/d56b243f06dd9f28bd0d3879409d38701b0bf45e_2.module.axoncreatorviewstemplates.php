@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.47, created on 2024-04-29 17:47:30
+/* Smarty version 3.1.47, created on 2024-04-29 22:07:21
   from 'module:axoncreatorviewstemplates' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.47',
-  'unifunc' => 'content_663023820f50c1_18629974',
+  'unifunc' => 'content_66306069e60c98_32839813',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'd56b243f06dd9f28bd0d3879409d38701b0bf45e' => 
     array (
       0 => 'module:axoncreatorviewstemplates',
-      1 => 1711123670,
+      1 => 1711210454,
       2 => 'module',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_663023820f50c1_18629974 (Smarty_Internal_Template $_smarty_tpl) {
+function content_66306069e60c98_32839813 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <a class="btn-canvas btn-canvas-account" href="javascript:void(0)" data-toggle="canvas-widget" data-target="#canvas-my-account" title="<?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'My Account','mod'=>'axoncreator'),$_smarty_tpl ) );?>
 "><?php if ((isset($_smarty_tpl->tpl_vars['icon']->value)) && $_smarty_tpl->tpl_vars['icon']->value) {

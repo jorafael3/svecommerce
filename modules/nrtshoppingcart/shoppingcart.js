@@ -185,22 +185,28 @@ $(document).ready(function () {
 								subtotal += rowSubtotal;
 							});
 							console.log('Subtotal total: $' + subtotal.toFixed(2))
+							var checkoutButtons = document.querySelectorAll('.checkout .btn-primary');
+							console.log('checkoutButtons: ', checkoutButtons);
 							let h = `
 							<div class="cart-detailed-totals js-cart-detailed-totals CART_TOTALS_CREDITO">
-
-							<div class="cart-detailed-subtotals js-cart-detailed-subtotals">  
-								<h2>Resumen</h2>
-							</div>
-							<div class="cart-summary-totals js-cart-summary-totals"> 
-								<div class="cart-summary-line cart-total">
-									<span class="label">12 cuotas de </span>
-									<span class="value CART_TOTALS_TOTAL_CREDIT">$`+ subtotal.toFixed(2) + `</span>
+								<div class="cart-detailed-subtotals js-cart-detailed-subtotals">  
+									<h2>Resumen</h2>
+								</div>
+								<div class="cart-summary-totals js-cart-summary-totals"> 
+									<div class="cart-summary-line cart-total">
+										<span class="label">12 cuotas de </span>
+										<span class="value CART_TOTALS_TOTAL_CREDIT">$`+ subtotal.toFixed(2) + `</span>
+									</div>
 								</div>
 							</div>
-							</div>
-
-							
+			
 							`
+							// Recorrer todos los elementos seleccionados por checkoutButtons
+							checkoutButtons.forEach(function (button) {
+								// Concatenar el HTML de cada botón al HTML existente
+								h += button.outerHTML;
+							});
+
 							$(".ax-cart-summary").empty();
 
 							setTimeout(() => {

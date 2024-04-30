@@ -1,26 +1,18 @@
 <?php
-<<<<<<< HEAD
-/* Smarty version 3.1.47, created on 2024-04-29 01:19:02
-=======
-/* Smarty version 3.1.47, created on 2024-04-01 11:20:36
->>>>>>> 9a1a6330930ccb4da80431385458d268e69be318
+/* Smarty version 3.1.47, created on 2024-04-29 22:07:16
   from 'C:\xampp\htdocs\svecommerce\modules\wkpaymentfee\views\templates\hook\paymentfee.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.47',
-<<<<<<< HEAD
-  'unifunc' => 'content_662f3bd6587991_36912558',
-=======
-  'unifunc' => 'content_660aded44e4e47_27461266',
->>>>>>> 9a1a6330930ccb4da80431385458d268e69be318
+  'unifunc' => 'content_66306064220af3_60763937',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '2df870fb564c201ae3550cb144a73c8d53740e19' => 
     array (
       0 => 'C:\\xampp\\htdocs\\svecommerce\\modules\\wkpaymentfee\\views\\templates\\hook\\paymentfee.tpl',
-      1 => 1711123678,
+      1 => 1711210464,
       2 => 'file',
     ),
   ),
@@ -28,11 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-<<<<<<< HEAD
-function content_662f3bd6587991_36912558 (Smarty_Internal_Template $_smarty_tpl) {
-=======
-function content_660aded44e4e47_27461266 (Smarty_Internal_Template $_smarty_tpl) {
->>>>>>> 9a1a6330930ccb4da80431385458d268e69be318
+function content_66306064220af3_60763937 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <div id='wk-payment-fee'>
 	<input type='hidden' name='wk-payment-fee-amount' value='<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['wk_fee']->value, ENT_QUOTES, 'UTF-8');?>

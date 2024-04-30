@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.47, created on 2024-04-29 17:47:30
+/* Smarty version 3.1.47, created on 2024-04-29 22:07:22
   from 'C:\xampp\htdocs\svecommerce\modules\hiwhatsapp\views\templates\hook\chatbox.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.47',
-  'unifunc' => 'content_663023826c82e5_15087578',
+  'unifunc' => 'content_6630606a353274_91539735',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'bbe729a3f69b30db05bda9f732b22ca13627e955' => 
     array (
       0 => 'C:\\xampp\\htdocs\\svecommerce\\modules\\hiwhatsapp\\views\\templates\\hook\\chatbox.tpl',
-      1 => 1711123670,
+      1 => 1711210455,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_663023826c82e5_15087578 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6630606a353274_91539735 (Smarty_Internal_Template $_smarty_tpl) {
 if ($_smarty_tpl->tpl_vars['wap_accounts']->value) {?>
     <div class="hi-wap-chatbox-container hi-wap-chatbox-position-<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['chatbox_position']->value, ENT_QUOTES, 'UTF-8');?>
 ">

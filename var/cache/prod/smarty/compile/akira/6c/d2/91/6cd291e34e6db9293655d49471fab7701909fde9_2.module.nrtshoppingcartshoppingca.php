@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.47, created on 2024-04-29 17:47:41
+/* Smarty version 3.1.47, created on 2024-04-29 22:07:21
   from 'module:nrtshoppingcartshoppingca' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.47',
-  'unifunc' => 'content_6630238dde1896_60122357',
+  'unifunc' => 'content_66306069deade0_22227752',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '6cd291e34e6db9293655d49471fab7701909fde9' => 
     array (
       0 => 'module:nrtshoppingcartshoppingca',
-      1 => 1711123671,
+      1 => 1711210455,
       2 => 'module',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6630238dde1896_60122357 (Smarty_Internal_Template $_smarty_tpl) {
+function content_66306069deade0_22227752 (Smarty_Internal_Template $_smarty_tpl) {
 ?><a class="btn-canvas btn-canvas-cart" <?php if ($_smarty_tpl->tpl_vars['has_ajax']->value) {?>rel="nofollow" href="javascript:void(0)" data-toggle="canvas-widget" data-target="#canvas-mini-cart"<?php } else { ?>href="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['cart_url']->value, ENT_QUOTES, 'UTF-8');?>
 "<?php }?> title="<?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Mini Cart','mod'=>'nrtshoppingcart'),$_smarty_tpl ) );?>
 "><span class="canvas-gr-icon"><?php if ((isset($_smarty_tpl->tpl_vars['icon']->value)) && $_smarty_tpl->tpl_vars['icon']->value) {

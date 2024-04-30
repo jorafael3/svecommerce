@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.47, created on 2024-04-29 14:59:51
+/* Smarty version 3.1.47, created on 2024-04-29 21:59:08
   from 'C:\xampp\htdocs\svecommerce\modules\ganalyticspro\views\templates\hook\error.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.47',
-  'unifunc' => 'content_662ffc37667c05_21614580',
+  'unifunc' => 'content_66305e7c6bfab0_46050160',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'd0a94a0fcf1e68312a3b49addbc3975352876aa1' => 
     array (
       0 => 'C:\\xampp\\htdocs\\svecommerce\\modules\\ganalyticspro\\views\\templates\\hook\\error.tpl',
-      1 => 1711123670,
+      1 => 1711210455,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_662ffc37667c05_21614580 (Smarty_Internal_Template $_smarty_tpl) {
+function content_66305e7c6bfab0_46050160 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="alert alert-danger">
 	<button type="button" class="close" data-dismiss="alert">×</button>
 	<?php

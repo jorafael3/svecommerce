@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.47, created on 2024-04-29 12:54:13
+/* Smarty version 3.1.47, created on 2024-04-29 21:35:04
   from 'module:axoncreatorviewstemplates' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.47',
-  'unifunc' => 'content_662fdec5582b82_61583329',
+  'unifunc' => 'content_663058d80001f2_08014288',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '920466935fa6d882e2ce7ad385c09ee5a3b5f878' => 
     array (
       0 => 'module:axoncreatorviewstemplates',
-      1 => 1711123670,
+      1 => 1711210454,
       2 => 'module',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_662fdec5582b82_61583329 (Smarty_Internal_Template $_smarty_tpl) {
+function content_663058d80001f2_08014288 (Smarty_Internal_Template $_smarty_tpl) {
 ?>	 
 <?php if (count($_smarty_tpl->tpl_vars['content']->value['products']) > 0) {?> 
 	<?php if ($_smarty_tpl->tpl_vars['content']->value['image_size']) {?> 
@@ -48,8 +48,8 @@ $_smarty_tpl->tpl_vars['product']->do_else = false;
 		<?php }?>
 			<?php ob_start();
 echo htmlspecialchars($_smarty_tpl->tpl_vars['content']->value['items_type_path'], ENT_QUOTES, 'UTF-8');
-$_prefixVariable1 = ob_get_clean();
-$_smarty_tpl->_subTemplateRender($_prefixVariable1, $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, true);
+$_prefixVariable3 = ob_get_clean();
+$_smarty_tpl->_subTemplateRender($_prefixVariable3, $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, true);
 ?>
 		<?php $_smarty_tpl->_assignInScope('i', $_smarty_tpl->tpl_vars['i']->value+1);?>	
 		<?php if ($_smarty_tpl->tpl_vars['i']->value % $_smarty_tpl->tpl_vars['y']->value == 0 || $_smarty_tpl->tpl_vars['i']->value == count($_smarty_tpl->tpl_vars['content']->value['products'])) {?>

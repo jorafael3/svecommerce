@@ -23,7 +23,7 @@
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  *}
 
-<div class="cart-summary-products cart-summary-products-wrapper js-cart-summary-products">
+<div class="cart-summary-products cart-summary-products-wrapper js-cart-summary-products ORDER_PRODUCTS">
     {block name='cart_summary_product_list'}
         <div id="cart-summary-product-list">
             {include file='checkout/_partials/cart-summary-items-subtotal.tpl'}

@@ -1,26 +1,18 @@
 <?php
-<<<<<<< HEAD
-/* Smarty version 3.1.47, created on 2024-04-28 23:01:18
-=======
-/* Smarty version 3.1.47, created on 2024-04-01 11:20:36
->>>>>>> 9a1a6330930ccb4da80431385458d268e69be318
+/* Smarty version 3.1.47, created on 2024-04-29 22:07:16
   from 'C:\xampp\htdocs\svecommerce\themes\akira\templates\checkout\_partials\steps\payment.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.47',
-<<<<<<< HEAD
-  'unifunc' => 'content_662f1b8e601141_50112894',
-=======
-  'unifunc' => 'content_660aded45b4423_41358299',
->>>>>>> 9a1a6330930ccb4da80431385458d268e69be318
+  'unifunc' => 'content_663060642d6037_45241682',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'd648d6f50db8910e7aa996843fe83080a7132986' => 
     array (
       0 => 'C:\\xampp\\htdocs\\svecommerce\\themes\\akira\\templates\\checkout\\_partials\\steps\\payment.tpl',
-      1 => 1711123680,
+      1 => 1711210466,
       2 => 'file',
     ),
   ),
@@ -29,41 +21,25 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:checkout/_partials/order-final-summary.tpl' => 1,
   ),
 ),false)) {
-<<<<<<< HEAD
-function content_662f1b8e601141_50112894 (Smarty_Internal_Template $_smarty_tpl) {
-=======
-function content_660aded45b4423_41358299 (Smarty_Internal_Template $_smarty_tpl) {
->>>>>>> 9a1a6330930ccb4da80431385458d268e69be318
+function content_663060642d6037_45241682 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 
 <?php 
-<<<<<<< HEAD
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1178384650662f1b8e5f11b2_68376985', 'step_content');
-=======
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_2016758230660aded45a20a2_63809974', 'step_content');
->>>>>>> 9a1a6330930ccb4da80431385458d268e69be318
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1319549418663060642c59a4_97691024', 'step_content');
 ?>
 
 <?php $_smarty_tpl->inheritance->endChild($_smarty_tpl, 'checkout/_partials/steps/checkout-step.tpl');
 }
 /* {block 'step_content'} */
-<<<<<<< HEAD
-class Block_1178384650662f1b8e5f11b2_68376985 extends Smarty_Internal_Block
-=======
-class Block_2016758230660aded45a20a2_63809974 extends Smarty_Internal_Block
->>>>>>> 9a1a6330930ccb4da80431385458d268e69be318
+class Block_1319549418663060642c59a4_97691024 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'step_content' => 
   array (
-<<<<<<< HEAD
-    0 => 'Block_1178384650662f1b8e5f11b2_68376985',
-=======
-    0 => 'Block_2016758230660aded45a20a2_63809974',
->>>>>>> 9a1a6330930ccb4da80431385458d268e69be318
+    0 => 'Block_1319549418663060642c59a4_97691024',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {

@@ -38,8 +38,6 @@ jQuery(document).ready(function ($) {
     if (paymentStepSection) {
         // Si la sección existe, obtén el botón "Realizar pedido" dentro de ella
         var realizarPedidoBtn = paymentStepSection.querySelector('.btn.btn-primary.center-block');
-
-
         // Verifica si se encontró el botón dentro de la sección
         if (realizarPedidoBtn) {
             // Agrega el ID deseado al botón
@@ -49,25 +47,25 @@ jQuery(document).ready(function ($) {
 
     function Mostrar_Credito() {
         var url = "index.php?fc=module&module=" + name_salvacero + "&controller=ajax";
+        if (window.location.href.includes('pedido')) {
+            $.ajax({
+                url: url,
+                dataType: 'json',
+                type: "POST",
+                data: {
+                    action: "getDataCustomer",
+                    customerEmail: prestashop.customer.email,
+                    total: prestashop.cart.totals.total.amount
 
-        $.ajax({
-            url: url,
-            dataType: 'json',
-            type: "POST",
-            data: {
-                action: "getDataCustomer",
-                customerEmail: prestashop.customer.email,
-                total: prestashop.cart.totals.total.amount
+                },
+                success: function (result) {
 
-            },
-            success: function (result) {
-
-                if (result.success) {
-                    // Calcular el porcentaje de crédito consumido
-                    var percentage = (result.Monto_Credito / result.amount_inicial) * 100;
-                    var percentage = (result.Monto_Credito / result.amount_inicial) * 100;
-                    // Crear el string HTML para la barra de progreso
-                    var barra = `
+                    if (result.success) {
+                        // Calcular el porcentaje de crédito consumido
+                        var percentage = (result.Monto_Credito / result.amount_inicial) * 100;
+                        var percentage = (result.Monto_Credito / result.amount_inicial) * 100;
+                        // Crear el string HTML para la barra de progreso
+                        var barra = `
                     <style>
                         .bg-custom {
                             background-color: #f0f0f0; /* Color gris claro, puedes cambiar esto según tus preferencias */
@@ -95,22 +93,23 @@ jQuery(document).ready(function ($) {
                         </div>
                     </div>
                     `;
-                    $("#header-normal").append(barra);
+                        $("#header-normal").append(barra);
 
-                    if (percentage >= 75) {
-                        progressBar.classList.add("bg-success"); // Verde si el porcentaje es 75% o más
-                    } else if (percentage >= 50) {
-                        progressBar.classList.add("bg-warning"); // Amarillo si el porcentaje está entre 50% y 75%
-                    } else {
-                        progressBar.classList.add("bg-danger"); // Rojo si el porcentaje es menos del 50%
+                        if (percentage >= 75) {
+                            progressBar.classList.add("bg-success"); // Verde si el porcentaje es 75% o más
+                        } else if (percentage >= 50) {
+                            progressBar.classList.add("bg-warning"); // Amarillo si el porcentaje está entre 50% y 75%
+                        } else {
+                            progressBar.classList.add("bg-danger"); // Rojo si el porcentaje es menos del 50%
+                        }
+
                     }
+                },
+                error: (jqXHR, exception) => {
 
                 }
-            },
-            error: (jqXHR, exception) => {
-
-            }
-        });
+            });
+        }
 
     }
     Mostrar_Credito();
@@ -144,7 +143,7 @@ jQuery(document).ready(function ($) {
                         action: "SetActualizarOrdenCredito",
                         orderReference: orderReference,
                     }
-                    console.log('param: ', param);
+                    
 
 
                     $.ajax({
@@ -153,7 +152,7 @@ jQuery(document).ready(function ($) {
                         type: "POST",
                         data: param,
                         success: function (result) {
-                            console.log('result: ', result);
+                            
 
                             let MESES = result["datos"]["meses"];
                             let TOTAL = result["datos"]["total"];
@@ -295,7 +294,7 @@ jQuery(document).ready(function ($) {
                         tbodyRows.forEach(function (row) {
                             // Obtener el texto dentro de la primera celda (td) de la fila actual
                             var productName = row.querySelector('td').textContent.trim();
-                            console.log('productName: ', productName);
+                            
                             // Verificar si el texto de la primera celda coincide con "Pago de tarifa adicional"
                             if (productName.includes("Pago de tarifa adicional")) {
                                 // Eliminar la fila del tbody
@@ -343,7 +342,7 @@ jQuery(document).ready(function ($) {
 
 
         var url = "index.php?fc=module&module=" + name_salvacero + "&controller=ajax";
-        console.log('url: ', url);
+        
 
         $.ajax({
             url: url,
@@ -356,7 +355,7 @@ jQuery(document).ready(function ($) {
 
             },
             success: function (result) {
-                console.log('result: ', result);
+                
                 if (result.success) {
 
                     $(".CART_SUBTOTAL_TEXT").text("12 cuotas de");
@@ -387,7 +386,7 @@ jQuery(document).ready(function ($) {
                     });
 
                     // Mostrar la suma total
-                    console.log('Total de CART_PRICE_CREDIT por cantidad:', totalPriceCredit);
+                    
                     var formattedPrice = totalPriceCredit.toLocaleString('en-US', { style: 'currency', currency: 'USD' });
                     $(".CART_PRICE_TOTAL_CREDITO_VAL").text(formattedPrice);
 
@@ -405,7 +404,7 @@ jQuery(document).ready(function ($) {
                         row.querySelector('.product-subtotal').innerHTML = '<span class="product-price"><strong>$' + rowSubtotal.toFixed(2) + '</strong></span>';
                         subtotal += rowSubtotal;
                     });
-                    console.log('Subtotal total: $' + subtotal.toFixed(2))
+                    
 
                     let h = `
                         <div class="cart-detailed-subtotals js-cart-detailed-subtotals">  
@@ -414,7 +413,7 @@ jQuery(document).ready(function ($) {
                         <div class="cart-summary-totals js-cart-summary-totals"> 
                             <div class="cart-summary-line cart-total">
                                 <span class="label">12 cuotas de </span>
-                                <span class="value CART_TOTALS_TOTAL_CREDIT">$`+ subtotal.toFixed(2)+`</span>
+                                <span class="value CART_TOTALS_TOTAL_CREDIT">$`+ subtotal.toFixed(2) + `</span>
                             </div>
                         </div>
                     `
@@ -442,10 +441,41 @@ jQuery(document).ready(function ($) {
     }
     Editar_index()
 
-    function Editar_Carrito_flotante() {
+    function Editar_Pedido() {
+        var url = "index.php?fc=module&module=" + name_salvacero + "&controller=ajax";
+
+        $(".carrier-price").text("");
+
+        $.ajax({
+            url: url,
+            dataType: 'json',
+            type: "POST",
+            data: {
+                action: "getDataCustomer",
+                customerEmail: prestashop.customer.email,
+                total: prestashop.cart.totals.total.amount
+
+            },
+            success: function (result) {
+                console.log('result: ', result);
+                if (result.success) {
+                    $("#payment-option-1-container").empty();
+                    var priceElements = document.querySelectorAll('.price-value');
+                    priceElements.forEach(function(element) {
+                        element.textContent = ''; // Cambia '$20.00' al valor deseado
+                    });
+                    
+                }else{
+                    $("#payment-option-2-container").empty();
+                }
+            },
+            error: (jqXHR, exception) => {
+
+            }
+        });
 
     }
-
+    Editar_Pedido()
 
 
 
